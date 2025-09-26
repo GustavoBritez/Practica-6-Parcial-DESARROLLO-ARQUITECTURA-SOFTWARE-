@@ -150,10 +150,7 @@ Se deben crear las siguientes tablas:
 
 ### 🚀 Extras (Opcional)
 
-- Implementar **gráficos estadísticos** de stock y productos más producidos.
 - Sistema de **alertas visuales** (ej. pintar filas en rojo si el stock < 10).
-- Generar **PDF** de órdenes de producción.
-- Manejo de **usuarios y roles** (administrador / operario).
 - Registro de **log de auditoría** (qué usuario creó/modificó cada orden).
 
 ---
