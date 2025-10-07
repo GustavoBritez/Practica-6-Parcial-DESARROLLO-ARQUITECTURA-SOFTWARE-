@@ -1,4 +1,4 @@
-# Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-
+# Practica 2DO -6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-
 
 # 🏭 Sistema de Producción y Stock  
 **Parcial de Desarrollo y Arquitectura de Software**  
@@ -156,6 +156,6 @@ Se deben crear las siguientes tablas:
 ---
 
 ## 🎯 Objetivo
-Implementar este sistema aplicando buenas prácticas de arquitectura en capas, validaciones en la **BLL**, acceso a datos seguro en la **DAL** y una interfaz de usuario intuitiva en **WinForms**, con reportes dinámicos y cálculos en memoria.
+Implementar este sistema aplicando buenas prácticas de arquitectura en capas, capa para manejar lectura y escritura de entidades **BE**, capa Mapeador Objeto Relacional **ORM**, **BLL**, acceso a datos seguro en la **DAL**, una interfaz de usuario intuitiva en **WinForms**, una capa de **Validacion**,,con reportes dinámicos y cálculos en memoria.
 
 ---
