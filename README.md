@@ -108,7 +108,7 @@ Se deben crear las siguientes tablas:
 #### 🟢 Reportes
 - Filtro por rango de fechas.
 - Filtro por producto específico.
-- Exportar resultados a **Excel o CSV**.
+- Exportar resultados a **Excel y PDF**.
 
 ---
 
