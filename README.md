@@ -3,7 +3,7 @@
 # 🏭 Sistema de Producción y Stock  
 **Parcial de Desarrollo y Arquitectura de Software**  
 
-Este proyecto consiste en desarrollar una **aplicación de escritorio en C# Windows Forms** conectada a **SQL Server**, aplicando **arquitectura en capas (DAL, BLL, UI)** y trabajando con **DataSet** en modo desconectado.  
+Este proyecto consiste en desarrollar una **aplicación de escritorio en C# Windows Forms** conectada a **SQL Server**, aplicando **arquitectura en capas** y trabajando con **DataSet** en modo desconectado.
 
 El objetivo es gestionar **materias primas**, **productos terminados**, **órdenes de producción** y **proveedores**, con validaciones de stock, transacciones y reportes dinámicos.
 
