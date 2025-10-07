@@ -148,7 +148,7 @@ Se deben crear las siguientes tablas:
 
 ---
 
-### 🚀 Extras (Opcional)
+### Investigar sobre estos temas
 
 - Sistema de **alertas visuales** (ej. pintar filas en rojo si el stock < 10).
 - Registro de **log de auditoría** (qué usuario creó/modificó cada orden).
