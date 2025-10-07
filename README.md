@@ -1,6 +1,6 @@
 # Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-
 
-# 🏭 Sistema Integral de Producción y Stock  
+# 🏭 Sistema de Producción y Stock  
 **Parcial de Desarrollo y Arquitectura de Software**  
 
 Este proyecto consiste en desarrollar una **aplicación de escritorio en C# Windows Forms** conectada a **SQL Server**, aplicando **arquitectura en capas (DAL, BLL, UI)** y trabajando con **DataSet** en modo desconectado.  
