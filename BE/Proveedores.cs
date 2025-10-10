@@ -6,7 +6,7 @@
     /// Git Push
     public class Proveedores
     {
-        public Proveedores(string pDNI) 
+        public Proveedores(int pDNI) 
         { DNI = pDNI; }
 
         public Proveedores(object[] pItemArray)
