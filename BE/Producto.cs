@@ -6,7 +6,8 @@ namespace BE
     /// Git Push
     public class Producto
     {
-        public Producto(){}
+        public Producto(int id)
+        { ID = id;}
 
         public Producto(object[] pItemArray)
         {
