@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "GIXZzehmRMY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\Syncfusion\\Syncfusion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.compression.net.core\\31.1.23\\syncfusion.compression.net.core.31.1.23.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.licensing\\31.1.23\\syncfusion.licensing.31.1.23.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.pdf.net.core\\31.1.23\\syncfusion.pdf.net.core.31.1.23.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
