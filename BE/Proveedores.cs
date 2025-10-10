@@ -6,19 +6,20 @@
     /// Git Push
     public class Proveedores
     {
-        Proveedores()
-        {
-        public Proveedores() { }
-        public Proveedores(string pDNI) { DNI = pDNI; }
+        public Proveedores(string pDNI) 
+        { DNI = pDNI; }
 
-        public Proveedores(object[] pItemArray) : this(pItemArray[0].ToString())
-        { Nombre = pItemArray[1].ToString(); Apellido = pItemArray[2].ToString(); }
+        public Proveedores(object[] pItemArray)
+        { 
+            DNI = Convert.ToInt32(pItemArray[0]);
+            Apellido = pItemArray[1].ToString(); 
+            Telefono = Convert.ToInt32(pItemArray[3]);
+            Mail = pItemArray[3].ToString();
+        }
 
-        public Proveedores(string pDNI, string pNombre, string pApellido) : this(new object[] {pDNI,pNombre, pApellido})
-        {}
-
-        public string DNI { get; set; }
+        public int DNI { get; set; }
         public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        
+        public string Telefono { get; set; }
+        public string Mail { get; set; }
+    }
 }
