@@ -6,9 +6,9 @@ namespace BE
     /// Git Push
     public class MateriasPrima
     {
-        MateriasPrima(int x) { ID = x;}
+        public MateriasPrima(int x) { ID = x;}
 
-        MateriasPrima(object[] pItemArray, Proveedores P)
+        public MateriasPrima(object[] pItemArray, Proveedores P)
         {
             ID = Convert.ToInt32(pItemArray[0]);
             Nombre = pItemArray[1].ToString();
