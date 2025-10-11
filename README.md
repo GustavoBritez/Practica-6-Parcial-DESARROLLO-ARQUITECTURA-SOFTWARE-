@@ -59,7 +59,7 @@ Se deben crear las siguientes tablas:
 | Campo           | Tipo de dato         | Descripción                              |
 |----------------|-------------------|----------------------------------------|
 | CODIGO_PROD    | VARCHAR(50) PK   | Código único del producto              |
-| ID_EMPLEADO    | VARCHAR(50) PK   | Identificador del empleado             |
+| ID_EMPLEADO    | VARCHAR(50) FK   | Identificador del empleado             |
 | NOMBRE         | VARCHAR(100)     | Nombre del producto                    |
 | PRECIO_VENTA   | DECIMAL(18,2)    | Precio de venta                        |
 | STOCK_ACTUAL   | INT              | Stock actual en almacén                |
@@ -68,8 +68,8 @@ Se deben crear las siguientes tablas:
 | Campo           | Tipo de dato         | Descripción                              |
 |----------------|-------------------|----------------------------------------|
 | ID_ORDEN       | INT PK IDENTITY   | Identificador de la orden              |
-| ID_MATERIA     | INT PK IDENTITY   | Identificador de la materia prima      |
-| ID_CLIENTE     | INT PK IDENTITY   | Identificador del Cliente              |
+| ID_MATERIA     | INT FK IDENTITY   | Identificador de la materia prima      |
+| ID_CLIENTE     | INT FK IDENTITY   | Identificador del Cliente              |
 | CODIGO_PROD    | VARCHAR(50) FK   | Producto a fabricar                     |
 | FECHA_ORDEN    | DATETIME         | Fecha de creación de la orden           |
 | CANTIDAD_USADA | INT             | Cantidad de Materia Prima usada          |
@@ -81,9 +81,8 @@ Se deben crear las siguientes tablas:
 | Campo           | Tipo de dato       | Descripción                                     |
 |----------------|-----------------|-----------------------------------------------|
 | ID_DETALLE     | INT PK IDENTITY | Identificador único del detalle                |
-| ID_ORDEN       | INT FK         | Referencia a la orden de producción           |
-| ID_MATERIA     | INT FK         | Materia prima utilizada                        |
-| CANTIDAD_USADA | INT           | Cantidad de materia prima consumida en la orden|
+| ID_DUEÑO       | INT FK         | Referencia al Dueño           |
+| ID_ORDEN     | INT FK         | Materia prima utilizada                        |
 
 ---
 
@@ -169,7 +168,7 @@ Se deben crear las siguientes tablas:
 | 2         | Tornillos    | 500         | 0.50         | 1           |
 | 3         | Pintura Azul | 20          | 15.00        | 2           |
 
-**Productos:**  
+**CATALOGO:**  
 
 | CODIGO_PROD | NOMBRE       | PRECIO_VENTA | STOCK_ACTUAL |
 |-------------|-------------|-------------|-------------|
