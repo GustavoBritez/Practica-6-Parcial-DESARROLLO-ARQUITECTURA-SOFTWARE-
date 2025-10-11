@@ -22,6 +22,31 @@ Se deben crear las siguientes tablas:
 | TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
 | EMAIL          | VARCHAR(100)      | Email de contacto           |
 
+**TABLA: EMPLEADO**  
+| Campo           | Tipo de dato         | Descripción                   |
+|----------------|-------------------|-----------------------------|
+| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
+| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
+| EMAIL          | VARCHAR(100)      | Email de contacto           |
+
+**TABLA: DUEÑO**  
+| Campo           | Tipo de dato         | Descripción                   |
+|----------------|-------------------|-----------------------------|
+| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
+| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
+| EMAIL          | VARCHAR(100)      | Email de contacto           |
+
+**TABLA: CLIENTE**  
+| Campo           | Tipo de dato         | Descripción                   |
+|----------------|-------------------|-----------------------------|
+| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
+| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
+| EMAIL          | VARCHAR(100)      | Email de contacto           |
+
+
 **TABLA: MATERIA_PRIMA**  
 | Campo           | Tipo de dato         | Descripción                                |
 |----------------|-------------------|------------------------------------------|
