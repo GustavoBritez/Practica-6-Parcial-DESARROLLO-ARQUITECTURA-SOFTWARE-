@@ -17,60 +17,65 @@ Se deben crear las siguientes tablas:
 **TABLA: PROVEEDOR**  
 | Campo           | Tipo de dato         | Descripción                   |
 |----------------|-------------------|-----------------------------|
-| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
-| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del Proveedor |
+| NOMBRE         | VARCHAR(100)      | Nombre del Proveedor        |
 | TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
 | EMAIL          | VARCHAR(100)      | Email de contacto           |
 
 **TABLA: EMPLEADO**  
 | Campo           | Tipo de dato         | Descripción                   |
 |----------------|-------------------|-----------------------------|
-| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
-| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| ID_EMPLEADO    | INT PK IDENTITY   | Identificador del Empleado  |
+| NOMBRE         | VARCHAR(100)      | Nombre del Empleado         |
 | TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
 | EMAIL          | VARCHAR(100)      | Email de contacto           |
 
 **TABLA: DUEÑO**  
 | Campo           | Tipo de dato         | Descripción                   |
 |----------------|-------------------|-----------------------------|
-| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
-| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| ID_DUEÑO       | INT PK IDENTITY   | Identificador del Dueño     |
+| NOMBRE         | VARCHAR(100)      | Nombre del Dueño            |
 | TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
 | EMAIL          | VARCHAR(100)      | Email de contacto           |
 
 **TABLA: CLIENTE**  
 | Campo           | Tipo de dato         | Descripción                   |
 |----------------|-------------------|-----------------------------|
-| ID_PROVEEDOR   | INT PK IDENTITY   | Identificador del proveedor |
-| NOMBRE         | VARCHAR(100)      | Nombre del proveedor        |
+| ID_CLIENTE     | INT PK IDENTITY   | Identificador del Cliente   |
+| NOMBRE         | VARCHAR(100)      | Nombre del Cliente          |
 | TELEFONO       | VARCHAR(20)       | Teléfono de contacto        |
 | EMAIL          | VARCHAR(100)      | Email de contacto           |
-
 
 **TABLA: MATERIA_PRIMA**  
 | Campo           | Tipo de dato         | Descripción                                |
 |----------------|-------------------|------------------------------------------|
 | ID_MATERIA     | INT PK IDENTITY   | Identificador de la materia prima        |
+| ID_PROVEEDOR   | INT FK            | Referencia al proveedor principal        |
 | NOMBRE         | VARCHAR(100)      | Nombre de la materia prima               |
 | STOCK_ACTUAL   | INT               | Cantidad en almacén                      |
 | COSTO_UNITARIO | DECIMAL(18,2)     | Costo por unidad                         |
-| ID_PROVEEDOR   | INT FK           | Referencia al proveedor principal        |
 
 **TABLA: PRODUCTO**  
 | Campo           | Tipo de dato         | Descripción                              |
 |----------------|-------------------|----------------------------------------|
 | CODIGO_PROD    | VARCHAR(50) PK   | Código único del producto              |
-| NOMBRE         | VARCHAR(100)    | Nombre del producto                    |
-| PRECIO_VENTA   | DECIMAL(18,2)   | Precio de venta                        |
-| STOCK_ACTUAL   | INT             | Stock actual en almacén                |
+| ID_EMPLEADO    | VARCHAR(50) PK   | Identificador del empleado             |
+| NOMBRE         | VARCHAR(100)     | Nombre del producto                    |
+| PRECIO_VENTA   | DECIMAL(18,2)    | Precio de venta                        |
+| STOCK_ACTUAL   | INT              | Stock actual en almacén                |
 
 **TABLA: ORDEN_PRODUCCION**  
 | Campo           | Tipo de dato         | Descripción                              |
 |----------------|-------------------|----------------------------------------|
 | ID_ORDEN       | INT PK IDENTITY   | Identificador de la orden              |
-| FECHA_ORDEN    | DATETIME         | Fecha de creación de la orden          |
-| CODIGO_PROD    | VARCHAR(50) FK   | Producto a fabricar                    |
-| CANTIDAD_PROD  | INT             | Cantidad a producir                    |
+| ID_MATERIA     | INT PK IDENTITY   | Identificador de la materia prima      |
+| ID_CLIENTE     | INT PK IDENTITY   | Identificador del Cliente              |
+| CODIGO_PROD    | VARCHAR(50) FK   | Producto a fabricar                     |
+| FECHA_ORDEN    | DATETIME         | Fecha de creación de la orden           |
+| CANTIDAD_USADA | INT             | Cantidad de Materia Prima usada          |
+| CANTIDAD_PROD  | INT             | Cantidad a producir de producto          |
+| COSTO_TOTAL_ORDEN  | DECIMAL            | Costo total de la orden           |
+| ESTADO  | STRING            | Estado de la orden                            |
 
 **TABLA: ORDEN_DETALLE**  
 | Campo           | Tipo de dato       | Descripción                                     |
