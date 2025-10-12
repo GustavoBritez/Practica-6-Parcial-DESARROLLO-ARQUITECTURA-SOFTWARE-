@@ -20,6 +20,6 @@ namespace BE
         public int id {get;set;}
         public string Nombre {get;set;}
         public decimal PrecioUniVenta {get;set;}
-        public decimal CantStock {get;set;}
+        public int CantStock {get;set;}
     }
 }
