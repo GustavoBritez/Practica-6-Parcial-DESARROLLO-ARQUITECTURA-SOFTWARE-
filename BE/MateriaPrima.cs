@@ -14,14 +14,14 @@ namespace BE
             ID = Convert.ToInt32(pItemArray[0]);
             Nombre = pItemArray[1].ToString();
             CantStock = Convert.ToInt32(pItemArray[2]);
-            CostoUni = Convert.ToInt32(pItemArray[3]);
+            CostoUni = Convert.ToDecimal(pItemArray[3]);
             ID_Prove = Convert.ToInt32(pItemArray[4]);
         }
 
         public int ID {get; set;}
         public string Nombre {get;set;}
         public int CantStock {get;set;}
-        public int CostoUni {get;set;}
+        public decimal CostoUni {get;set;}
         public int ID_Prove {get;set;}
     }
 }
