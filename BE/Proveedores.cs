@@ -4,15 +4,15 @@
     /// Git Add .
     /// Git Commit -m " NOMBRE DEL CAMBIO "
     /// Git Push
-    public class Proveedores
+    public class OP
     {
-        public Proveedores(int pDNI) 
+        public Usario(int pDNI)
         { DNI = pDNI; }
 
-        public Proveedores(object[] pItemArray)
-        { 
+        public Usario(object[] pItemArray)
+        {
             DNI = Convert.ToInt32(pItemArray[0]);
-            Apellido = pItemArray[1].ToString(); 
+            Apellido = pItemArray[1].ToString();
             Telefono = Convert.ToInt32(pItemArray[3]);
             Mail = pItemArray[3].ToString();
         }
