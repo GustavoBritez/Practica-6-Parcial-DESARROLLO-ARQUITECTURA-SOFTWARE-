@@ -17,7 +17,7 @@ namespace ORM_MateriaPrima
             catch (exception ex) { throw ex; }
         }
         
-        public void Baja(ORM_MateriaPrima mp)
+        public void Baja(MateriaPrima mp)
         {
             try
             {

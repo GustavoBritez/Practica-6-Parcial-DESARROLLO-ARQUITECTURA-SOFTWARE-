@@ -2,7 +2,7 @@ namespace BLL
 {
     public class BLL_Producto : Iabmc<ProductoBE>
     {
-        ORM_Producto MP;
+        ORM_Productos MP;
 
         public BLL_Producto()
         { MP = new ORM_Producto(); }
