@@ -15,7 +15,6 @@ namespace DAO
         public SqlConnection conn = new("AGREGAR DATASOURCE BD");
         public SqlTransaction transaction;
 
-
         public void Open()
         {
             conn.Open();
@@ -36,28 +35,36 @@ namespace DAO
         {
             transaction.Commit();
         }
-        public void Escribir( string Query , SqlParameter[] sp = null )
+
+        public void Sincronizar()
         {
+
+        }
+        public int Escribir( string Query , SqlParameter[] sp = null )
+        {
+            int filasAfectadas = 0; 
             try
             {
-                Open();
-                using ( SqlCommand cmd = new SqlCommand(Query, conn)) 
+                conn.Open();
+                Start_TX();
+                using (SqlCommand cmd = new SqlCommand(Query, conn))
                 {
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    
+                    cmd.CommandType = CommandType.StoredProcedure;
                     if ( sp is not null )
-                        cmd.Parameters.AddRange( sp );
-
-                    Start_TX();
-                    cmd.Transaction = transaction;
-                    int resultado = cmd.ExecuteNonQuery();
-                    Commit_TX();
+                        cmd.Parameters.AddRange(sp);
+                    
+                    filasAfectadas = cmd.ExecuteNonQuery();
 
                 }
+
+                Commit_TX();
+
+                return filasAfectadas;
             }
             catch( Exception ex )
             {
-                throw new ArgumentException(ex.Message);
+                Stop_TX();
+                throw;
             }
         }
         public DataTable Leer( string Query , SqlParameter[] sp )
