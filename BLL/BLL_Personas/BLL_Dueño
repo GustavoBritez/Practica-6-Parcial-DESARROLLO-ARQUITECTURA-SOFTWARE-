@@ -1,18 +1,18 @@
 namespace BLL
 {
-    public class BLL_Dueño : Iabmc<Dueño>
+    public class BLL_Dueño : Iabmc<DueñoBE>
     {
         ORM_Dueño MP;
 
         public BLL_Dueño()
         { MP = new ORM_Dueño(); }
 
-        public void Alta(Provedor mp)
+        public void Alta(DueñoBE mp)
         {
             MP.Alta(mp);
         }
 
-        public void Baja(Provedor mp)
+        public void Baja(DueñoBE mp)
         {
             MP.Baja(mp);
         }

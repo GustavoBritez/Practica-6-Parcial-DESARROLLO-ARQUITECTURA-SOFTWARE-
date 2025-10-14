@@ -1,18 +1,18 @@
 ﻿namespace BLL
 {
-    public class BLL_MateriaPrima : Iabmc<MateriaPrima> 
+    public class BLL_MateriaPrima : Iabmc<MateriaPrimaBE> 
     {
         ORM_MateriaPrima MP;
 
         public BLL_MateriaPrima()
         { MP = new ORM_MateriaPrima(); }
 
-        public void Alta(MateriaPrima mp)
+        public void Alta(MateriaPrimaBE mp)
         {
             MP.Alta(mp);
         }
 
-        public void Baja(MateriaPrima mp)
+        public void Baja(MateriaPrimaBE mp)
         {
             MP.Baja(mp);
         }

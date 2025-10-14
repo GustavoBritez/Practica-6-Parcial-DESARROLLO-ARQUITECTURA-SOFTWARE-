@@ -1,23 +1,23 @@
 namespace BLL
 {
-    public class BLL_Producto : Iabmc<Producto>
+    public class BLL_Producto : Iabmc<ProductoBE>
     {
         ORM_Producto MP;
 
         public BLL_Producto()
         { MP = new ORM_Producto(); }
 
-        public void Alta(Producto mp)
+        public void Alta(ProductoBE mp)
         {
             MP.Alta(mp);
         }
 
-        public void Baja(Producto mp)
+        public void Baja(ProductoBE mp)
         {
             MP.Baja(mp);
         }
 
-        public void Update(Producto mp)
+        public void Update(ProductoBE mp)
         {
             MP.Update(mp);
         }
