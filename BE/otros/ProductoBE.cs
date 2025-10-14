@@ -17,5 +17,14 @@ namespace BE
         public string Nombre { get => nombre; set => nombre = value; }
         public decimal Precio_Venta { get => precio_venta; set => precio_venta = value; }
         public int Stock_Actual { get => stock_actual; set => stock_actual = value; }
+
+        public ProductoBE(string codigo_prod, int id_empleado, string nombre, decimal precio_venta, int stock_actual)
+        {
+            this.codigo_prod = codigo_prod;
+            this.id_empleado = id_empleado;
+            this.nombre = nombre;
+            this.precio_venta = precio_venta;
+            this.stock_actual = stock_actual;
+        }
     }
 }

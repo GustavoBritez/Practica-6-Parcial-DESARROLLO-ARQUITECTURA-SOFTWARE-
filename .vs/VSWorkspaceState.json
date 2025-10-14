@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GUI",
+    "\\ORM",
+    "\\VALIDACION",
+    "\\VISTA"
   ],
-  "SelectedNode": "\\GUI.sln",
+  "SelectedNode": "\\GUI\\GUI.sln",
   "PreviewInSolutionExplorer": false
 }
