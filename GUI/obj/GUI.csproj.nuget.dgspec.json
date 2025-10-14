@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\Documents\\Nueva carpeta\\GUI\\GUI.csproj": {}
+    "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\Documents\\Nueva carpeta\\GUI\\GUI.csproj": {
+    "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\GUI\\GUI.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\GUI\\GUI.csproj",
+        "projectPath": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
         "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\GUI\\obj\\",
+        "outputPath": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\Documents\\Nueva carpeta\\DAO\\DAO.csproj": {}
+    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\DAO\\DAO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\Documents\\Nueva carpeta\\DAO\\DAO.csproj": {
+    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\DAO\\DAO.csproj",
+        "projectUniqueName": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\DAO\\DAO.csproj",
-        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\Nueva carpeta\\DAO\\obj\\",
+        "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\DAO\\DAO.csproj",
+        "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\DAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Navegador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Navegador\\SQLClient": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,12 +51,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[6.1.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
