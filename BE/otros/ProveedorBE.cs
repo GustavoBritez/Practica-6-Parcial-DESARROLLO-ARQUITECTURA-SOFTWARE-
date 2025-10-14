@@ -1,15 +1,16 @@
 ﻿namespace BE
 {
-    public class ProveedorBE
+    public class ProveedorBE : PersonaBE
     {
         private int id_proveedor;
-        private string nombre;
-        private string telefono;
-        private string mail;
+
 
         public int Id_Proveedor { get => id_proveedor; set => id_proveedor = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Telefono { get => telefono; set => telefono = value; }
-        public string Mail { get => mail; set => mail = value; }
+
+
+        public ProveedorBE(int id_proveedor, string nombre, string telefono, string mail) : base(nombre,telefono, mail)
+        {
+            this.id_proveedor = id_proveedor;
+        }
     }
 }

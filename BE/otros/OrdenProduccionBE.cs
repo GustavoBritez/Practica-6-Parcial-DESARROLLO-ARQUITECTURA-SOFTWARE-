@@ -21,5 +21,16 @@ namespace BE
         public DateTime Fecha_Inicio { get => fecha_inicio; set => fecha_inicio = value; }
         public DateTime Fecha_Fin { get => fecha_fin; set => fecha_fin = value; }
         public string Estado { get => estado; set => estado = value; }
+
+        public OrdenProduccionBE(int id_orden, string codigo_prod, int cantidad, DateTime fecha_inicio, DateTime fecha_fin, string estado)
+        {
+            this.id_orden = id_orden;
+            this.codigo_prod = codigo_prod;
+            this.cantidad = cantidad;
+            this.fecha_inicio = fecha_inicio;
+            this.fecha_fin = fecha_fin;
+            this.estado = estado;
+        }
+
     }
 }

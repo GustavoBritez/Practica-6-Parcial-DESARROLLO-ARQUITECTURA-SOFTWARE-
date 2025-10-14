@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -10,6 +11,7 @@ namespace VALIDACION
 {
     public class Validar_Persona
     {
+        /// El nombre debe tener entre 3 y 15 caracteres y no debe contener numeros
         public void Validar_Nombre(string nombre)
         {
             if ( string.IsNullOrEmpty(nombre))
@@ -52,6 +54,32 @@ namespace VALIDACION
             {
                 throw new ArgumentException(ex.Message);
             }
+        }
+
+        /// Los telefonos deben tener 8 digitos y no deben contener letras
+        public void Validar_Telefono( string telefono )
+        {
+            if (string.IsNullOrEmpty(telefono))
+                throw new ArgumentNullException("El telefono no puede estar vacio");
+
+                Regex tgx = new Regex(@"^\d{8}$");
+
+                if ( !tgx.IsMatch(telefono))
+                        throw new ArgumentException("El telefono debe tener 8 digitos y no debe contener letras");
+
+        }
+
+        /// El correo debe tener entre 3 y 25 caracteres y debe ser de gmail.com
+        public void Validar_Mail( string correo )
+        {
+            if (!string.IsNullOrEmpty(correo))
+                throw new ArgumentException("El correo es NULL");
+
+            Regex rxg = new Regex(@"^[a-z0-9\.]{3,25}@gmail\.com$",RegexOptions.IgnoreCase);
+
+            if (!rxg.IsMatch(correo))
+                throw new ArgumentException("El correo debe tener entre 3 y 25 caracteres y debe ser de gmail.com");
+
         }
     }
 }

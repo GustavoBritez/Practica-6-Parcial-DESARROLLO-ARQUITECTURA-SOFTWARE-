@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BE
 {
-    public class EmpleadoBE
+    public class EmpleadoBE : PersonaBE
     {
-        private int id_materia;
-        private int id_proveedor;
-        private string nombre;
-        private int stock;
-        private decimal costo_venta;
+        private int id_empleado;
 
-        public int Id_Materia { get => id_materia; set => id_materia = value; }
-        public int Id_Proveedor { get => id_proveedor; set => id_proveedor = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public int Stock { get => stock; set => stock = value; }
-        public decimal Costo_Venta { get => costo_venta; set => costo_venta = value; }
+        public int Id_Empleado { get => id_empleado; set => id_empleado = value; }
+
+        public EmpleadoBE( int Id_Empleado , string nombre ,string telefono, string mail) : base(nombre, telefono, mail)
+        {
+            this.id_empleado = Id_Empleado;
+        }
     }
 }

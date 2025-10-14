@@ -10,6 +10,12 @@ namespace BE
         public string Telefono { get => telefono; set => telefono = value; }    
         public string Mail { get => mail; set => mail = value; }    
 
+        public PersonaBE( string nombre, string telefono, string mail)
+        {
+            this.nombre = nombre;
+            this.telefono = telefono;
+            this.mail = mail;   
+        }
     }
 
 }
