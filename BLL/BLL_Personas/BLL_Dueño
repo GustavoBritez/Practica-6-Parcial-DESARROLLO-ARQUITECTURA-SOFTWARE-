@@ -1,0 +1,20 @@
+namespace BLL
+{
+    public class BLL_Dueño : Iabmc<Dueño>
+    {
+        ORM_Dueño MP;
+
+        public BLL_Dueño()
+        { MP = new ORM_Dueño(); }
+
+        public void Alta(Provedor mp)
+        {
+            MP.Alta(mp);
+        }
+
+        public void Baja(Provedor mp)
+        {
+            MP.Baja(mp);
+        }
+    }
+}

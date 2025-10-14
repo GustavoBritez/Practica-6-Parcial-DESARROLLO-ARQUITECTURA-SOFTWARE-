@@ -6,6 +6,6 @@ namespace BE
     /// Git Push
     public class Dueño : Persona
     {
-        public int ID_Adm
+        public int ID_Adm { get; set; }
     }
 }
