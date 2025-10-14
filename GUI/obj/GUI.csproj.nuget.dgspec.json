@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {}
+    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {
+    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
+        "projectUniqueName": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
+        "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
         "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\obj\\",
+        "outputPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
