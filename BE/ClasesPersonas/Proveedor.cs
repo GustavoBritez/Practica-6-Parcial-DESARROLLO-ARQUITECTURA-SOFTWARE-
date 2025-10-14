@@ -6,6 +6,6 @@ namespace BE
     /// Git Push
     public class Proveedor : Persona
     {
-        
+        public int ID_Pro
     }
 }
