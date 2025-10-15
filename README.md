@@ -188,3 +188,14 @@ Se deben crear las siguientes tablas:
 Implementar este sistema aplicando buenas prácticas de arquitectura en capas, capa para manejar lectura y escritura de entidades **BE**, capa Mapeador Objeto Relacional **ORM**, **BLL**, acceso a datos seguro en la **DAO**,acceso a datos seguro en la **Vista**, una interfaz de usuario intuitiva en **WinForms**, una capa de **Validacion**,  **DAO**,con reportes dinámicos y cálculos en memoria.
 
 ---
+
+Interfaz de Usuario (UI -User Interfaces): Es la capa de presentación, con la que
+interactúan los usuarios.
+Entidades de Negocio o BE (Bussiness Entity): se utiliza para la comunicación o
+medio de transporte entre las demás capas para llevar y traer datos, regularmente a
+través de parámetros (solamente las propiedades de las clases)
+Negocio (BLL -Business Logic Layer): Esta capa contiene toda la lógica del negocio.
+Mapper (MPP): Capa que convierte objetos a datos relacionales y viceversa. Posee la
+lógica para la transformación.
+Datos (DAL -Data Access Layer): Es la capa encargada de la persistencia en la base
+de datos
