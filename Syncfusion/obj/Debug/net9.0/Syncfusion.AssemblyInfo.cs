@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Syncfusion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a7449e3c997746c5466fa5f41662e056f917a6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1897422e28d9a13984fda59c524116ca73d7f69")]
 [assembly: System.Reflection.AssemblyProductAttribute("Syncfusion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Syncfusion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
