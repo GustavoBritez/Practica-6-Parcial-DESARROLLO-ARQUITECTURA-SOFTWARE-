@@ -10,7 +10,7 @@ namespace DAO
 {
     public class Proveedor_DAL
     {
-        public Access acceso = new Access();
+        private Access acceso = new Access();
 
         public DataTable Obtener_Proveedores()
         {
@@ -26,7 +26,7 @@ namespace DAO
 
         public void Sincronizar_Proveedores(DataTable proveedores)
         {
-            acceso.Sincronizar(proveedores , "SP_PROVEEDOR_CRUD"); // VER MAL
+            acceso.Sincronizar(proveedores , "SELECT * FROM PROVEEDOR"); // VER MAL
         }
 
     }

@@ -1,6 +1,9 @@
+using ORM;
+using BE;
+
 namespace BLL
 {
-    public class BLL_OrdenDetalle : Iabmc<OrdenDetalleBE>
+    public class BLL_OrdenDetalle 
     {
         ORM_OrdenDetalle MP;
 

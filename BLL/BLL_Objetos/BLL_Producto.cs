@@ -1,6 +1,9 @@
+using ORM;
+using BE;
+
 namespace BLL
 {
-    public class BLL_Producto : Iabmc<ProductoBE>
+    public class BLL_Producto 
     {
         ORM_Productos MP;
 

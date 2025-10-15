@@ -1,8 +1,10 @@
-﻿namespace BLL
+﻿using ORM;
+using BE;
+namespace BLL
 {
-    public class BLL_MateriaPrima : Iabmc<MateriaPrimaBE>
+    public class BLL_MateriaPrima 
     {
-        ORM_MateriaPrima MP;
+        ORM.
 
         public BLL_MateriaPrima()
         { MP = new ORM_MateriaPrima(); }

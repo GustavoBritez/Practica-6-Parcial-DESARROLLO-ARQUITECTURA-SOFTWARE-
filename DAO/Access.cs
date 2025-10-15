@@ -36,9 +36,15 @@ namespace DAO
             transaction.Commit();
         }
 
-        public void Sincronizar()
+        public void Sincronizar(DataTable tabla, string SelectQuery)
         {
-
+            using (SqlDataAdapter adapter = new SqlDataAdapter(SelectQuery,conn))
+            {
+                using (SqlCommandBuilder builder = new(adapter))
+                {
+                    adapter.Update(tabla);
+                }
+            }
         }
         public int Escribir( string Query , SqlParameter[] sp = null )
         {

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BE
 {
+    [Table("EMPLEADO")]
     public class EmpleadoBE : PersonaBE
     {
         private int id_empleado;
