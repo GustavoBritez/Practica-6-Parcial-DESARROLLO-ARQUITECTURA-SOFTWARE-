@@ -6,16 +6,7 @@ namespace ORM_Lista_Ordenes
 
         public ORM_Lista_Ordenes() { }
 
-        public void Alta(ListaOrdenesBE mp)
-        {
-            try
-            {
-
-            }
-            catch (exception ex) { throw ex; }
-        }
-        
-        public void Baja(ListaOrdenesBE mp)
+        public void VerOrdenes(ListaOrdenesBE mp)
         {
             try
             {

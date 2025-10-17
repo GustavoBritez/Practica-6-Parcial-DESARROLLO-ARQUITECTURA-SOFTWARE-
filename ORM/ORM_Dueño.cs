@@ -3,9 +3,9 @@ namespace ORM_Dueño
 {
     public class ORM_Dueño
     {
-        DataSet DS; 
-
-        public ORM_Dueño() { }
+        DataSet DS;
+        Dueño_DAL AC;
+        public ORM_Dueño() { AC = new Access(); DS = AC.TablaDueño();  }
 
         public void Alta(Dueño mp)
         {
