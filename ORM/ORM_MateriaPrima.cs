@@ -1,29 +1,43 @@
-﻿using System.Data;
+﻿using BE;
+using ORM;
 
 namespace ORM_MateriaPrima
 {
     public class ORM_MateriaPrima
     {
-        DataSet DS; 
+        private miDbContext miDbContext = new();
 
-        public ORM_MateriaPrima() { }
-
-        public void Alta(MateriaPrima mp)
+        public List<MateriasPrimaBE> Obtener_Materias_Primas_ORM()
         {
-            try
-            {
-
-            }
-            catch (exception ex) { throw ex; }
+            return miDbContext.Materias_Primas.ToList();
         }
-        
-        public void Baja(MateriaPrima mp)
+        public void Agregar_MP(MateriasPrimaBE materiaprima)
         {
             try
             {
-
+                miDbContext.Materias_Primas.Add(materiaprima);
+                miDbContext.SaveChanges();
             }
-            catch (exception ex) { throw ex; }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void Eliminar_MP(MateriasPrimaBE materiaprima)
+        {
+            try
+            {
+                var entity = miDbContext.Materias_Primas.Find(materiaprima.Id_Materia);
+                if (entity != null)
+                {
+                    miDbContext.Materias_Primas.Remove(entity);
+                    miDbContext.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -1,15 +1,10 @@
+using ORM;
+using BE;
+
 namespace BLL
 {
-    public class BLL_Lista_Ordenes : Iabmc<ListaOrdenesBE>
+    public class BLL_Lista_Ordenes 
     {
-        ORM_ListaOrdenes MP;
-
-        public BLL_Lista_Ordenes()
-        { MP = new ORM_ListaOrdenes(); }
-
-        public void VerOrdenes(ListaOrdenesBE mp)
-        {
-            MP.Alta(mp);
-        }
+        /// No sabemos si esta clase es necesaria
     }
 }

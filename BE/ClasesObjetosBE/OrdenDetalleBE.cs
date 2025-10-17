@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BE
 {
+    [Table("OORDEN_DETALLE")]
     public class OrdenDetalleBE
     {
         private int id_detalle;

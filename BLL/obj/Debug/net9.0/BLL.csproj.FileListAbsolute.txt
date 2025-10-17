@@ -1,0 +1,6 @@
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.csproj.AssemblyReference.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.AssemblyInfo.cs
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\BLL\obj\Debug\net9.0\BLL.sourcelink.json

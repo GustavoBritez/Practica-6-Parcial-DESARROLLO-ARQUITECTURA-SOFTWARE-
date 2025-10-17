@@ -1,5 +1,8 @@
-﻿namespace BE
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BE
 {
+    [Table("PROVEEDOR")]
     public class ProveedorBE : PersonaBE
     {
         private int id_proveedor;

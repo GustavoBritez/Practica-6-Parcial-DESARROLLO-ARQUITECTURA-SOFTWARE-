@@ -1,6 +1,9 @@
+using ORM;
+using BE;
+
 namespace BLL
 {
-    public class BLL_OrdenProduccion : Iabmc<Orden_ProduccionBE> 
+    public class BLL_OrdenProduccion 
     {
         ORM_OrdenProduccion MP;
 

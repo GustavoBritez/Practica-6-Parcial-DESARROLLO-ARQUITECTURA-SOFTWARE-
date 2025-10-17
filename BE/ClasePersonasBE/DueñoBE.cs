@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BE
 {
+    [Table("DUEÑO")]
     public class DueñoBE : PersonaBE
     {
         private int id_admin;

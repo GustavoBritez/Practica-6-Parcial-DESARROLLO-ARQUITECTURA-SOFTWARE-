@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
 namespace BE
 {
     ///Para subir cambios a git
     /// Git Add .
     /// Git Commit -m " NOMBRE DEL CAMBIO "
     /// Git Push
+    [Table("PRODUCTO")]
     public class ProductoBE
     {
         private string codigo_prod;

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj": {}
+    "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj": {
+    "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj",
+        "projectUniqueName": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj",
         "projectName": "VISTA",
-        "projectPath": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj",
-        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\obj\\",
+        "projectPath": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\VISTA.csproj",
+        "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VISTA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Navegador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Navegador\\SQLClient": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +51,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

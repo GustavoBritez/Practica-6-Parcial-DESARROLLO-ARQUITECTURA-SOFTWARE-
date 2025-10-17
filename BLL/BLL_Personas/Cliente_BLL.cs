@@ -1,0 +1,54 @@
+﻿using BE;
+using ORM;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BLL.BLL_Personas
+{
+    public class Cliente_BLL
+    {
+        ORM_Cliente mapper = new();
+
+        public void Agregar_Cliente(ClienteBE newCliente)
+        {
+            try
+            {
+                mapper.Alta(newCliente);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void Eliminar_Cliente(ClienteBE cliente)
+        {
+            try
+            {
+                mapper.Baja(cliente);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<ClienteBE> ObtenerClientes()
+        {
+            try
+            {
+                List<ClienteBE> lista_clientes= mapper.Obtener_Clientes_ORM();
+
+                return lista_clientes;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+    }
+}
