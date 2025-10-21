@@ -8,8 +8,7 @@ using BE;
 namespace ORM
 {
     public class ORM_Cliente
-    {
-        private miDbContext _context = new();
+    {private miDbContext _context = new();
         public List<ClienteBE> Obtener_Clientes_ORM()
         {
             return _context.Clientes.ToList();
@@ -57,5 +56,6 @@ namespace ORM
                 _context.SaveChanges();
             }
         }
+    }
     }
 }
