@@ -1,11 +1,23 @@
-using Microsoft.EntityFrameworkCore;
+
 using BE;
 using ORM;
 namespace ORM_OrdenDetalle
 {
     public class ORM_OrdenDetalle
     {
-        private miDbContext _context = new();
+       /* private miDbContext _context = new();
+
+
+        /// <summary>
+        /// ADS
+        /// Composicion
+        ///  No hay un correlato de ciclos de vida por que el usuario,
+        ///  
+        /// Agregacion, debe poner un constructor al usuario que cuando lo instancie se instancie el otro objeto dentro de ese constructor
+        /// 
+        /// Asociacion, si el usuario usa perfiles con 0...1 
+        /// </summary>
+        /// <returns></returns>
 
         public List<OrdenDetalleBE> Obtener_Ordenes_Detalles_ORM()
         {
@@ -38,7 +50,7 @@ namespace ORM_OrdenDetalle
             {
                 throw ex;
             }
-        }   
+        }   */
 
     }
 }

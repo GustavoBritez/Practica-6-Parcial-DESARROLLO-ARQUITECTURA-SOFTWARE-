@@ -1,12 +1,11 @@
 using BE;
-using Microsoft.EntityFrameworkCore;
 using ORM;
 
 namespace ORM_OrdenProduccion
 {
     public class ORM_OrdenProduccion
     {
-        private miDbContext _context = new();
+        /*private miDbContext _context = new();
         public List<OrdenProduccionBE> Ver_Estado_De_Orden()
         {
             return _context.Ordenes_Produccion.ToList();
@@ -57,6 +56,6 @@ namespace ORM_OrdenProduccion
 
                 _context.SaveChanges();
             }
-        }
+        }*/
     }
 }

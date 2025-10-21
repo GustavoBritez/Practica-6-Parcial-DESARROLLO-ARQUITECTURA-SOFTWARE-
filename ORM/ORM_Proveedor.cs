@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using BE;
 
 namespace ORM
 {
     public class ORM_Proveedor
     {
-        private miDbContext _context = new();   
+       /* private miDbContext _context = new();   
 
         public List<ProveedorBE> Obtener_Proveedores_ORM()
         {
@@ -56,6 +55,6 @@ namespace ORM
                 entity.Mail = proveedormodificado.Mail; 
                 _context.SaveChanges();
             }
-        }   
+        }   */
     }
 }

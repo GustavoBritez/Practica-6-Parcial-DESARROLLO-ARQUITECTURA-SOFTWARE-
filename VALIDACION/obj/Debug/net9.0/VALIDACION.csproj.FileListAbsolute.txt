@@ -1,7 +1,6 @@
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.deps.json
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.dll
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.pdb
-C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.csproj.AssemblyReference.cache
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.AssemblyInfoInputs.cache
 C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.AssemblyInfo.cs

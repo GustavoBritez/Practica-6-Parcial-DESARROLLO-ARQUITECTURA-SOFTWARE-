@@ -1,0 +1,12 @@
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.deps.json
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.AssemblyInfoInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.AssemblyInfo.cs
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.sourcelink.json
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\refint\VISTA.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\ref\VISTA.dll

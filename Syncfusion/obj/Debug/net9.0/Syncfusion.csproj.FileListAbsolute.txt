@@ -1,0 +1,12 @@
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\bin\Debug\net9.0\Syncfusion.deps.json
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\bin\Debug\net9.0\Syncfusion.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\bin\Debug\net9.0\Syncfusion.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.AssemblyInfoInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.AssemblyInfo.cs
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.sourcelink.json
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\refint\Syncfusion.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\Syncfusion.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\Syncfusion\obj\Debug\net9.0\ref\Syncfusion.dll

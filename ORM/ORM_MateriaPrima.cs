@@ -5,7 +5,7 @@ namespace ORM_MateriaPrima
 {
     public class ORM_MateriaPrima
     {
-        private miDbContext miDbContext = new();
+        /*private miDbContext miDbContext = new();
 
         public List<MateriasPrimaBE> Obtener_Materias_Primas_ORM()
         {
@@ -38,6 +38,6 @@ namespace ORM_MateriaPrima
             {
                 throw ex;
             }
-        }
+        }*/
     }
 }

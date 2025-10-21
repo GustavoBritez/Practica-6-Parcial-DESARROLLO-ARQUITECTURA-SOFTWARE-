@@ -3,58 +3,81 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.Data;
 using BE;
+
 namespace ORM
 {
     public class ORM_Cliente
     {
-        private miDbContext _context = new();
-        public List<ClienteBE> Obtener_Clientes_ORM()
+        Access acceso = new();
+        private List<ClienteBE> listaClientes;
+
+        /// Generamos un constructor para inicializar la lista de clientes dentro de una BLL y utilizar los metodos de ORM
+         
+
+        public List<ClienteBE> Cargar_Clientes_Grilla()
         {
-            return _context.Clientes.ToList();
+            return listaClientes;
+
         }
 
+
+        public ORM_Cliente()
+        {
+            listaClientes = Obtener_Clientes_ORM();
+        }   
+
+        // Este metodo convierte una tabla en una lista de objetos ClienteBE 
+        public List<ClienteBE> Obtener_Clientes_ORM()
+        {
+            List<ClienteBE> listaClientes = new List<ClienteBE>();
+            DataTable dt = acceso.Leer("SP_OBTENER_CLIENTES", null);
+
+            /// Cargamos manualmente la funcion de mapeo
+            foreach (DataRow dr in dt.Rows)
+            {
+                ClienteBE mapeoCliente = new(Convert.ToInt32(dr["Id_Cliente"]), dr["Nombre"].ToString(), dr["Telefono"].ToString(), dr["Mail"].ToString());
+                listaClientes.Add(mapeoCliente);
+            }
+            return listaClientes;
+        }
+
+        /// Agrega el cliente a la lista en memoria
         public void Alta(ClienteBE cliente)
         {
             try
             {
-                _context.Clientes.Add(cliente);
-                _context.SaveChanges();
+                this.listaClientes.Add(cliente);
             }
             catch (Exception ex) 
             {
                 throw ex;
             }
-        }   
-
+        }
+        /// Elimina el cliente de la lista en memoria
         public void Baja(ClienteBE cliente)
         {
             try
             {
-                var entity = _context.Clientes.Find(cliente.Id_Cliente);
-                if (entity != null)
-                {
-                    _context.Clientes.Remove(entity);
-                    _context.SaveChanges();
-                }
+                // Elimina el cliente de la lista en memoria
+                this.listaClientes.RemoveAll(c => c.Id_Cliente == cliente.Id_Cliente);
             }
             catch (Exception ex) 
             {
                 throw ex; 
             }
         }
-
+        /// No se modifica el Id_Cliente porlotanto solo buscamos y colocamos los nuevos valores al ID ya existente en la lista
         public void Modificar( ClienteBE clientemodificado )
         {
-            var entity = _context.Clientes.Find(clientemodificado.Id_Cliente);
-            if ( entity != null )
-            {
-                entity.Nombre = clientemodificado.Nombre;
-                entity.Telefono = clientemodificado.Telefono;
-                entity.Mail = clientemodificado.Mail; 
-
-                _context.SaveChanges();
+            {   var cliente = this.listaClientes.FirstOrDefault(c => c.Id_Cliente == clientemodificado.Id_Cliente);
+                if ( cliente != null )
+                {
+                    cliente.Nombre = clientemodificado.Nombre;
+                    cliente.Telefono = clientemodificado.Telefono;
+                    cliente.Mail = clientemodificado.Mail; 
+                }
             }
         }
     }

@@ -5,7 +5,7 @@ namespace BLL
 {
     public class BLL_OrdenProduccion 
     {
-        ORM_OrdenProduccion MP;
+        /*ORM_OrdenProduccion MP;
 
         public BLL_OrdenProduccion()
         { MP = new ORM_OrdenProduccion(); }
@@ -27,6 +27,6 @@ namespace BLL
         public void Ver_Estado_Orden(Orden_ProduccionBE mp)
         {
             MP.Ver_Estado_Orden(mp);
-        }
+        }*/
     }
 }

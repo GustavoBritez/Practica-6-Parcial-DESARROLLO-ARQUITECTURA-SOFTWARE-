@@ -51,12 +51,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -131,12 +125,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -214,12 +202,6 @@
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -295,13 +277,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[9.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[7.0.0-preview2.25289.6, )"
             }
           },
           "imports": [
@@ -371,12 +349,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

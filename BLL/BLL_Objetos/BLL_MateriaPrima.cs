@@ -4,8 +4,8 @@ namespace BLL
 {
     public class BLL_MateriaPrima 
     {
-        ORM.
 
+/*
         public BLL_MateriaPrima()
         { MP = new ORM_MateriaPrima(); }
 
@@ -16,6 +16,7 @@ namespace BLL
         public void Baja(MateriaPrimaBE mp)
         {
             MP.Baja(mp);
-        }
+        }*/
+
     }
 }

@@ -1,12 +1,11 @@
 using BE;
-using Microsoft.EntityFrameworkCore;
 using ORM;
 
 namespace ORM_Productos
 {
     public class ORM_Productos
     {
-        private  miDbContext _context = new();
+        /*private  miDbContext _context = new();
 
         // No tenemos aqui un ACTUALIZAR si usamos ORM
         public List<ProductoBE> Obtener_Productos_ORM()
@@ -41,6 +40,6 @@ namespace ORM_Productos
                 throw ex;
             }
         }
- 
+ */
     }
 }

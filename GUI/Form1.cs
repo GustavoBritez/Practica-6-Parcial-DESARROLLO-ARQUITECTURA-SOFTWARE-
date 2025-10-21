@@ -9,9 +9,12 @@ namespace GUI
         Cliente_BLL Cliente_BLL = new Cliente_BLL();
 
         Validar_Persona validar_Persona = new Validar_Persona();
+
         public Form1()
         {
             InitializeComponent();
+            Grilla_Clientes.DataSource = null;
+            Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
         }
 
         private void BTN_Agregar_Cliente_Click(object sender, EventArgs e)

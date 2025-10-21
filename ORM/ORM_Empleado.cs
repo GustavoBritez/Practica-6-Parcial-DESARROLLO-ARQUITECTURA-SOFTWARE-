@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using BE;
 
 namespace ORM
 {
     public class ORM_Empleado
     {
-        private miDbContext _context = new();
+        /*private miDbContext _context = new();
 
         public List<EmpleadoBE> Obtener_Empleados_ORM()
         {
@@ -54,6 +53,6 @@ namespace ORM
                 entity.Mail = empleadomodificado.Mail; 
                 _context.SaveChanges();
             }
-        }   
+        }   */
     }
 }

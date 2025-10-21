@@ -72,7 +72,7 @@ namespace VALIDACION
         /// El correo debe tener entre 3 y 25 caracteres y debe ser de gmail.com
         public void Validar_Mail( string correo )
         {
-            if (!string.IsNullOrEmpty(correo))
+            if (string.IsNullOrEmpty(correo))
                 throw new ArgumentException("El correo es NULL");
 
             Regex rxg = new Regex(@"^[a-z0-9\.]{3,25}@gmail\.com$",RegexOptions.IgnoreCase);

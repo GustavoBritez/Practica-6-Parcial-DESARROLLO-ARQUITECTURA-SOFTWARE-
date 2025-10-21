@@ -5,7 +5,7 @@ namespace BLL
 {
     public class BLL_Producto 
     {
-        ORM_Productos MP;
+        /*ORM_Productos MP;
 
         public BLL_Producto()
         { MP = new ORM_Producto(); }
@@ -23,6 +23,6 @@ namespace BLL
         public void Update(ProductoBE mp)
         {
             MP.Update(mp);
-        }
+        }*/
     }
 }

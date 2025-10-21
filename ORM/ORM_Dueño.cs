@@ -6,7 +6,7 @@ namespace ORM_Dueño
 {
     public class ORM_Dueño
     {
-<<<<<<< HEAD
+/*<<<<<<< HEAD
         DataSet DS;
         Dueño_DAL AC;
         public ORM_Dueño() { AC = new Access(); DS = AC.TablaDueño();  }
@@ -68,6 +68,6 @@ namespace ORM_Dueño
                 entity.Telefono = dueñomodificado.Telefono;
                 entity.Mail = dueñomodificado.Mail; 
             }
-        }
+        }*/
     }
 }

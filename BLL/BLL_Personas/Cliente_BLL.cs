@@ -40,7 +40,7 @@ namespace BLL.BLL_Personas
         {
             try
             {
-                List<ClienteBE> lista_clientes= mapper.Obtener_Clientes_ORM();
+                List<ClienteBE> lista_clientes = mapper.Cargar_Clientes_Grilla();
 
                 return lista_clientes;
             }
