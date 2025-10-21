@@ -8,45 +8,33 @@ using BE;
 namespace ORM
 {
     public class ORM_Proveedor
+<<<<<<< HEAD
     {
        /* private miDbContext _context = new();   
+=======
+    {  
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 
         public List<ProveedorBE> Obtener_Proveedores_ORM()
         {
-            return _context.Proveedor.ToList();
+             List<ProveedorBE> listnew = new List<ProveedorBE>();
+
+            
+            return listnew;
         }   
         public void Alta(ProveedorBE proveedor)
         {
-            try
-            {
-                _context.Proveedor.Add(proveedor);
-                _context.SaveChanges();
-            }
-            catch (Exception ex) 
-            {
-                throw ex;
-            }
+           
         }
 
         public void Baja(ProveedorBE proveedor)
         {
-            try
-            {
-                var entity = _context.Proveedor.Find(proveedor.Id_Proveedor);
-                if (entity != null)
-                {
-                    _context.Proveedor.Remove(entity);
-                    _context.SaveChanges();
-                }
-            }
-            catch (Exception ex) 
-            {
-                throw ex; 
-            }
+            
         }   
 
         public void Modificar( ProveedorBE proveedormodificado )
         {
+<<<<<<< HEAD
             var entity = _context.Proveedor.Find(proveedormodificado.Id_Proveedor);
             if ( entity != null )
             {
@@ -56,5 +44,9 @@ namespace ORM
                 _context.SaveChanges();
             }
         }   */
+=======
+            
+        }   
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

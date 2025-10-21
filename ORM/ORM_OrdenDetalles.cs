@@ -5,6 +5,7 @@ namespace ORM_OrdenDetalle
 {
     public class ORM_OrdenDetalle
     {
+<<<<<<< HEAD
        /* private miDbContext _context = new();
 
 
@@ -19,24 +20,21 @@ namespace ORM_OrdenDetalle
         /// </summary>
         /// <returns></returns>
 
+=======
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
         public List<OrdenDetalleBE> Obtener_Ordenes_Detalles_ORM()
         {
-            return _context.OrdenDetalle.ToList();
+            List<OrdenDetalleBE> listnew = new List<OrdenDetalleBE>();
+
+            
+            return listnew;
         }
         public void Alta(OrdenDetalleBE ordendetalle)
         {
-            try
-            {
-                _context.OrdenDetalle.Add(ordendetalle);
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
         }
         public void Baja(OrdenDetalleBE ordendetalle)
         {
+<<<<<<< HEAD
             try
             {
                 var entity = _context.OrdenDetalle.Find(ordendetalle.Id_Detalle);
@@ -51,6 +49,10 @@ namespace ORM_OrdenDetalle
                 throw ex;
             }
         }   */
+=======
+            
+        }   
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 
     }
 }

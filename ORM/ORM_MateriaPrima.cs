@@ -5,26 +5,25 @@ namespace ORM_MateriaPrima
 {
     public class ORM_MateriaPrima
     {
+<<<<<<< HEAD
         /*private miDbContext miDbContext = new();
 
+=======
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
         public List<MateriasPrimaBE> Obtener_Materias_Primas_ORM()
         {
-            return miDbContext.Materias_Primas.ToList();
+           List<MateriasPrimaBE> listnew = new List<MateriasPrimaBE>();
+
+            
+            return listnew;
         }
         public void Agregar_MP(MateriasPrimaBE materiaprima)
         {
-            try
-            {
-                miDbContext.Materias_Primas.Add(materiaprima);
-                miDbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            
         }
         public void Eliminar_MP(MateriasPrimaBE materiaprima)
         {
+<<<<<<< HEAD
             try
             {
                 var entity = miDbContext.Materias_Primas.Find(materiaprima.Id_Materia);
@@ -39,5 +38,9 @@ namespace ORM_MateriaPrima
                 throw ex;
             }
         }*/
+=======
+           
+        }
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

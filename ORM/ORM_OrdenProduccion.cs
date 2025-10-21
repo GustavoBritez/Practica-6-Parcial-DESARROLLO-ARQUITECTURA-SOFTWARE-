@@ -5,43 +5,30 @@ namespace ORM_OrdenProduccion
 {
     public class ORM_OrdenProduccion
     {
+<<<<<<< HEAD
         /*private miDbContext _context = new();
+=======
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
         public List<OrdenProduccionBE> Ver_Estado_De_Orden()
         {
-            return _context.Ordenes_Produccion.ToList();
+            List<OrdenProduccionBE> listnew = new List<OrdenProduccionBE>();
+
+            
+            return listnew;
         }
 
         public void Abrir_Orden_Produccion(OrdenProduccionBE ordenproduccion)
         {
-            try
-            {
-                _context.Ordenes_Produccion.Add(ordenproduccion);
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            
         }
         public void Cancelar_Orden_Produccion(OrdenProduccionBE ordenproduccion)
         {
-            try
-            {
-                var entity = _context.Ordenes_Produccion.Find(ordenproduccion.Id_Orden);
-                if (entity != null)
-                {
-                    _context.Ordenes_Produccion.Remove(entity);
-                    _context.SaveChanges();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            
         }
 
         public void Modificar_Estado_Orden(OrdenProduccionBE ordenproduccionmodificado)
         {
+<<<<<<< HEAD
             var entity = _context.Ordenes_Produccion.Find(ordenproduccionmodificado.Id_Orden);
             if ( entity != null)
             {
@@ -57,5 +44,9 @@ namespace ORM_OrdenProduccion
                 _context.SaveChanges();
             }
         }*/
+=======
+            
+        }
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

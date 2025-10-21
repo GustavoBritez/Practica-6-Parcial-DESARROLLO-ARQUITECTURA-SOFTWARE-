@@ -4,6 +4,7 @@ using ORM;
 
 namespace ORM_Dueño
 {
+<<<<<<< HEAD
     public class ORM_Dueño
     {
 /*<<<<<<< HEAD
@@ -22,45 +23,30 @@ namespace ORM_Dueño
         ///  
         /// </summary>
         private miDbContext _context = new();
+=======
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 
         public List<DueñoBE> Obtener_Dueños_ORM()
->>>>>>> 8adb55794572c25ece430cb0ca5eeae74b393f33
         {
-            return _context.Dueños.ToList();
+            List<DueñoBE> listnew = new List<DueñoBE>();
+
+            
+            return listnew;
         }
 
         public void Alta(DueñoBE dueño)
         {
-            try
-            {
-                _context.Dueños.Add(dueño);
-                _context.SaveChanges();
-            }
-            catch (Exception ex) 
-            {
-                throw ex;
-            }
+           
         }
 
         public void Baja(DueñoBE dueño)
         {
-            try
-            {
-                var entity = _context.Dueños.Find(dueño.Id_Admin);
-                if (entity != null)
-                {
-                    _context.Dueños.Remove(entity);
-                    _context.SaveChanges();
-                }
-            }
-            catch (Exception ex) 
-            {
-                throw ex; 
-            }
+            
         }   
 
         public void Modificar( DueñoBE dueñomodificado )
         {
+<<<<<<< HEAD
             var entity = _context.Dueños.Find(dueñomodificado.Id_Admin);
             if ( entity != null )
             {
@@ -70,4 +56,10 @@ namespace ORM_Dueño
             }
         }*/
     }
+=======
+            
+        }
+        
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 }
+

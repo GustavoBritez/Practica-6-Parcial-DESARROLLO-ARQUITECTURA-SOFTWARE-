@@ -9,42 +9,29 @@ namespace ORM
 {
     public class ORM_Empleado
     {
+<<<<<<< HEAD
         /*private miDbContext _context = new();
+=======
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 
         public List<EmpleadoBE> Obtener_Empleados_ORM()
         {
-            return _context.Empleados.ToList();
+            List<DueñoBE> listnew = new List<DueñoBE>();
+
+            
+            return listnew;
         }   
         public void Alta(EmpleadoBE empleado)
         {
-            try
-            {
-                _context.Empleados.Add(empleado);
-                _context.SaveChanges();
-            }
-            catch (Exception ex) 
-            {
-                throw ex;
-            }
-        }   
+            
+        }
         public void Baja(EmpleadoBE empleado)
         {
-            try
-            {
-                var entity = _context.Empleados.Find(empleado.Id_Empleado);
-                if (entity != null)
-                {
-                    _context.Empleados.Remove(entity);
-                    _context.SaveChanges();
-                }
-            }
-            catch (Exception ex) 
-            {
-                throw ex; 
-            }
+            
         }
         public void modificar( EmpleadoBE empleadomodificado )
         {
+<<<<<<< HEAD
             var entity = _context.Empleados.Find(empleadomodificado.Id_Empleado);
             if ( entity != null )
             {
@@ -54,5 +41,9 @@ namespace ORM
                 _context.SaveChanges();
             }
         }   */
+=======
+           
+        }   
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

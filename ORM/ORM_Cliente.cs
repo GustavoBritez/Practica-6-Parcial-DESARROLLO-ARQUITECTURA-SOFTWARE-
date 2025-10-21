@@ -10,6 +10,7 @@ namespace ORM
 {
     public class ORM_Cliente
     {
+<<<<<<< HEAD
         Access acceso = new();
         private List<ClienteBE> listaClientes;
 
@@ -20,6 +21,14 @@ namespace ORM
         {
             return listaClientes;
 
+=======
+        public List<ClienteBE> Obtener_Clientes_ORM()
+        {
+            List<ClienteBE> listnew = new List<ClienteBE>();
+
+
+            return listnew;
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
         }
 
 
@@ -46,6 +55,7 @@ namespace ORM
         /// Agrega el cliente a la lista en memoria
         public void Alta(ClienteBE cliente)
         {
+<<<<<<< HEAD
             try
             {
                 this.listaClientes.Add(cliente);
@@ -79,6 +89,20 @@ namespace ORM
                     cliente.Mail = clientemodificado.Mail; 
                 }
             }
+=======
+
+        }
+
+        public void Baja(ClienteBE cliente)
+        {
+
+        }
+
+        public void Modificar(ClienteBE clientemodificado)
+        {
+
+>>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
         }
     }
 }
+
