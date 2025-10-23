@@ -24,11 +24,24 @@ namespace BLL.BLL_Personas
             }
         }
 
-        public void Eliminar_Cliente(ClienteBE cliente)
+        public void Eliminar_Cliente( int id_cliente)
         {
             try
             {
-                mapper.Baja(cliente);
+                mapper.Baja(id_cliente);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public void Modificar_Cliente(ClienteBE cliente )
+        {
+            try
+            {
+                mapper.Modificar(cliente);
             }
             catch (Exception ex)
             {

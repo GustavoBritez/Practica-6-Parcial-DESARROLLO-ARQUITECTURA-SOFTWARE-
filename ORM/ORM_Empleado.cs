@@ -9,7 +9,7 @@ namespace ORM
 {
     public class ORM_Empleado
     {
-<<<<<<< HEAD
+
         /*private miDbContext _context = new();
 =======
 >>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
@@ -40,10 +40,6 @@ namespace ORM
                 entity.Mail = empleadomodificado.Mail; 
                 _context.SaveChanges();
             }
-        }   */
-=======
-           
+        }   */ 
         }   
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
-    }
 }

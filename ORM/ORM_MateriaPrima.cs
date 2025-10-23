@@ -5,7 +5,6 @@ namespace ORM_MateriaPrima
 {
     public class ORM_MateriaPrima
     {
-<<<<<<< HEAD
         /*private miDbContext miDbContext = new();
 
 =======
@@ -38,9 +37,6 @@ namespace ORM_MateriaPrima
                 throw ex;
             }
         }*/
-=======
            
-        }
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

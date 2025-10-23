@@ -4,10 +4,6 @@ namespace BLL
 {
     public class BLL_MateriaPrima 
     {
-<<<<<<< HEAD
-=======
-        ORM_MateriaPrima MP;
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
 
 /*
         public BLL_MateriaPrima()

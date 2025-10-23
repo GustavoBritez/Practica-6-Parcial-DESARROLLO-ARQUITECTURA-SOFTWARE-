@@ -55,12 +55,55 @@ namespace GUI
 
         private void BTN_Modificar_Cliente_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (Grilla_Clientes.SelectedRows.Count != 0) MessageBox.Show(" Se cambiara la fila seleccionada por los datos de los text box");
 
+                validar_Persona.Validar_Nombre(txt_Nombre_Cliente.Text);
+                validar_Persona.Validar_Telefono(txt_Telefono_Cliente.Text);
+                validar_Persona.Validar_Mail(txt_Mail_Cliente.Text);
+
+
+                ClienteBE cliente_modificado = new ClienteBE(
+                                                                Convert.ToInt32(Grilla_Clientes.CurrentRow.Cells["Id_cliente"].Value),
+                                                                txt_Nombre_Cliente.Text,
+                                                                txt_Telefono_Cliente.Text,
+                                                                txt_Mail_Cliente.Text
+                                                            );
+
+                Cliente_BLL.Modificar_Cliente(cliente_modificado);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Grilla_Clientes.DataSource = null;
+                Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
+            }
         }
 
         private void BTN_Eliminar_Cliente_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (Grilla_Clientes.SelectedRows.Count == 0) throw new ArgumentException("Debe seleccionar algo para eliminar");
+                int id_cliente = Convert.ToInt32(Grilla_Clientes.CurrentRow.Cells["Id_Cliente"].Value);
 
+                Cliente_BLL.Eliminar_Cliente( id_cliente);
+
+            }
+            catch( Exception ex )
+            {
+                MessageBox.Show(ex.Message);    
+            }
+            finally
+            {
+                Grilla_Clientes.DataSource = null;
+                Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
+            }
         }
     }
 }

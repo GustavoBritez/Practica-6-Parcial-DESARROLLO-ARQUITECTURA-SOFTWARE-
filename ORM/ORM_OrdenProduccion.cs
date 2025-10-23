@@ -5,7 +5,6 @@ namespace ORM_OrdenProduccion
 {
     public class ORM_OrdenProduccion
     {
-<<<<<<< HEAD
         /*private miDbContext _context = new();
 =======
 >>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
@@ -44,9 +43,6 @@ namespace ORM_OrdenProduccion
                 _context.SaveChanges();
             }
         }*/
-=======
-            
-        }
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
+
     }
 }

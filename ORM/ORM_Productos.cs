@@ -5,7 +5,6 @@ namespace ORM_Productos
 {
     public class ORM_Productos
     {
-<<<<<<< HEAD
         /*private  miDbContext _context = new();
 
 =======

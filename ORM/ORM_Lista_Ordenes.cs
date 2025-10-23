@@ -4,7 +4,7 @@ namespace ORM_Lista_Ordenes
 {
     public class ORM_Lista_Ordenes
     {
-<<<<<<< HEAD
+
         /*DataSet DS; 
 =======
         DataSet DS; 
@@ -23,7 +23,6 @@ namespace ORM_Lista_Ordenes
 <<<<<<< HEAD
         
         */
-=======
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
+
     }
 }

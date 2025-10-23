@@ -8,7 +8,6 @@ using BE;
 namespace ORM
 {
     public class ORM_Proveedor
-<<<<<<< HEAD
     {
        /* private miDbContext _context = new();   
 =======
@@ -44,9 +43,5 @@ namespace ORM
                 _context.SaveChanges();
             }
         }   */
-=======
-            
-        }   
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
     }
 }

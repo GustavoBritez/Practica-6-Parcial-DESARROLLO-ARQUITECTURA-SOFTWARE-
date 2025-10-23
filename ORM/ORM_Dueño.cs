@@ -4,7 +4,6 @@ using ORM;
 
 namespace ORM_Dueño
 {
-<<<<<<< HEAD
     public class ORM_Dueño
     {
 /*<<<<<<< HEAD
@@ -23,8 +22,7 @@ namespace ORM_Dueño
         ///  
         /// </summary>
         private miDbContext _context = new();
-=======
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
+
 
         public List<DueñoBE> Obtener_Dueños_ORM()
         {
@@ -55,11 +53,6 @@ namespace ORM_Dueño
                 entity.Mail = dueñomodificado.Mail; 
             }
         }*/
-    }
-=======
-            
-        }
-        
->>>>>>> fe91ebba3f0de89302f09930830e67d99109d472
+    }       
 }
 

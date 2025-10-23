@@ -42,7 +42,6 @@ namespace ORM
             
             try
             {
-                
                 Open();
                 using (SqlCommand cmd = new SqlCommand(Query, conn))
                 {
@@ -71,7 +70,7 @@ namespace ORM
         }
 
 
-        public int Escribir( string Query , SqlParameter sp )
+        public int Escribir( string Query , SqlParameter[] sp )
         {
             int filas_afectadas = 0;    
             try
@@ -83,11 +82,11 @@ namespace ORM
                     cmd.Transaction = transaction;
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     if ( sp != null )
-                        cmd.Parameters.Add( sp );
+                        cmd.Parameters.AddRange( sp );
 
                     filas_afectadas = cmd.ExecuteNonQuery(); // Ejecuta la consulta y devuelve el número de filas afectadas
 
-                    if ( filas_afectadas > 0 )
+                    if ( filas_afectadas == -1 )
                     {
                         Commit_TX();
                     }
