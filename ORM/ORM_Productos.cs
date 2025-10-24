@@ -1,7 +1,7 @@
 using BE;
 using ORM;
 
-namespace ORM_Productos
+namespace ORM
 {
     public class ORM_Productos
     {

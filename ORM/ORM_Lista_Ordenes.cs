@@ -1,7 +1,8 @@
 using BE;
+using ORM;
 
-namespace ORM_Lista_Ordenes
-{
+namespace ORM
+{ 
     public class ORM_Lista_Ordenes
     {
 

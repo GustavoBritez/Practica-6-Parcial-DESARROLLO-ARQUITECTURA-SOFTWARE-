@@ -7,6 +7,7 @@ namespace GUI
     public partial class Form1 : Form
     {
         Cliente_BLL Cliente_BLL = new Cliente_BLL();
+        Dueño_BLL Dueño_BLL = new Dueño_BLL();
 
         Validar_Persona validar_Persona = new Validar_Persona();
 
@@ -15,6 +16,8 @@ namespace GUI
             InitializeComponent();
             Grilla_Clientes.DataSource = null;
             Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
+            Grilla_Dueño.DataSource = null; 
+            Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
         }
 
         private void BTN_Agregar_Cliente_Click(object sender, EventArgs e)
@@ -92,17 +95,101 @@ namespace GUI
                 if (Grilla_Clientes.SelectedRows.Count == 0) throw new ArgumentException("Debe seleccionar algo para eliminar");
                 int id_cliente = Convert.ToInt32(Grilla_Clientes.CurrentRow.Cells["Id_Cliente"].Value);
 
-                Cliente_BLL.Eliminar_Cliente( id_cliente);
+                Cliente_BLL.Eliminar_Cliente(id_cliente);
 
             }
-            catch( Exception ex )
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);    
+                MessageBox.Show(ex.Message);
             }
             finally
             {
                 Grilla_Clientes.DataSource = null;
                 Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
+            }
+        }
+
+        private void BTN_AGREGAR_DUEÑO_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                validar_Persona.Validar_Nombre(TXT_NOMBRE_DUEÑO.Text);
+                validar_Persona.Validar_Telefono(TXT_TELEFONO_DUEÑO.Text);
+                validar_Persona.Validar_Mail(TXT_MAIL_DUEÑO.Text);
+
+                string nombre = TXT_NOMBRE_DUEÑO.Text;
+                string telefono = TXT_TELEFONO_DUEÑO.Text;  
+                string mail = TXT_MAIL_DUEÑO.Text;  
+
+
+                Dueño_BLL.Agregar_Dueño(new DueñoBE(001,nombre,telefono,mail)); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Grilla_Dueño.DataSource = null;
+                Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
+            }
+        }
+
+        private void BTN_ELIMINAR_DUEÑO_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Grilla_Dueño.SelectedRows.Count == 0) throw new ArgumentException("Debe seleccionar algo para eliminar");
+                int id_dueño = Convert.ToInt32(Grilla_Dueño.CurrentRow.Cells["Id_Admin"].Value);
+                Dueño_BLL.Eliminar_Dueño(id_dueño);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Grilla_Dueño.DataSource = null;
+                Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
+            }
+        }
+
+        private void BTN_MODIFICAR_DUEÑO_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Grilla_Dueño.SelectedRows.Count != 0)
+                {
+
+
+                    validar_Persona.Validar_Nombre(TXT_NOMBRE_DUEÑO.Text);
+                    validar_Persona.Validar_Telefono(TXT_TELEFONO_DUEÑO.Text);
+                    validar_Persona.Validar_Mail(TXT_MAIL_DUEÑO.Text);
+
+                    DueñoBE dueño_modificado = new DueñoBE(
+                                                                    Convert.ToInt32(Grilla_Dueño.CurrentRow.Cells["Id_Admin"].Value),
+                                                                    TXT_NOMBRE_DUEÑO.Text,
+                                                                    TXT_TELEFONO_DUEÑO.Text,
+                                                                    TXT_MAIL_DUEÑO.Text
+                                                                );
+
+                    Dueño_BLL.Modificar_Dueño(dueño_modificado);
+                    MessageBox.Show("La fila seleccionada obtendra los valores de los texbox");
+                }
+                else
+                {
+                    throw new ArgumentException("Debe seleccionar una fila para modificar");
+                }
+                
+            }
+            catch ( Exception ex )
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Grilla_Dueño.DataSource = null;
+                Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
             }
         }
     }

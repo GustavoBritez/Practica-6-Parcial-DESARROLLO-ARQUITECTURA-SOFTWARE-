@@ -1,7 +1,7 @@
 ﻿using BE;
 using ORM;
 
-namespace ORM_MateriaPrima
+namespace ORM
 {
     public class ORM_MateriaPrima
     {
