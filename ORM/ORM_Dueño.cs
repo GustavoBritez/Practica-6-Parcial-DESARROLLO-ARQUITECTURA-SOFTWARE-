@@ -35,11 +35,11 @@ namespace ORM
                 new SqlParameter("@ACCION", "OBTENER")
             };
 
-            dt = acceso.Leer("SP_ADMIN_CRUD",sp);
+            dt = acceso.Leer("SP_DUEÑO_CRUD",sp);
 
             foreach( DataRow dr in dt.Rows)
             {                 
-                DueñoBE mapeoDueño = new DueñoBE( Convert.ToInt32 ( dr["Id_Admin"] ) , dr["Nombre"].ToString() , dr["Telefono"].ToString() , dr["Mail"].ToString() );
+                DueñoBE mapeoDueño = new DueñoBE( Convert.ToInt32 ( dr["Id_Dueño"] ) , dr["Nombre"].ToString() , dr["Telefono"].ToString() , dr["Mail"].ToString() );
                 listaDueños_1.Add( mapeoDueño );
             }
 
@@ -64,7 +64,7 @@ namespace ORM
                                 new SqlParameter ("@TELEFONO", SqlDbType.VarChar ) { Value = duenio.Telefono },
                                 new SqlParameter ("@MAIL", SqlDbType.VarChar ){ Value = duenio.Mail }
                     };
-                    acceso.Escribir("SP_ADMIN_CRUD", sp);
+                    acceso.Escribir("SP_DUEÑO_CRUD", sp);
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace ORM
                                 new SqlParameter ("@TELEFONO", SqlDbType.VarChar ) { Value = duenio.Telefono },
                                 new SqlParameter ("@MAIL", SqlDbType.VarChar ){ Value = duenio.Mail }
                     };
-                    acceso.Escribir("SP_ADMIN_CRUD", sp);
+                    acceso.Escribir("SP_DUEÑO_CRUD", sp);
                 }
             }
             catch(Exception ex )
@@ -112,7 +112,7 @@ namespace ORM
                 new SqlParameter ("@TELEFONO", SqlDbType.VarChar ) { Value = duenio_sinmodificar.Telefono },
                 new SqlParameter ("@MAIL", SqlDbType.VarChar ){ Value = duenio_sinmodificar.Mail }
                 };
-                acceso.Escribir("SP_ADMIN_CRUD", sp);
+                acceso.Escribir("SP_DUEÑO_CRUD", sp);
             }
             catch (Exception ex)
             {
@@ -133,7 +133,7 @@ namespace ORM
                 new SqlParameter("@ACCION", "ELIMINAR"),
                 new SqlParameter ("@ID_DUEÑO", SqlDbType.Int ) { Value = id_dueño }
 };
-                acceso.Escribir("SP_ADMIN_CRUD", sp);
+                acceso.Escribir("SP_DUEÑO_CRUD", sp);
 
             }
             catch (Exception ex)

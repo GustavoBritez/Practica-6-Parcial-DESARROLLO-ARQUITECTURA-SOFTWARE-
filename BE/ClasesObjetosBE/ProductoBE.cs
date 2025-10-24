@@ -8,25 +8,22 @@ namespace BE
     [Table("PRODUCTO")]
     public class ProductoBE
     {
-        private string codigo_prod;
-        private int id_empleado;
+        private int id_producto;
         private string nombre;
-        private decimal precio_venta;
-        private int stock_actual;
+        private decimal precio;
+        private int cantidad;
 
-        public string Codigo_Prod { get => codigo_prod; set => codigo_prod = value; }
-        public int Id_Empleado { get => id_empleado; set => id_empleado = value; }
+        public int Id_Producto { get => this.id_producto; set => this.id_producto = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public decimal Precio_Venta { get => precio_venta; set => precio_venta = value; }
-        public int Stock_Actual { get => stock_actual; set => stock_actual = value; }
+        public decimal Precio { get => precio; set => precio = value; }
+        public int Cantidad { get => cantidad; set => cantidad = value; }
 
-        public ProductoBE(string codigo_prod, int id_empleado, string nombre, decimal precio_venta, int stock_actual)
+        public ProductoBE(int codigo_prod, string nombre, decimal precio_venta, int cantidad_)
         {
-            this.codigo_prod = codigo_prod;
-            this.id_empleado = id_empleado;
+            this.id_producto = codigo_prod;
             this.nombre = nombre;
-            this.precio_venta = precio_venta;
-            this.stock_actual = stock_actual;
+            this.precio = precio_venta;
+            this.cantidad = cantidad_;
         }
     }
 }

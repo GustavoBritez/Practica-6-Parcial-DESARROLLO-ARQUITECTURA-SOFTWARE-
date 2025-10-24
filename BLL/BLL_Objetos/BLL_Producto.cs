@@ -1,28 +1,29 @@
 using ORM;
 using BE;
+using System.IO.MemoryMappedFiles;
 
 namespace BLL
 {
-    public class BLL_Producto 
+    public class BLL_Producto
     {
-        /*ORM_Productos MP;
+        private ORM_Productos maper = new();
 
-        public BLL_Producto()
-        { MP = new ORM_Producto(); }
-
-        public void Alta(ProductoBE mp)
+        public void Buscar_incrementalmente()
         {
-            MP.Alta(mp);
+
         }
 
-        public void Baja(ProductoBE mp)
+        public void Agregar_Productos( ProductoBE nuevoproducto )
         {
-            MP.Baja(mp);
+            maper.Agregar_Producto(nuevoproducto);
         }
-
-        public void Update(ProductoBE mp)
+        public void Eliminar_Producto( int id_producto )
         {
-            MP.Update(mp);
-        }*/
+            maper.Eliminar_Producto(id_producto);
+        }
+        public void Modificar_Producto( ProductoBE producto_modificado )
+        {
+            maper.Modificar_Producto(producto_modificado);
+        }
     }
 }
