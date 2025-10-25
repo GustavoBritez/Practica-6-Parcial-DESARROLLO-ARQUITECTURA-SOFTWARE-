@@ -29,66 +29,71 @@
         private void InitializeComponent()
         {
             Tab_Dueño = new TabPage();
-            Grilla_Dueño = new DataGridView();
-            TXT_NOMBRE_DUEÑO = new TextBox();
-            TXT_TELEFONO_DUEÑO = new TextBox();
-            TXT_MAIL_DUEÑO = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            BTN_AGREGAR_DUEÑO = new Button();
-            BTN_MODIFICAR_DUEÑO = new Button();
-            BTN_ELIMINAR_DUEÑO = new Button();
-            label7 = new Label();
             button1 = new Button();
+            label7 = new Label();
+            BTN_ELIMINAR_DUEÑO = new Button();
+            BTN_MODIFICAR_DUEÑO = new Button();
+            BTN_AGREGAR_DUEÑO = new Button();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            TXT_MAIL_DUEÑO = new TextBox();
+            TXT_TELEFONO_DUEÑO = new TextBox();
+            TXT_NOMBRE_DUEÑO = new TextBox();
+            Grilla_Dueño = new DataGridView();
             Tab_Cliente = new TabPage();
-            Grilla_Clientes = new DataGridView();
-            BTN_Modificar_Cliente = new Button();
-            BTN_Agregar_Cliente = new Button();
-            BTN_Eliminar_Cliente = new Button();
+            label2 = new Label();
+            Grilla_Carrito = new DataGridView();
+            BTN_COMPRAR_PRODUCTO = new Button();
+            BTN_ADD_PRODUCTO = new Button();
+            Grilla_Producto = new DataGridView();
+            label1 = new Label();
             label8 = new Label();
+            BTN_Eliminar_Cliente = new Button();
+            BTN_Agregar_Cliente = new Button();
+            BTN_Modificar_Cliente = new Button();
+            Grilla_Clientes = new DataGridView();
             Control_Vista = new TabControl();
             Tab_Empleado = new TabPage();
-            Grilla_Empleado = new DataGridView();
-            BTN_AGREGAR_EMPLEADO = new Button();
-            BTN_EMPLEADO_ELIMINAR = new Button();
-            BTN_MODIFICADO_EMPLEADO = new Button();
+            label12 = new Label();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
             TXT_MAIL_EMPLEADO = new TextBox();
             TXT_TELEFONO_EMPLEADO = new TextBox();
             TXT_NOMBRE_EMPLEADO = new TextBox();
-            label12 = new Label();
+            BTN_MODIFICADO_EMPLEADO = new Button();
+            BTN_EMPLEADO_ELIMINAR = new Button();
+            BTN_AGREGAR_EMPLEADO = new Button();
+            Grilla_Empleado = new DataGridView();
             Tab_Proveedor = new TabPage();
-            Grilla_Proveedor = new DataGridView();
-            BTN_AGREGAR_PROVEEDOR = new Button();
-            BTN_ELIMINAR_PROVEEDOR = new Button();
-            BTN_MODIFICARPROVEEDOR = new Button();
-            LABEL154 = new Label();
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
             TXT_MAIL_PROVEEDOR = new TextBox();
             TXT_TELEFONO_PROVEEDOR = new TextBox();
             TXT_NOMBRE_PROVEEDOR = new TextBox();
-            label1 = new Label();
-            Grilla_Producto = new DataGridView();
-            BTN_ADD_PRODUCTO = new Button();
-            BTN_COMPRAR_PRODUCTO = new Button();
-            Grilla_Carrito = new DataGridView();
-            label2 = new Label();
+            LABEL154 = new Label();
+            BTN_MODIFICARPROVEEDOR = new Button();
+            BTN_ELIMINAR_PROVEEDOR = new Button();
+            BTN_AGREGAR_PROVEEDOR = new Button();
+            Grilla_Proveedor = new DataGridView();
+            Grilla_Materia_Prima = new DataGridView();
+            BNTN_AGREGAR_MATERIA_PRIMA = new Button();
+            label3 = new Label();
+            BNTN_ELIMINAR_MATERIA_PRIMA = new Button();
             Tab_Dueño.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).BeginInit();
             Tab_Cliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Clientes).BeginInit();
             Control_Vista.SuspendLayout();
             Tab_Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Empleado).BeginInit();
             Tab_Proveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Proveedor).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).BeginInit();
             SuspendLayout();
             // 
             // Tab_Dueño
@@ -114,88 +119,27 @@
             Tab_Dueño.TabIndex = 3;
             Tab_Dueño.Text = "Dueño";
             // 
-            // Grilla_Dueño
+            // button1
             // 
-            Grilla_Dueño.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Dueño.Location = new Point(8, 87);
-            Grilla_Dueño.Name = "Grilla_Dueño";
-            Grilla_Dueño.Size = new Size(492, 199);
-            Grilla_Dueño.TabIndex = 0;
+            button1.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(199, 362);
+            button1.Name = "button1";
+            button1.Size = new Size(397, 33);
+            button1.TabIndex = 11;
+            button1.Text = "Generar Reporte";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // TXT_NOMBRE_DUEÑO
+            // label7
             // 
-            TXT_NOMBRE_DUEÑO.Location = new Point(584, 109);
-            TXT_NOMBRE_DUEÑO.Name = "TXT_NOMBRE_DUEÑO";
-            TXT_NOMBRE_DUEÑO.Size = new Size(160, 23);
-            TXT_NOMBRE_DUEÑO.TabIndex = 1;
-            // 
-            // TXT_TELEFONO_DUEÑO
-            // 
-            TXT_TELEFONO_DUEÑO.Location = new Point(584, 166);
-            TXT_TELEFONO_DUEÑO.Name = "TXT_TELEFONO_DUEÑO";
-            TXT_TELEFONO_DUEÑO.Size = new Size(160, 23);
-            TXT_TELEFONO_DUEÑO.TabIndex = 2;
-            // 
-            // TXT_MAIL_DUEÑO
-            // 
-            TXT_MAIL_DUEÑO.Location = new Point(584, 221);
-            TXT_MAIL_DUEÑO.Name = "TXT_MAIL_DUEÑO";
-            TXT_MAIL_DUEÑO.Size = new Size(160, 23);
-            TXT_MAIL_DUEÑO.TabIndex = 3;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(528, 117);
-            label4.Name = "label4";
-            label4.Size = new Size(51, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Nombre";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(525, 174);
-            label5.Name = "label5";
-            label5.Size = new Size(52, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Telefono";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.ForeColor = SystemColors.ActiveCaptionText;
-            label6.Location = new Point(543, 229);
-            label6.Name = "label6";
-            label6.Size = new Size(30, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Mail";
-            // 
-            // BTN_AGREGAR_DUEÑO
-            // 
-            BTN_AGREGAR_DUEÑO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_AGREGAR_DUEÑO.ForeColor = SystemColors.ActiveCaptionText;
-            BTN_AGREGAR_DUEÑO.Location = new Point(49, 292);
-            BTN_AGREGAR_DUEÑO.Name = "BTN_AGREGAR_DUEÑO";
-            BTN_AGREGAR_DUEÑO.Size = new Size(75, 23);
-            BTN_AGREGAR_DUEÑO.TabIndex = 7;
-            BTN_AGREGAR_DUEÑO.Text = "Agregar";
-            BTN_AGREGAR_DUEÑO.UseVisualStyleBackColor = true;
-            BTN_AGREGAR_DUEÑO.Click += BTN_AGREGAR_DUEÑO_Click;
-            // 
-            // BTN_MODIFICAR_DUEÑO
-            // 
-            BTN_MODIFICAR_DUEÑO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_MODIFICAR_DUEÑO.ForeColor = SystemColors.ActiveCaptionText;
-            BTN_MODIFICAR_DUEÑO.Location = new Point(209, 292);
-            BTN_MODIFICAR_DUEÑO.Name = "BTN_MODIFICAR_DUEÑO";
-            BTN_MODIFICAR_DUEÑO.Size = new Size(75, 23);
-            BTN_MODIFICAR_DUEÑO.TabIndex = 8;
-            BTN_MODIFICAR_DUEÑO.Text = "Modificar";
-            BTN_MODIFICAR_DUEÑO.UseVisualStyleBackColor = true;
-            BTN_MODIFICAR_DUEÑO.Click += BTN_MODIFICAR_DUEÑO_Click;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ActiveCaptionText;
+            label7.Location = new Point(199, 47);
+            label7.Name = "label7";
+            label7.Size = new Size(101, 37);
+            label7.TabIndex = 10;
+            label7.Text = "Dueño";
             // 
             // BTN_ELIMINAR_DUEÑO
             // 
@@ -209,31 +153,96 @@
             BTN_ELIMINAR_DUEÑO.UseVisualStyleBackColor = true;
             BTN_ELIMINAR_DUEÑO.Click += BTN_ELIMINAR_DUEÑO_Click;
             // 
-            // label7
+            // BTN_MODIFICAR_DUEÑO
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = SystemColors.ActiveCaptionText;
-            label7.Location = new Point(199, 47);
-            label7.Name = "label7";
-            label7.Size = new Size(101, 37);
-            label7.TabIndex = 10;
-            label7.Text = "Dueño";
+            BTN_MODIFICAR_DUEÑO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_MODIFICAR_DUEÑO.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_MODIFICAR_DUEÑO.Location = new Point(209, 292);
+            BTN_MODIFICAR_DUEÑO.Name = "BTN_MODIFICAR_DUEÑO";
+            BTN_MODIFICAR_DUEÑO.Size = new Size(75, 23);
+            BTN_MODIFICAR_DUEÑO.TabIndex = 8;
+            BTN_MODIFICAR_DUEÑO.Text = "Modificar";
+            BTN_MODIFICAR_DUEÑO.UseVisualStyleBackColor = true;
+            BTN_MODIFICAR_DUEÑO.Click += BTN_MODIFICAR_DUEÑO_Click;
             // 
-            // button1
+            // BTN_AGREGAR_DUEÑO
             // 
-            button1.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(199, 362);
-            button1.Name = "button1";
-            button1.Size = new Size(397, 33);
-            button1.TabIndex = 11;
-            button1.Text = "Generar Reporte";
-            button1.UseVisualStyleBackColor = true;
+            BTN_AGREGAR_DUEÑO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_AGREGAR_DUEÑO.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_AGREGAR_DUEÑO.Location = new Point(49, 292);
+            BTN_AGREGAR_DUEÑO.Name = "BTN_AGREGAR_DUEÑO";
+            BTN_AGREGAR_DUEÑO.Size = new Size(75, 23);
+            BTN_AGREGAR_DUEÑO.TabIndex = 7;
+            BTN_AGREGAR_DUEÑO.Text = "Agregar";
+            BTN_AGREGAR_DUEÑO.UseVisualStyleBackColor = true;
+            BTN_AGREGAR_DUEÑO.Click += BTN_AGREGAR_DUEÑO_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = SystemColors.ActiveCaptionText;
+            label6.Location = new Point(543, 229);
+            label6.Name = "label6";
+            label6.Size = new Size(30, 15);
+            label6.TabIndex = 6;
+            label6.Text = "Mail";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.Location = new Point(525, 174);
+            label5.Name = "label5";
+            label5.Size = new Size(52, 15);
+            label5.TabIndex = 5;
+            label5.Text = "Telefono";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.Location = new Point(528, 117);
+            label4.Name = "label4";
+            label4.Size = new Size(51, 15);
+            label4.TabIndex = 4;
+            label4.Text = "Nombre";
+            // 
+            // TXT_MAIL_DUEÑO
+            // 
+            TXT_MAIL_DUEÑO.Location = new Point(584, 221);
+            TXT_MAIL_DUEÑO.Name = "TXT_MAIL_DUEÑO";
+            TXT_MAIL_DUEÑO.Size = new Size(160, 23);
+            TXT_MAIL_DUEÑO.TabIndex = 3;
+            // 
+            // TXT_TELEFONO_DUEÑO
+            // 
+            TXT_TELEFONO_DUEÑO.Location = new Point(584, 166);
+            TXT_TELEFONO_DUEÑO.Name = "TXT_TELEFONO_DUEÑO";
+            TXT_TELEFONO_DUEÑO.Size = new Size(160, 23);
+            TXT_TELEFONO_DUEÑO.TabIndex = 2;
+            // 
+            // TXT_NOMBRE_DUEÑO
+            // 
+            TXT_NOMBRE_DUEÑO.Location = new Point(584, 109);
+            TXT_NOMBRE_DUEÑO.Name = "TXT_NOMBRE_DUEÑO";
+            TXT_NOMBRE_DUEÑO.Size = new Size(160, 23);
+            TXT_NOMBRE_DUEÑO.TabIndex = 1;
+            // 
+            // Grilla_Dueño
+            // 
+            Grilla_Dueño.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Dueño.Location = new Point(8, 87);
+            Grilla_Dueño.Name = "Grilla_Dueño";
+            Grilla_Dueño.Size = new Size(492, 199);
+            Grilla_Dueño.TabIndex = 0;
             // 
             // Tab_Cliente
             // 
             Tab_Cliente.BackColor = Color.Gray;
+            Tab_Cliente.Controls.Add(BNTN_ELIMINAR_MATERIA_PRIMA);
+            Tab_Cliente.Controls.Add(label3);
+            Tab_Cliente.Controls.Add(BNTN_AGREGAR_MATERIA_PRIMA);
+            Tab_Cliente.Controls.Add(Grilla_Materia_Prima);
             Tab_Cliente.Controls.Add(label2);
             Tab_Cliente.Controls.Add(Grilla_Carrito);
             Tab_Cliente.Controls.Add(BTN_COMPRAR_PRODUCTO);
@@ -252,35 +261,71 @@
             Tab_Cliente.TabIndex = 0;
             Tab_Cliente.Text = "Cliente";
             // 
-            // Grilla_Clientes
+            // label2
             // 
-            Grilla_Clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Clientes.Location = new Point(8, 90);
-            Grilla_Clientes.Name = "Grilla_Clientes";
-            Grilla_Clientes.Size = new Size(304, 100);
-            Grilla_Clientes.TabIndex = 0;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(93, 232);
+            label2.Name = "label2";
+            label2.Size = new Size(107, 37);
+            label2.TabIndex = 18;
+            label2.Text = "Carrito";
             // 
-            // BTN_Modificar_Cliente
+            // Grilla_Carrito
             // 
-            BTN_Modificar_Cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_Modificar_Cliente.Location = new Point(125, 196);
-            BTN_Modificar_Cliente.Name = "BTN_Modificar_Cliente";
-            BTN_Modificar_Cliente.Size = new Size(75, 23);
-            BTN_Modificar_Cliente.TabIndex = 1;
-            BTN_Modificar_Cliente.Text = "Modificar";
-            BTN_Modificar_Cliente.UseVisualStyleBackColor = true;
-            BTN_Modificar_Cliente.Click += BTN_Modificar_Cliente_Click;
+            Grilla_Carrito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Carrito.Location = new Point(8, 272);
+            Grilla_Carrito.Name = "Grilla_Carrito";
+            Grilla_Carrito.Size = new Size(304, 115);
+            Grilla_Carrito.TabIndex = 17;
             // 
-            // BTN_Agregar_Cliente
+            // BTN_COMPRAR_PRODUCTO
             // 
-            BTN_Agregar_Cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_Agregar_Cliente.Location = new Point(27, 196);
-            BTN_Agregar_Cliente.Name = "BTN_Agregar_Cliente";
-            BTN_Agregar_Cliente.Size = new Size(75, 23);
-            BTN_Agregar_Cliente.TabIndex = 2;
-            BTN_Agregar_Cliente.Text = "Agregar";
-            BTN_Agregar_Cliente.UseVisualStyleBackColor = true;
-            BTN_Agregar_Cliente.Click += BTN_Agregar_Cliente_Click;
+            BTN_COMPRAR_PRODUCTO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_COMPRAR_PRODUCTO.Location = new Point(183, 393);
+            BTN_COMPRAR_PRODUCTO.Name = "BTN_COMPRAR_PRODUCTO";
+            BTN_COMPRAR_PRODUCTO.Size = new Size(110, 23);
+            BTN_COMPRAR_PRODUCTO.TabIndex = 16;
+            BTN_COMPRAR_PRODUCTO.Text = "Comprar";
+            BTN_COMPRAR_PRODUCTO.UseVisualStyleBackColor = true;
+            // 
+            // BTN_ADD_PRODUCTO
+            // 
+            BTN_ADD_PRODUCTO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_ADD_PRODUCTO.Location = new Point(441, 210);
+            BTN_ADD_PRODUCTO.Name = "BTN_ADD_PRODUCTO";
+            BTN_ADD_PRODUCTO.Size = new Size(110, 23);
+            BTN_ADD_PRODUCTO.TabIndex = 12;
+            BTN_ADD_PRODUCTO.Text = "Add Producto";
+            BTN_ADD_PRODUCTO.UseVisualStyleBackColor = true;
+            // 
+            // Grilla_Producto
+            // 
+            Grilla_Producto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Producto.Location = new Point(441, 64);
+            Grilla_Producto.Name = "Grilla_Producto";
+            Grilla_Producto.Size = new Size(319, 140);
+            Grilla_Producto.TabIndex = 11;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(519, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 37);
+            label1.TabIndex = 10;
+            label1.Text = "Producto";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(121, 50);
+            label8.Name = "label8";
+            label8.Size = new Size(107, 37);
+            label8.TabIndex = 9;
+            label8.Text = "Cliente";
             // 
             // BTN_Eliminar_Cliente
             // 
@@ -293,15 +338,35 @@
             BTN_Eliminar_Cliente.UseVisualStyleBackColor = true;
             BTN_Eliminar_Cliente.Click += BTN_Eliminar_Cliente_Click;
             // 
-            // label8
+            // BTN_Agregar_Cliente
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(121, 50);
-            label8.Name = "label8";
-            label8.Size = new Size(107, 37);
-            label8.TabIndex = 9;
-            label8.Text = "Cliente";
+            BTN_Agregar_Cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_Agregar_Cliente.Location = new Point(27, 196);
+            BTN_Agregar_Cliente.Name = "BTN_Agregar_Cliente";
+            BTN_Agregar_Cliente.Size = new Size(75, 23);
+            BTN_Agregar_Cliente.TabIndex = 2;
+            BTN_Agregar_Cliente.Text = "Agregar";
+            BTN_Agregar_Cliente.UseVisualStyleBackColor = true;
+            BTN_Agregar_Cliente.Click += BTN_Agregar_Cliente_Click;
+            // 
+            // BTN_Modificar_Cliente
+            // 
+            BTN_Modificar_Cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_Modificar_Cliente.Location = new Point(125, 196);
+            BTN_Modificar_Cliente.Name = "BTN_Modificar_Cliente";
+            BTN_Modificar_Cliente.Size = new Size(75, 23);
+            BTN_Modificar_Cliente.TabIndex = 1;
+            BTN_Modificar_Cliente.Text = "Modificar";
+            BTN_Modificar_Cliente.UseVisualStyleBackColor = true;
+            BTN_Modificar_Cliente.Click += BTN_Modificar_Cliente_Click;
+            // 
+            // Grilla_Clientes
+            // 
+            Grilla_Clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Clientes.Location = new Point(8, 90);
+            Grilla_Clientes.Name = "Grilla_Clientes";
+            Grilla_Clientes.Size = new Size(304, 100);
+            Grilla_Clientes.TabIndex = 0;
             // 
             // Control_Vista
             // 
@@ -337,46 +402,16 @@
             Tab_Empleado.TabIndex = 4;
             Tab_Empleado.Text = "Empleado";
             // 
-            // Grilla_Empleado
+            // label12
             // 
-            Grilla_Empleado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Empleado.Location = new Point(8, 65);
-            Grilla_Empleado.Name = "Grilla_Empleado";
-            Grilla_Empleado.Size = new Size(556, 279);
-            Grilla_Empleado.TabIndex = 0;
-            // 
-            // BTN_AGREGAR_EMPLEADO
-            // 
-            BTN_AGREGAR_EMPLEADO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_AGREGAR_EMPLEADO.ForeColor = SystemColors.ActiveCaptionText;
-            BTN_AGREGAR_EMPLEADO.Location = new Point(25, 350);
-            BTN_AGREGAR_EMPLEADO.Name = "BTN_AGREGAR_EMPLEADO";
-            BTN_AGREGAR_EMPLEADO.Size = new Size(75, 23);
-            BTN_AGREGAR_EMPLEADO.TabIndex = 8;
-            BTN_AGREGAR_EMPLEADO.Text = "Agregar";
-            BTN_AGREGAR_EMPLEADO.UseVisualStyleBackColor = true;
-            // 
-            // BTN_EMPLEADO_ELIMINAR
-            // 
-            BTN_EMPLEADO_ELIMINAR.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_EMPLEADO_ELIMINAR.ForeColor = SystemColors.ActiveCaptionText;
-            BTN_EMPLEADO_ELIMINAR.Location = new Point(238, 350);
-            BTN_EMPLEADO_ELIMINAR.Name = "BTN_EMPLEADO_ELIMINAR";
-            BTN_EMPLEADO_ELIMINAR.Size = new Size(75, 23);
-            BTN_EMPLEADO_ELIMINAR.TabIndex = 9;
-            BTN_EMPLEADO_ELIMINAR.Text = "Eliminar";
-            BTN_EMPLEADO_ELIMINAR.UseVisualStyleBackColor = true;
-            // 
-            // BTN_MODIFICADO_EMPLEADO
-            // 
-            BTN_MODIFICADO_EMPLEADO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_MODIFICADO_EMPLEADO.ForeColor = SystemColors.ActiveCaptionText;
-            BTN_MODIFICADO_EMPLEADO.Location = new Point(461, 350);
-            BTN_MODIFICADO_EMPLEADO.Name = "BTN_MODIFICADO_EMPLEADO";
-            BTN_MODIFICADO_EMPLEADO.Size = new Size(75, 23);
-            BTN_MODIFICADO_EMPLEADO.TabIndex = 10;
-            BTN_MODIFICADO_EMPLEADO.Text = "Modificar";
-            BTN_MODIFICADO_EMPLEADO.UseVisualStyleBackColor = true;
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.ActiveCaptionText;
+            label12.Location = new Point(196, 25);
+            label12.Name = "label12";
+            label12.Size = new Size(145, 37);
+            label12.TabIndex = 17;
+            label12.Text = "Empleado";
             // 
             // label9
             // 
@@ -429,16 +464,46 @@
             TXT_NOMBRE_EMPLEADO.Size = new Size(160, 23);
             TXT_NOMBRE_EMPLEADO.TabIndex = 11;
             // 
-            // label12
+            // BTN_MODIFICADO_EMPLEADO
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = SystemColors.ActiveCaptionText;
-            label12.Location = new Point(196, 25);
-            label12.Name = "label12";
-            label12.Size = new Size(145, 37);
-            label12.TabIndex = 17;
-            label12.Text = "Empleado";
+            BTN_MODIFICADO_EMPLEADO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_MODIFICADO_EMPLEADO.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_MODIFICADO_EMPLEADO.Location = new Point(461, 350);
+            BTN_MODIFICADO_EMPLEADO.Name = "BTN_MODIFICADO_EMPLEADO";
+            BTN_MODIFICADO_EMPLEADO.Size = new Size(75, 23);
+            BTN_MODIFICADO_EMPLEADO.TabIndex = 10;
+            BTN_MODIFICADO_EMPLEADO.Text = "Modificar";
+            BTN_MODIFICADO_EMPLEADO.UseVisualStyleBackColor = true;
+            // 
+            // BTN_EMPLEADO_ELIMINAR
+            // 
+            BTN_EMPLEADO_ELIMINAR.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_EMPLEADO_ELIMINAR.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_EMPLEADO_ELIMINAR.Location = new Point(238, 350);
+            BTN_EMPLEADO_ELIMINAR.Name = "BTN_EMPLEADO_ELIMINAR";
+            BTN_EMPLEADO_ELIMINAR.Size = new Size(75, 23);
+            BTN_EMPLEADO_ELIMINAR.TabIndex = 9;
+            BTN_EMPLEADO_ELIMINAR.Text = "Eliminar";
+            BTN_EMPLEADO_ELIMINAR.UseVisualStyleBackColor = true;
+            // 
+            // BTN_AGREGAR_EMPLEADO
+            // 
+            BTN_AGREGAR_EMPLEADO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BTN_AGREGAR_EMPLEADO.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_AGREGAR_EMPLEADO.Location = new Point(25, 350);
+            BTN_AGREGAR_EMPLEADO.Name = "BTN_AGREGAR_EMPLEADO";
+            BTN_AGREGAR_EMPLEADO.Size = new Size(75, 23);
+            BTN_AGREGAR_EMPLEADO.TabIndex = 8;
+            BTN_AGREGAR_EMPLEADO.Text = "Agregar";
+            BTN_AGREGAR_EMPLEADO.UseVisualStyleBackColor = true;
+            // 
+            // Grilla_Empleado
+            // 
+            Grilla_Empleado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Empleado.Location = new Point(8, 65);
+            Grilla_Empleado.Name = "Grilla_Empleado";
+            Grilla_Empleado.Size = new Size(556, 279);
+            Grilla_Empleado.TabIndex = 0;
             // 
             // Tab_Proveedor
             // 
@@ -460,51 +525,6 @@
             Tab_Proveedor.Size = new Size(792, 422);
             Tab_Proveedor.TabIndex = 5;
             Tab_Proveedor.Text = "Provedor";
-            // 
-            // Grilla_Proveedor
-            // 
-            Grilla_Proveedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Proveedor.Location = new Point(8, 66);
-            Grilla_Proveedor.Name = "Grilla_Proveedor";
-            Grilla_Proveedor.Size = new Size(531, 263);
-            Grilla_Proveedor.TabIndex = 1;
-            // 
-            // BTN_AGREGAR_PROVEEDOR
-            // 
-            BTN_AGREGAR_PROVEEDOR.Location = new Point(19, 335);
-            BTN_AGREGAR_PROVEEDOR.Name = "BTN_AGREGAR_PROVEEDOR";
-            BTN_AGREGAR_PROVEEDOR.Size = new Size(75, 23);
-            BTN_AGREGAR_PROVEEDOR.TabIndex = 2;
-            BTN_AGREGAR_PROVEEDOR.Text = "Agregar";
-            BTN_AGREGAR_PROVEEDOR.UseVisualStyleBackColor = true;
-            // 
-            // BTN_ELIMINAR_PROVEEDOR
-            // 
-            BTN_ELIMINAR_PROVEEDOR.Location = new Point(225, 335);
-            BTN_ELIMINAR_PROVEEDOR.Name = "BTN_ELIMINAR_PROVEEDOR";
-            BTN_ELIMINAR_PROVEEDOR.Size = new Size(75, 23);
-            BTN_ELIMINAR_PROVEEDOR.TabIndex = 3;
-            BTN_ELIMINAR_PROVEEDOR.Text = "Eliminar";
-            BTN_ELIMINAR_PROVEEDOR.UseVisualStyleBackColor = true;
-            // 
-            // BTN_MODIFICARPROVEEDOR
-            // 
-            BTN_MODIFICARPROVEEDOR.Location = new Point(437, 335);
-            BTN_MODIFICARPROVEEDOR.Name = "BTN_MODIFICARPROVEEDOR";
-            BTN_MODIFICARPROVEEDOR.Size = new Size(75, 23);
-            BTN_MODIFICARPROVEEDOR.TabIndex = 4;
-            BTN_MODIFICARPROVEEDOR.Text = "Modificar";
-            BTN_MODIFICARPROVEEDOR.UseVisualStyleBackColor = true;
-            // 
-            // LABEL154
-            // 
-            LABEL154.AutoSize = true;
-            LABEL154.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LABEL154.Location = new Point(187, 26);
-            LABEL154.Name = "LABEL154";
-            LABEL154.Size = new Size(152, 37);
-            LABEL154.TabIndex = 5;
-            LABEL154.Text = "Proveedor";
             // 
             // label13
             // 
@@ -557,61 +577,88 @@
             TXT_NOMBRE_PROVEEDOR.Size = new Size(160, 23);
             TXT_NOMBRE_PROVEEDOR.TabIndex = 17;
             // 
-            // label1
+            // LABEL154
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(519, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 37);
-            label1.TabIndex = 10;
-            label1.Text = "Producto";
+            LABEL154.AutoSize = true;
+            LABEL154.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LABEL154.Location = new Point(187, 26);
+            LABEL154.Name = "LABEL154";
+            LABEL154.Size = new Size(152, 37);
+            LABEL154.TabIndex = 5;
+            LABEL154.Text = "Proveedor";
             // 
-            // Grilla_Producto
+            // BTN_MODIFICARPROVEEDOR
             // 
-            Grilla_Producto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Producto.Location = new Point(441, 90);
-            Grilla_Producto.Name = "Grilla_Producto";
-            Grilla_Producto.Size = new Size(320, 160);
-            Grilla_Producto.TabIndex = 11;
+            BTN_MODIFICARPROVEEDOR.Location = new Point(437, 335);
+            BTN_MODIFICARPROVEEDOR.Name = "BTN_MODIFICARPROVEEDOR";
+            BTN_MODIFICARPROVEEDOR.Size = new Size(75, 23);
+            BTN_MODIFICARPROVEEDOR.TabIndex = 4;
+            BTN_MODIFICARPROVEEDOR.Text = "Modificar";
+            BTN_MODIFICARPROVEEDOR.UseVisualStyleBackColor = true;
             // 
-            // BTN_ADD_PRODUCTO
+            // BTN_ELIMINAR_PROVEEDOR
             // 
-            BTN_ADD_PRODUCTO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_ADD_PRODUCTO.Location = new Point(441, 256);
-            BTN_ADD_PRODUCTO.Name = "BTN_ADD_PRODUCTO";
-            BTN_ADD_PRODUCTO.Size = new Size(110, 23);
-            BTN_ADD_PRODUCTO.TabIndex = 12;
-            BTN_ADD_PRODUCTO.Text = "Add Producto";
-            BTN_ADD_PRODUCTO.UseVisualStyleBackColor = true;
+            BTN_ELIMINAR_PROVEEDOR.Location = new Point(225, 335);
+            BTN_ELIMINAR_PROVEEDOR.Name = "BTN_ELIMINAR_PROVEEDOR";
+            BTN_ELIMINAR_PROVEEDOR.Size = new Size(75, 23);
+            BTN_ELIMINAR_PROVEEDOR.TabIndex = 3;
+            BTN_ELIMINAR_PROVEEDOR.Text = "Eliminar";
+            BTN_ELIMINAR_PROVEEDOR.UseVisualStyleBackColor = true;
             // 
-            // BTN_COMPRAR_PRODUCTO
+            // BTN_AGREGAR_PROVEEDOR
             // 
-            BTN_COMPRAR_PRODUCTO.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BTN_COMPRAR_PRODUCTO.Location = new Point(316, 373);
-            BTN_COMPRAR_PRODUCTO.Name = "BTN_COMPRAR_PRODUCTO";
-            BTN_COMPRAR_PRODUCTO.Size = new Size(110, 23);
-            BTN_COMPRAR_PRODUCTO.TabIndex = 16;
-            BTN_COMPRAR_PRODUCTO.Text = "Comprar";
-            BTN_COMPRAR_PRODUCTO.UseVisualStyleBackColor = true;
+            BTN_AGREGAR_PROVEEDOR.Location = new Point(19, 335);
+            BTN_AGREGAR_PROVEEDOR.Name = "BTN_AGREGAR_PROVEEDOR";
+            BTN_AGREGAR_PROVEEDOR.Size = new Size(75, 23);
+            BTN_AGREGAR_PROVEEDOR.TabIndex = 2;
+            BTN_AGREGAR_PROVEEDOR.Text = "Agregar";
+            BTN_AGREGAR_PROVEEDOR.UseVisualStyleBackColor = true;
             // 
-            // Grilla_Carrito
+            // Grilla_Proveedor
             // 
-            Grilla_Carrito.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Carrito.Location = new Point(6, 296);
-            Grilla_Carrito.Name = "Grilla_Carrito";
-            Grilla_Carrito.Size = new Size(304, 100);
-            Grilla_Carrito.TabIndex = 17;
+            Grilla_Proveedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Proveedor.Location = new Point(8, 66);
+            Grilla_Proveedor.Name = "Grilla_Proveedor";
+            Grilla_Proveedor.Size = new Size(531, 263);
+            Grilla_Proveedor.TabIndex = 1;
             // 
-            // label2
+            // Grilla_Materia_Prima
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(93, 256);
-            label2.Name = "label2";
-            label2.Size = new Size(107, 37);
-            label2.TabIndex = 18;
-            label2.Text = "Carrito";
+            Grilla_Materia_Prima.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Materia_Prima.Location = new Point(441, 272);
+            Grilla_Materia_Prima.Name = "Grilla_Materia_Prima";
+            Grilla_Materia_Prima.Size = new Size(319, 115);
+            Grilla_Materia_Prima.TabIndex = 19;
+            // 
+            // BNTN_AGREGAR_MATERIA_PRIMA
+            // 
+            BNTN_AGREGAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BNTN_AGREGAR_MATERIA_PRIMA.Location = new Point(441, 391);
+            BNTN_AGREGAR_MATERIA_PRIMA.Name = "BNTN_AGREGAR_MATERIA_PRIMA";
+            BNTN_AGREGAR_MATERIA_PRIMA.Size = new Size(110, 23);
+            BNTN_AGREGAR_MATERIA_PRIMA.TabIndex = 20;
+            BNTN_AGREGAR_MATERIA_PRIMA.Text = "Agregar MP";
+            BNTN_AGREGAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(507, 232);
+            label3.Name = "label3";
+            label3.Size = new Size(201, 37);
+            label3.TabIndex = 21;
+            label3.Text = "Materia Prima";
+            // 
+            // BNTN_ELIMINAR_MATERIA_PRIMA
+            // 
+            BNTN_ELIMINAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BNTN_ELIMINAR_MATERIA_PRIMA.Location = new Point(662, 391);
+            BNTN_ELIMINAR_MATERIA_PRIMA.Name = "BNTN_ELIMINAR_MATERIA_PRIMA";
+            BNTN_ELIMINAR_MATERIA_PRIMA.Size = new Size(98, 23);
+            BNTN_ELIMINAR_MATERIA_PRIMA.TabIndex = 22;
+            BNTN_ELIMINAR_MATERIA_PRIMA.Text = "Eliminar MP";
+            BNTN_ELIMINAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -627,6 +674,8 @@
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).EndInit();
             Tab_Cliente.ResumeLayout(false);
             Tab_Cliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).EndInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Clientes).EndInit();
             Control_Vista.ResumeLayout(false);
             Tab_Empleado.ResumeLayout(false);
@@ -635,8 +684,7 @@
             Tab_Proveedor.ResumeLayout(false);
             Tab_Proveedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Proveedor).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).EndInit();
             ResumeLayout(false);
         }
 
@@ -692,5 +740,9 @@
         private Button BTN_COMPRAR_PRODUCTO;
         private Label label2;
         private DataGridView Grilla_Carrito;
+        private Button BNTN_ELIMINAR_MATERIA_PRIMA;
+        private Label label3;
+        private Button BNTN_AGREGAR_MATERIA_PRIMA;
+        private DataGridView Grilla_Materia_Prima;
     }
 }

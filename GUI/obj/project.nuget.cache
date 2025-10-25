@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dd/jECTCAL8=",
+  "dgSpecHash": "dRWWQY4CwpY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
+  "projectFilePath": "C:\\Users\\Danie\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\GUI\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danie\\.nuget\\packages\\azure.core\\1.49.0\\azure.core.1.49.0.nupkg.sha512",
     "C:\\Users\\Danie\\.nuget\\packages\\azure.identity\\1.16.0\\azure.identity.1.16.0.nupkg.sha512",
