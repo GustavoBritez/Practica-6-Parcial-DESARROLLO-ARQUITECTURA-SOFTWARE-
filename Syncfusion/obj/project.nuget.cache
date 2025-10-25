@@ -1,28 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "fJVrhBot4/I=",
+  "dgSpecHash": "MlsDBFNZVM4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+  "projectFilePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.compression.base\\31.2.3\\syncfusion.compression.base.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.compression.net.core\\31.2.3\\syncfusion.compression.net.core.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.licensing\\31.2.3\\syncfusion.licensing.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.pdf.net.core\\31.2.3\\syncfusion.pdf.net.core.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.pdf.winforms\\31.2.3\\syncfusion.pdf.winforms.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.pdftoimageconverter.winforms\\31.2.3\\syncfusion.pdftoimageconverter.winforms.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.pdfviewer.windows\\31.2.3\\syncfusion.pdfviewer.windows.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\syncfusion.shared.base\\31.2.3\\syncfusion.shared.base.31.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.compression.base\\31.2.3\\syncfusion.compression.base.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.compression.net.core\\31.2.3\\syncfusion.compression.net.core.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.licensing\\31.2.3\\syncfusion.licensing.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.pdf.net.core\\31.2.3\\syncfusion.pdf.net.core.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.pdf.winforms\\31.2.3\\syncfusion.pdf.winforms.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.pdftoimageconverter.winforms\\31.2.3\\syncfusion.pdftoimageconverter.winforms.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.pdfviewer.windows\\31.2.3\\syncfusion.pdfviewer.windows.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\syncfusion.shared.base\\31.2.3\\syncfusion.shared.base.31.2.3.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Syncfusion.Compression.Base 31.2.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "projectPath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "filePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "libraryId": "Syncfusion.Compression.Base",
       "targetGraphs": [
         "net9.0"
@@ -32,9 +32,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Syncfusion.Pdf.WinForms 31.2.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "projectPath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "filePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "libraryId": "Syncfusion.Pdf.WinForms",
       "targetGraphs": [
         "net9.0"
@@ -44,9 +44,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Syncfusion.PdfToImageConverter.WinForms 31.2.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "projectPath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "filePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "libraryId": "Syncfusion.PdfToImageConverter.WinForms",
       "targetGraphs": [
         "net9.0"
@@ -56,9 +56,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Syncfusion.PdfViewer.Windows 31.2.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "projectPath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "filePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "libraryId": "Syncfusion.PdfViewer.Windows",
       "targetGraphs": [
         "net9.0"
@@ -68,9 +68,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Syncfusion.Shared.Base 31.2.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "projectPath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\admin\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
+      "filePath": "C:\\Users\\Danie\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\Syncfusion\\Syncfusion.csproj",
       "libraryId": "Syncfusion.Shared.Base",
       "targetGraphs": [
         "net9.0"

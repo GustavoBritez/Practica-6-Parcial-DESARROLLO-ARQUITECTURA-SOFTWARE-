@@ -5,15 +5,16 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\admin\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Danie\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\admin\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\Danie\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSyncfusion_Shared_Base Condition=" '$(PkgSyncfusion_Shared_Base)' == '' ">C:\Users\admin\.nuget\packages\syncfusion.shared.base\31.2.3</PkgSyncfusion_Shared_Base>
-    <PkgSyncfusion_PdfViewer_Windows Condition=" '$(PkgSyncfusion_PdfViewer_Windows)' == '' ">C:\Users\admin\.nuget\packages\syncfusion.pdfviewer.windows\31.2.3</PkgSyncfusion_PdfViewer_Windows>
+    <PkgSyncfusion_Shared_Base Condition=" '$(PkgSyncfusion_Shared_Base)' == '' ">C:\Users\Danie\.nuget\packages\syncfusion.shared.base\31.2.3</PkgSyncfusion_Shared_Base>
+    <PkgSyncfusion_PdfViewer_Windows Condition=" '$(PkgSyncfusion_PdfViewer_Windows)' == '' ">C:\Users\Danie\.nuget\packages\syncfusion.pdfviewer.windows\31.2.3</PkgSyncfusion_PdfViewer_Windows>
   </PropertyGroup>
 </Project>

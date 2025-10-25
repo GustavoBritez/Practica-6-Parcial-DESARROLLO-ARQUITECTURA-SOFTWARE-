@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BE
 {
-    [Table("CLIENTE")]
     public class ClienteBE : PersonaBE
     {
         private int id_cliente;

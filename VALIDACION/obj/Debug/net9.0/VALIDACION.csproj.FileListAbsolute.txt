@@ -34,3 +34,15 @@ C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\refint\VALIDACION.dll
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.pdb
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\ref\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.deps.json
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\bin\Debug\net9.0\VALIDACION.pdb
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.AssemblyInfoInputs.cache
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.AssemblyInfo.cs
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.sourcelink.json
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\refint\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\VALIDACION.pdb
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VALIDACION\obj\Debug\net9.0\ref\VALIDACION.dll

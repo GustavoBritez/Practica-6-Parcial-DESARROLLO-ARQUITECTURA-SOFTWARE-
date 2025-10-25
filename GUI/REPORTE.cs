@@ -13,19 +13,6 @@ namespace GUI
 {
     public partial class REPORTE : Form
     {
-        public REPORTE()
-        {
-            InitializeComponent();
-        }
 
-        public void TEST_PDF_VIEWER()
-        {
-            
-        }
-
-        private void MONTOTO_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
