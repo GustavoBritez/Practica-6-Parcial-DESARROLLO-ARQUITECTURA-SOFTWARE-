@@ -95,11 +95,11 @@ namespace ORM
             }
             finally
             {   
-                /// Como cargamos a la base de datos entonces pisamos el dato de la lista en memoria con los datos de base de datos
+                // Como cargamos a la base de datos entonces pisamos el dato de la lista en memoria con los datos de base de datos
                 this.listaClientes = Obtener_Clientes_ORM();
             }
         }
-        /// No se modifica el Id_Cliente porlotanto solo buscamos y colocamos los nuevos valores al ID ya existente en la lista
+        // No se modifica el Id_Cliente porlotanto solo buscamos y colocamos los nuevos valores al ID ya existente en la lista
         public void Modificar( ClienteBE clientemodificado )
         {
             {   var cliente = this.listaClientes.FirstOrDefault(c => c.Id_Cliente == clientemodificado.Id_Cliente);

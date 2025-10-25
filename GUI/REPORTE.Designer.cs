@@ -32,53 +32,61 @@
             Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings pdfViewerPrinterSettings2 = new Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(REPORTE));
             Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings textSearchSettings2 = new Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings();
-            MONTOTO = new Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView();
+            groupView1 = new Syncfusion.Windows.Forms.Tools.GroupView();
+            pdfDocumentView1 = new Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView();
             SuspendLayout();
             // 
-            // MONTOTO
+            // groupView1
             // 
-            MONTOTO.AutoScroll = true;
-            MONTOTO.BackColor = Color.FromArgb(237, 237, 237);
-            MONTOTO.CursorMode = Syncfusion.Windows.Forms.PdfViewer.PdfViewerCursorMode.SelectTool;
-            MONTOTO.Dock = DockStyle.Fill;
-            MONTOTO.EnableContextMenu = true;
-            MONTOTO.HorizontalScrollOffset = 0;
-            MONTOTO.IsTextSearchEnabled = true;
-            MONTOTO.IsTextSelectionEnabled = true;
-            MONTOTO.Location = new Point(0, 0);
+            groupView1.Location = new Point(48, 289);
+            groupView1.Name = "groupView1";
+            groupView1.Size = new Size(199, 112);
+            groupView1.TabIndex = 0;
+            groupView1.Text = "groupView1";
+            // 
+            // pdfDocumentView1
+            // 
+            pdfDocumentView1.BackColor = Color.FromArgb(237, 237, 237);
+            pdfDocumentView1.CursorMode = Syncfusion.Windows.Forms.PdfViewer.PdfViewerCursorMode.SelectTool;
+            pdfDocumentView1.EnableContextMenu = true;
+            pdfDocumentView1.HorizontalScrollOffset = 0;
+            pdfDocumentView1.IsTextSearchEnabled = true;
+            pdfDocumentView1.IsTextSelectionEnabled = true;
+            pdfDocumentView1.Location = new Point(113, 92);
             messageBoxSettings2.EnableNotification = true;
-            MONTOTO.MessageBoxSettings = messageBoxSettings2;
-            MONTOTO.MinimumZoomPercentage = 50;
-            MONTOTO.Name = "MONTOTO";
-            MONTOTO.PageBorderThickness = 1;
+            pdfDocumentView1.MessageBoxSettings = messageBoxSettings2;
+            pdfDocumentView1.MinimumZoomPercentage = 50;
+            pdfDocumentView1.Name = "pdfDocumentView1";
+            pdfDocumentView1.PageBorderThickness = 1;
             pdfViewerPrinterSettings2.Copies = 1;
             pdfViewerPrinterSettings2.PageOrientation = Syncfusion.Windows.PdfViewer.PdfViewerPrintOrientation.Auto;
             pdfViewerPrinterSettings2.PageSize = Syncfusion.Windows.PdfViewer.PdfViewerPrintSize.ActualSize;
             pdfViewerPrinterSettings2.PrintLocation = (PointF)resources.GetObject("pdfViewerPrinterSettings2.PrintLocation");
             pdfViewerPrinterSettings2.ShowPrintStatusDialog = true;
-            MONTOTO.PrinterSettings = pdfViewerPrinterSettings2;
-            MONTOTO.ReferencePath = null;
-            MONTOTO.ScrollDisplacementValue = 0;
-            MONTOTO.ShowHorizontalScrollBar = true;
-            MONTOTO.ShowVerticalScrollBar = true;
-            MONTOTO.Size = new Size(800, 450);
-            MONTOTO.SpaceBetweenPages = 8;
-            MONTOTO.TabIndex = 0;
+            pdfDocumentView1.PrinterSettings = pdfViewerPrinterSettings2;
+            pdfDocumentView1.ReferencePath = null;
+            pdfDocumentView1.ScrollDisplacementValue = 0;
+            pdfDocumentView1.ShowHorizontalScrollBar = true;
+            pdfDocumentView1.ShowVerticalScrollBar = true;
+            pdfDocumentView1.Size = new Size(150, 150);
+            pdfDocumentView1.SpaceBetweenPages = 8;
+            pdfDocumentView1.TabIndex = 1;
             textSearchSettings2.CurrentInstanceColor = Color.FromArgb(127, 255, 171, 64);
             textSearchSettings2.HighlightAllInstance = true;
             textSearchSettings2.OtherInstanceColor = Color.FromArgb(127, 254, 255, 0);
-            MONTOTO.TextSearchSettings = textSearchSettings2;
-            MONTOTO.ThemeName = "Office2016DarkGray";
-            MONTOTO.VerticalScrollOffset = 0;
-            MONTOTO.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Office2016DarkGray;
-            MONTOTO.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
+            pdfDocumentView1.TextSearchSettings = textSearchSettings2;
+            pdfDocumentView1.ThemeName = "Office2016Black";
+            pdfDocumentView1.VerticalScrollOffset = 0;
+            pdfDocumentView1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Office2016Black;
+            pdfDocumentView1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
             // 
             // REPORTE
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(MONTOTO);
+            Controls.Add(pdfDocumentView1);
+            Controls.Add(groupView1);
             Name = "REPORTE";
             Text = "REPORTE";
             ResumeLayout(false);
@@ -86,6 +94,7 @@
 
         #endregion
 
-        private Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView MONTOTO;
+        private Syncfusion.Windows.Forms.Tools.GroupView groupView1;
+        private Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView pdfDocumentView1;
     }
 }

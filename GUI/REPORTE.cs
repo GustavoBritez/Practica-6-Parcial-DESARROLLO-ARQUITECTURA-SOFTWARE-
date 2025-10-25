@@ -20,13 +20,12 @@ namespace GUI
 
         public void TEST_PDF_VIEWER()
         {
-            MONTOTO.BeginInvoke(new Action(() =>
-            {
-                PdfDocumentView pdfViewer = new PdfDocumentView();
-                pdfViewer.Dock = DockStyle.Fill;
-                this.Controls.Add(pdfViewer);
-                pdfViewer.Load(@"C:\REPORTE.pdf");
-            }));
+            
+        }
+
+        private void MONTOTO_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

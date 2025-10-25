@@ -55,18 +55,21 @@
             Grilla_Clientes = new DataGridView();
             Control_Vista = new TabControl();
             tabPage1 = new TabPage();
-            Lista_Productos = new ListBox();
-            TXT_BUSQUEDA = new TextBox();
-            label9 = new Label();
-            BTN_AGREGAR = new Button();
-            BTN_ELIMINAR = new Button();
+            Grilla_Productos = new DataGridView();
+            BT_CONFIRMAR_COMPRA = new Button();
             BTN_MODIFICAR = new Button();
+            BTN_ELIMINAR = new Button();
+            BTN_AGREGAR = new Button();
+            label9 = new Label();
+            TXT_BUSQUEDA = new TextBox();
+            CambioDeEstado_Productos = new RadioButton();
             Tab_Dueño.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).BeginInit();
             Tab_Cliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Clientes).BeginInit();
             Control_Vista.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Productos).BeginInit();
             SuspendLayout();
             // 
             // Tab_Dueño
@@ -166,7 +169,7 @@
             label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Location = new Point(525, 174);
             label5.Name = "label5";
-            label5.Size = new Size(53, 15);
+            label5.Size = new Size(52, 15);
             label5.TabIndex = 5;
             label5.Text = "Telefono";
             // 
@@ -347,12 +350,14 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.DarkGray;
+            tabPage1.Controls.Add(CambioDeEstado_Productos);
+            tabPage1.Controls.Add(Grilla_Productos);
+            tabPage1.Controls.Add(BT_CONFIRMAR_COMPRA);
             tabPage1.Controls.Add(BTN_MODIFICAR);
             tabPage1.Controls.Add(BTN_ELIMINAR);
             tabPage1.Controls.Add(BTN_AGREGAR);
             tabPage1.Controls.Add(label9);
             tabPage1.Controls.Add(TXT_BUSQUEDA);
-            tabPage1.Controls.Add(Lista_Productos);
             tabPage1.ForeColor = Color.CornflowerBlue;
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
@@ -361,59 +366,90 @@
             tabPage1.TabIndex = 4;
             tabPage1.Text = "Panaderia";
             // 
-            // Lista_Productos
+            // Grilla_Productos
             // 
-            Lista_Productos.Dock = DockStyle.Bottom;
-            Lista_Productos.FormattingEnabled = true;
-            Lista_Productos.Location = new Point(3, 355);
-            Lista_Productos.Name = "Lista_Productos";
-            Lista_Productos.Size = new Size(786, 64);
-            Lista_Productos.TabIndex = 0;
+            Grilla_Productos.AllowUserToAddRows = false;
+            Grilla_Productos.AllowUserToDeleteRows = false;
+            Grilla_Productos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Productos.Dock = DockStyle.Bottom;
+            Grilla_Productos.Location = new Point(3, 129);
+            Grilla_Productos.Name = "Grilla_Productos";
+            Grilla_Productos.ReadOnly = true;
+            Grilla_Productos.Size = new Size(786, 290);
+            Grilla_Productos.TabIndex = 8;
             // 
-            // TXT_BUSQUEDA
+            // BT_CONFIRMAR_COMPRA
             // 
-            TXT_BUSQUEDA.Location = new Point(71, 329);
-            TXT_BUSQUEDA.Name = "TXT_BUSQUEDA";
-            TXT_BUSQUEDA.Size = new Size(114, 23);
-            TXT_BUSQUEDA.TabIndex = 1;
+            BT_CONFIRMAR_COMPRA.Location = new Point(609, 34);
+            BT_CONFIRMAR_COMPRA.Name = "BT_CONFIRMAR_COMPRA";
+            BT_CONFIRMAR_COMPRA.Size = new Size(145, 23);
+            BT_CONFIRMAR_COMPRA.TabIndex = 7;
+            BT_CONFIRMAR_COMPRA.Text = "Confirmar Compra";
+            BT_CONFIRMAR_COMPRA.UseVisualStyleBackColor = true;
+            BT_CONFIRMAR_COMPRA.Click += CONFIMAR_COMPRA_Click;
+            // 
+            // BTN_MODIFICAR
+            // 
+            BTN_MODIFICAR.Location = new Point(421, 35);
+            BTN_MODIFICAR.Name = "BTN_MODIFICAR";
+            BTN_MODIFICAR.Size = new Size(75, 23);
+            BTN_MODIFICAR.TabIndex = 6;
+            BTN_MODIFICAR.Text = "Modificar";
+            BTN_MODIFICAR.UseVisualStyleBackColor = true;
+            BTN_MODIFICAR.Click += BTN_MODIFICAR_Click;
+            // 
+            // BTN_ELIMINAR
+            // 
+            BTN_ELIMINAR.Location = new Point(325, 36);
+            BTN_ELIMINAR.Name = "BTN_ELIMINAR";
+            BTN_ELIMINAR.Size = new Size(75, 23);
+            BTN_ELIMINAR.TabIndex = 5;
+            BTN_ELIMINAR.Text = "Eliminar";
+            BTN_ELIMINAR.UseVisualStyleBackColor = true;
+            BTN_ELIMINAR.Click += BTN_ELIMINAR_Click;
+            // 
+            // BTN_AGREGAR
+            // 
+            BTN_AGREGAR.Location = new Point(223, 36);
+            BTN_AGREGAR.Name = "BTN_AGREGAR";
+            BTN_AGREGAR.Size = new Size(75, 23);
+            BTN_AGREGAR.TabIndex = 4;
+            BTN_AGREGAR.Text = "Agregar";
+            BTN_AGREGAR.UseVisualStyleBackColor = true;
+            BTN_AGREGAR.Click += BTN_AGREGAR_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(3, 327);
+            label9.Location = new Point(3, 35);
             label9.Name = "label9";
             label9.Size = new Size(71, 25);
             label9.TabIndex = 2;
             label9.Text = "Buscar";
             // 
-            // BTN_AGREGAR
+            // TXT_BUSQUEDA
             // 
-            BTN_AGREGAR.Location = new Point(223, 328);
-            BTN_AGREGAR.Name = "BTN_AGREGAR";
-            BTN_AGREGAR.Size = new Size(75, 23);
-            BTN_AGREGAR.TabIndex = 4;
-            BTN_AGREGAR.Text = "Agregar";
-            BTN_AGREGAR.UseVisualStyleBackColor = true;
+            TXT_BUSQUEDA.Location = new Point(80, 37);
+            TXT_BUSQUEDA.Name = "TXT_BUSQUEDA";
+            TXT_BUSQUEDA.Size = new Size(114, 23);
+            TXT_BUSQUEDA.TabIndex = 1;
+            TXT_BUSQUEDA.TextChanged += TXT_BUSQUEDA_TextChanged;
             // 
-            // BTN_ELIMINAR
+            // CambioDeEstado_Productos
             // 
-            BTN_ELIMINAR.Location = new Point(325, 328);
-            BTN_ELIMINAR.Name = "BTN_ELIMINAR";
-            BTN_ELIMINAR.Size = new Size(75, 23);
-            BTN_ELIMINAR.TabIndex = 5;
-            BTN_ELIMINAR.Text = "Eliminar";
-            BTN_ELIMINAR.UseVisualStyleBackColor = true;
-            // 
-            // BTN_MODIFICAR
-            // 
-            BTN_MODIFICAR.Location = new Point(425, 326);
-            BTN_MODIFICAR.Name = "BTN_MODIFICAR";
-            BTN_MODIFICAR.Size = new Size(75, 23);
-            BTN_MODIFICAR.TabIndex = 6;
-            BTN_MODIFICAR.Text = "Modificar";
-            BTN_MODIFICAR.UseVisualStyleBackColor = true;
+            CambioDeEstado_Productos.AutoSize = true;
+            CambioDeEstado_Productos.Font = new Font("Segoe UI", 15F);
+            CambioDeEstado_Productos.ForeColor = Color.CornflowerBlue;
+            CambioDeEstado_Productos.Location = new Point(8, 82);
+            CambioDeEstado_Productos.Name = "CambioDeEstado_Productos";
+            CambioDeEstado_Productos.Size = new Size(169, 32);
+            CambioDeEstado_Productos.TabIndex = 9;
+            CambioDeEstado_Productos.TabStop = true;
+            CambioDeEstado_Productos.Text = "Ver tus compras";
+            CambioDeEstado_Productos.UseVisualStyleBackColor = true;
+            CambioDeEstado_Productos.CheckedChanged += CambioDeEstado_Productos_CheckedChanged;
             // 
             // Form1
             // 
@@ -433,6 +469,7 @@
             Control_Vista.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Productos).EndInit();
             ResumeLayout(false);
         }
 
@@ -468,9 +505,11 @@
         private TabPage TabPage;
         private Label label9;
         private TextBox TXT_BUSQUEDA;
-        private ListBox Lista_Productos;
         private Button BTN_MODIFICAR;
         private Button BTN_ELIMINAR;
         private Button BTN_AGREGAR;
+        private Button BT_CONFIRMAR_COMPRA;
+        private DataGridView Grilla_Productos;
+        private RadioButton CambioDeEstado_Productos;
     }
 }

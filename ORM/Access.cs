@@ -33,7 +33,7 @@ namespace ORM
         }
         public void Stop_TX()
         {
-                transaction.Rollback();
+               
         }
 
         public DataTable Leer ( string Query , SqlParameter[] sp = null , string nombre_tabla = null )

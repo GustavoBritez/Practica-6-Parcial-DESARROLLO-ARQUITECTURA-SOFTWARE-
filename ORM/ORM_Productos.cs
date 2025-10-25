@@ -16,7 +16,14 @@ namespace ORM
             listaProducts = Obtener_Productos_ROM();
         }
 
-        private List<ProductoBE>Obtener_Productos_ROM()
+        public List<object> Obtener_lista_Productos()
+        {
+            List<ProductoBE> listaOriginal = Cargar_Productos_Grilla();
+            List<object> listaObjetos = listaOriginal.Cast<object>().ToList();
+            return listaObjetos;
+        }
+
+        private List<ProductoBE> Obtener_Productos_ROM()
         {
             List<ProductoBE> productos = new();
             SqlParameter[] sp = new SqlParameter[]

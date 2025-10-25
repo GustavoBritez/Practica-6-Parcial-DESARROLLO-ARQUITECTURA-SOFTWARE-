@@ -8,9 +8,9 @@ namespace BLL
     {
         private ORM_Productos maper = new();
 
-        public void Buscar_incrementalmente()
+        public List<object> Retornar_Lista_productos()
         {
-
+            return maper.Obtener_lista_Productos();
         }
 
         public void Agregar_Productos( ProductoBE nuevoproducto )

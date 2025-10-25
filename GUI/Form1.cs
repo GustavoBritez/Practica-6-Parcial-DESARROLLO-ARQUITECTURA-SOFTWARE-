@@ -1,23 +1,32 @@
 using BE;
-using VALIDACION;
 using BLL;
 using BLL.BLL_Personas;
+using System.Windows.Forms;
+using VALIDACION;
 namespace GUI
 {
     public partial class Form1 : Form
     {
         Cliente_BLL Cliente_BLL = new Cliente_BLL();
         Dueño_BLL Dueño_BLL = new Dueño_BLL();
+        BLL_Producto Productos_BLL = new BLL_Producto();
 
         Validar_Persona validar_Persona = new Validar_Persona();
 
+
+        List<object> listaProductos;
+        List<object> listaCarrito = new List<object>();
         public Form1()
         {
             InitializeComponent();
             Grilla_Clientes.DataSource = null;
             Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
-            Grilla_Dueño.DataSource = null; 
+            Grilla_Dueño.DataSource = null;
             Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
+
+            Grilla_Productos.DataSource = null;
+            Grilla_Productos.DataSource = Productos_BLL.Retornar_Lista_productos();
+            listaProductos = Productos_BLL.Retornar_Lista_productos();
         }
 
         private void BTN_Agregar_Cliente_Click(object sender, EventArgs e)
@@ -118,11 +127,11 @@ namespace GUI
                 validar_Persona.Validar_Mail(TXT_MAIL_DUEÑO.Text);
 
                 string nombre = TXT_NOMBRE_DUEÑO.Text;
-                string telefono = TXT_TELEFONO_DUEÑO.Text;  
-                string mail = TXT_MAIL_DUEÑO.Text;  
+                string telefono = TXT_TELEFONO_DUEÑO.Text;
+                string mail = TXT_MAIL_DUEÑO.Text;
 
 
-                Dueño_BLL.Agregar_Dueño(new DueñoBE(001,nombre,telefono,mail)); 
+                Dueño_BLL.Agregar_Dueño(new DueñoBE(001, nombre, telefono, mail));
             }
             catch (Exception ex)
             {
@@ -180,9 +189,9 @@ namespace GUI
                 {
                     throw new ArgumentException("Debe seleccionar una fila para modificar");
                 }
-                
+
             }
-            catch ( Exception ex )
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -190,6 +199,132 @@ namespace GUI
             {
                 Grilla_Dueño.DataSource = null;
                 Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
+            }
+        }
+
+
+
+        private void BTN_AGREGAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Grilla_Dueño.SelectedRows.Count != 0)
+                {
+                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
+                    listaCarrito.Add( select );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BTN_ELIMINAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Grilla_Dueño.SelectedRows.Count != 0)
+                {
+                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
+                    bool encontrado = false;
+                    foreach (var p in listaCarrito)
+                    {
+                        if (p == select)  // Compara la referencia del objeto
+                        {
+                            encontrado = true;
+                            break; // Sale del bucle al encontrarlo
+                        }
+                    }
+                    if (encontrado)
+                    {
+                        listaCarrito.Remove(select);
+                    }
+                    else throw new Exception("No se encontro ese producto");
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BTN_MODIFICAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Grilla_Dueño.SelectedRows.Count != 0)
+                {
+                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
+                    bool encontrado = false;
+                    foreach (var p in listaCarrito)
+                    {
+                        if (p == select)  // Compara la referencia del objeto
+                        {
+                            encontrado = true;
+                            break; // Sale del bucle al encontrarlo
+                        }
+                    }
+                    if (encontrado)
+                    {
+                        int x = 
+                    }
+                    else throw new Exception("No se encontro ese producto");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CONFIMAR_COMPRA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TXT_BUSQUEDA_TextChanged(object sender, EventArgs e)
+        {
+            if (CambioDeEstado_Productos.Checked!)
+            {
+                string texto = TXT_BUSQUEDA.Text.ToLower();
+                
+                var filtrados = listaProductos
+                 .Where(obj =>
+                  {
+                      var prop = obj.GetType().GetProperty("Nombre");
+                      if (prop == null) return false;
+                      var valor = prop.GetValue(obj)?.ToString()?.ToLower();
+                      return valor != null && valor.Contains(texto);
+                  })
+                .ToList();
+
+                Grilla_Productos.DataSource = null;
+                Grilla_Productos.DataSource = filtrados;
+            }
+        }
+
+        private void CambioDeEstado_Productos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CambioDeEstado_Productos.Checked)
+            {
+                CambioDeEstado_Productos.Text = "Ver productos";
+                Grilla_Productos.DataSource = null;
+                Grilla_Productos.DataSource = listaCarrito;
+            }
+            else
+            {
+                CambioDeEstado_Productos.Text = "Ver tus compras";
+                Grilla_Productos.DataSource = null;
+                Grilla_Productos.DataSource = listaProductos;
             }
         }
     }
