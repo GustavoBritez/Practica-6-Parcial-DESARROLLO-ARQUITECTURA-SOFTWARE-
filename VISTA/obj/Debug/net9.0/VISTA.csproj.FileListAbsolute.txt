@@ -22,3 +22,15 @@ C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\refint\VISTA.dll
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.pdb
 C:\Users\admin\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\ref\VISTA.dll
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.deps.json
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.dll
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\bin\Debug\net9.0\VISTA.pdb
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.AssemblyInfoInputs.cache
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.AssemblyInfo.cs
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.csproj.CoreCompileInputs.cache
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.sourcelink.json
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.dll
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\refint\VISTA.dll
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\VISTA.pdb
+C:\Users\Danie\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\VISTA\obj\Debug\net9.0\ref\VISTA.dll

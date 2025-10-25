@@ -42,11 +42,15 @@
             TXT_NOMBRE_DUEÑO = new TextBox();
             Grilla_Dueño = new DataGridView();
             Tab_Cliente = new TabPage();
+            BNTN_ELIMINAR_MATERIA_PRIMA = new Button();
+            label3 = new Label();
+            BNTN_AGREGAR_MATERIA_PRIMA = new Button();
+            Grilla_Materia_Prima = new DataGridView();
             label2 = new Label();
             Grilla_Carrito = new DataGridView();
             BTN_COMPRAR_PRODUCTO = new Button();
             BTN_ADD_PRODUCTO = new Button();
-            Grilla_Producto = new DataGridView();
+            Grilla_Productos = new DataGridView();
             label1 = new Label();
             label8 = new Label();
             BTN_Eliminar_Cliente = new Button();
@@ -78,22 +82,18 @@
             BTN_ELIMINAR_PROVEEDOR = new Button();
             BTN_AGREGAR_PROVEEDOR = new Button();
             Grilla_Proveedor = new DataGridView();
-            Grilla_Materia_Prima = new DataGridView();
-            BNTN_AGREGAR_MATERIA_PRIMA = new Button();
-            label3 = new Label();
-            BNTN_ELIMINAR_MATERIA_PRIMA = new Button();
             Tab_Dueño.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).BeginInit();
             Tab_Cliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Productos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Clientes).BeginInit();
             Control_Vista.SuspendLayout();
             Tab_Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Empleado).BeginInit();
             Tab_Proveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Proveedor).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).BeginInit();
             SuspendLayout();
             // 
             // Tab_Dueño
@@ -247,7 +247,7 @@
             Tab_Cliente.Controls.Add(Grilla_Carrito);
             Tab_Cliente.Controls.Add(BTN_COMPRAR_PRODUCTO);
             Tab_Cliente.Controls.Add(BTN_ADD_PRODUCTO);
-            Tab_Cliente.Controls.Add(Grilla_Producto);
+            Tab_Cliente.Controls.Add(Grilla_Productos);
             Tab_Cliente.Controls.Add(label1);
             Tab_Cliente.Controls.Add(label8);
             Tab_Cliente.Controls.Add(BTN_Eliminar_Cliente);
@@ -260,6 +260,44 @@
             Tab_Cliente.Size = new Size(792, 422);
             Tab_Cliente.TabIndex = 0;
             Tab_Cliente.Text = "Cliente";
+            // 
+            // BNTN_ELIMINAR_MATERIA_PRIMA
+            // 
+            BNTN_ELIMINAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BNTN_ELIMINAR_MATERIA_PRIMA.Location = new Point(662, 391);
+            BNTN_ELIMINAR_MATERIA_PRIMA.Name = "BNTN_ELIMINAR_MATERIA_PRIMA";
+            BNTN_ELIMINAR_MATERIA_PRIMA.Size = new Size(98, 23);
+            BNTN_ELIMINAR_MATERIA_PRIMA.TabIndex = 22;
+            BNTN_ELIMINAR_MATERIA_PRIMA.Text = "Eliminar MP";
+            BNTN_ELIMINAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(507, 232);
+            label3.Name = "label3";
+            label3.Size = new Size(201, 37);
+            label3.TabIndex = 21;
+            label3.Text = "Materia Prima";
+            // 
+            // BNTN_AGREGAR_MATERIA_PRIMA
+            // 
+            BNTN_AGREGAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BNTN_AGREGAR_MATERIA_PRIMA.Location = new Point(441, 391);
+            BNTN_AGREGAR_MATERIA_PRIMA.Name = "BNTN_AGREGAR_MATERIA_PRIMA";
+            BNTN_AGREGAR_MATERIA_PRIMA.Size = new Size(110, 23);
+            BNTN_AGREGAR_MATERIA_PRIMA.TabIndex = 20;
+            BNTN_AGREGAR_MATERIA_PRIMA.Text = "Agregar MP";
+            BNTN_AGREGAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
+            // 
+            // Grilla_Materia_Prima
+            // 
+            Grilla_Materia_Prima.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Materia_Prima.Location = new Point(441, 272);
+            Grilla_Materia_Prima.Name = "Grilla_Materia_Prima";
+            Grilla_Materia_Prima.Size = new Size(319, 115);
+            Grilla_Materia_Prima.TabIndex = 19;
             // 
             // label2
             // 
@@ -299,13 +337,13 @@
             BTN_ADD_PRODUCTO.Text = "Add Producto";
             BTN_ADD_PRODUCTO.UseVisualStyleBackColor = true;
             // 
-            // Grilla_Producto
+            // Grilla_Productos
             // 
-            Grilla_Producto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Producto.Location = new Point(441, 64);
-            Grilla_Producto.Name = "Grilla_Producto";
-            Grilla_Producto.Size = new Size(319, 140);
-            Grilla_Producto.TabIndex = 11;
+            Grilla_Productos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Grilla_Productos.Location = new Point(441, 64);
+            Grilla_Productos.Name = "Grilla_Productos";
+            Grilla_Productos.Size = new Size(319, 140);
+            Grilla_Productos.TabIndex = 11;
             // 
             // label1
             // 
@@ -622,44 +660,6 @@
             Grilla_Proveedor.Size = new Size(531, 263);
             Grilla_Proveedor.TabIndex = 1;
             // 
-            // Grilla_Materia_Prima
-            // 
-            Grilla_Materia_Prima.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Grilla_Materia_Prima.Location = new Point(441, 272);
-            Grilla_Materia_Prima.Name = "Grilla_Materia_Prima";
-            Grilla_Materia_Prima.Size = new Size(319, 115);
-            Grilla_Materia_Prima.TabIndex = 19;
-            // 
-            // BNTN_AGREGAR_MATERIA_PRIMA
-            // 
-            BNTN_AGREGAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            BNTN_AGREGAR_MATERIA_PRIMA.Location = new Point(441, 391);
-            BNTN_AGREGAR_MATERIA_PRIMA.Name = "BNTN_AGREGAR_MATERIA_PRIMA";
-            BNTN_AGREGAR_MATERIA_PRIMA.Size = new Size(110, 23);
-            BNTN_AGREGAR_MATERIA_PRIMA.TabIndex = 20;
-            BNTN_AGREGAR_MATERIA_PRIMA.Text = "Agregar MP";
-            BNTN_AGREGAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(507, 232);
-            label3.Name = "label3";
-            label3.Size = new Size(201, 37);
-            label3.TabIndex = 21;
-            label3.Text = "Materia Prima";
-            // 
-            // BNTN_ELIMINAR_MATERIA_PRIMA
-            // 
-            BNTN_ELIMINAR_MATERIA_PRIMA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BNTN_ELIMINAR_MATERIA_PRIMA.Location = new Point(662, 391);
-            BNTN_ELIMINAR_MATERIA_PRIMA.Name = "BNTN_ELIMINAR_MATERIA_PRIMA";
-            BNTN_ELIMINAR_MATERIA_PRIMA.Size = new Size(98, 23);
-            BNTN_ELIMINAR_MATERIA_PRIMA.TabIndex = 22;
-            BNTN_ELIMINAR_MATERIA_PRIMA.Text = "Eliminar MP";
-            BNTN_ELIMINAR_MATERIA_PRIMA.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -674,8 +674,9 @@
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).EndInit();
             Tab_Cliente.ResumeLayout(false);
             Tab_Cliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).EndInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Carrito).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Producto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Grilla_Productos).EndInit();
             ((System.ComponentModel.ISupportInitialize)Grilla_Clientes).EndInit();
             Control_Vista.ResumeLayout(false);
             Tab_Empleado.ResumeLayout(false);
@@ -684,7 +685,6 @@
             Tab_Proveedor.ResumeLayout(false);
             Tab_Proveedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Proveedor).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Grilla_Materia_Prima).EndInit();
             ResumeLayout(false);
         }
 
@@ -735,7 +735,7 @@
         private TextBox TXT_TELEFONO_PROVEEDOR;
         private TextBox TXT_NOMBRE_PROVEEDOR;
         private Button BTN_ADD_PRODUCTO;
-        private DataGridView Grilla_Producto;
+        private DataGridView Grilla_Productos;
         private Label label1;
         private Button BTN_COMPRAR_PRODUCTO;
         private Label label2;

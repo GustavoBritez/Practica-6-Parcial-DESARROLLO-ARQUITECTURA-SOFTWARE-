@@ -1,6 +1,7 @@
 using BE;
 using BLL;
 using BLL.BLL_Personas;
+using Microsoft.VisualBasic;
 using System.Windows.Forms;
 using VALIDACION;
 namespace GUI
@@ -14,8 +15,6 @@ namespace GUI
         Validar_Persona validar_Persona = new Validar_Persona();
 
 
-        List<object> listaProductos;
-        List<object> listaCarrito = new List<object>();
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +25,6 @@ namespace GUI
 
             Grilla_Productos.DataSource = null;
             Grilla_Productos.DataSource = Productos_BLL.Retornar_Lista_productos();
-            listaProductos = Productos_BLL.Retornar_Lista_productos();
         }
 
         private void BTN_Agregar_Cliente_Click(object sender, EventArgs e)
@@ -34,9 +32,9 @@ namespace GUI
             try
             {
                 /// Paso 1 Obtenemos los datos
-                string nombre = txt_Nombre_Cliente.Text;
-                string telefono = txt_Telefono_Cliente.Text;
-                string mail = txt_Mail_Cliente.Text;
+                string nombre = Interaction.InputBox("Ingrese Nombre del CLiente");
+                string telefono = Interaction.InputBox("Ingrese Telefono");
+                string mail = Interaction.InputBox("Ingrese Gmail ");
 
                 /// Paso 2 Validamos los datos
                 validar_Persona.Validar_Nombre(nombre);
@@ -69,18 +67,15 @@ namespace GUI
         {
             try
             {
-                if (Grilla_Clientes.SelectedRows.Count != 0) MessageBox.Show(" Se cambiara la fila seleccionada por los datos de los text box");
-
-                validar_Persona.Validar_Nombre(txt_Nombre_Cliente.Text);
-                validar_Persona.Validar_Telefono(txt_Telefono_Cliente.Text);
-                validar_Persona.Validar_Mail(txt_Mail_Cliente.Text);
-
+                validar_Persona.Validar_Nombre(Interaction.InputBox("Ingrese Nombre del CLiente"));
+                validar_Persona.Validar_Telefono(Interaction.InputBox("Ingrese Telefono"));
+                validar_Persona.Validar_Mail(Interaction.InputBox("Ingrese Gmail "));
 
                 ClienteBE cliente_modificado = new ClienteBE(
                                                                 Convert.ToInt32(Grilla_Clientes.CurrentRow.Cells["Id_cliente"].Value),
-                                                                txt_Nombre_Cliente.Text,
-                                                                txt_Telefono_Cliente.Text,
-                                                                txt_Mail_Cliente.Text
+                                                                Interaction.InputBox("Ingrese Nombre del CLiente"),
+                                                                Interaction.InputBox("Ingrese Telefono"),
+                                                                Interaction.InputBox("Ingrese Gmail ")
                                                             );
 
                 Cliente_BLL.Modificar_Cliente(cliente_modificado);
@@ -203,129 +198,7 @@ namespace GUI
         }
 
 
-
-        private void BTN_AGREGAR_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Grilla_Dueño.SelectedRows.Count != 0)
-                {
-                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
-                    listaCarrito.Add( select );
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void BTN_ELIMINAR_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Grilla_Dueño.SelectedRows.Count != 0)
-                {
-                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
-                    bool encontrado = false;
-                    foreach (var p in listaCarrito)
-                    {
-                        if (p == select)  // Compara la referencia del objeto
-                        {
-                            encontrado = true;
-                            break; // Sale del bucle al encontrarlo
-                        }
-                    }
-                    if (encontrado)
-                    {
-                        listaCarrito.Remove(select);
-                    }
-                    else throw new Exception("No se encontro ese producto");
-                    
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void BTN_MODIFICAR_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Grilla_Dueño.SelectedRows.Count != 0)
-                {
-                    var select = Grilla_Productos.SelectedRows[0].DataBoundItem;
-                    bool encontrado = false;
-                    foreach (var p in listaCarrito)
-                    {
-                        if (p == select)  // Compara la referencia del objeto
-                        {
-                            encontrado = true;
-                            break; // Sale del bucle al encontrarlo
-                        }
-                    }
-                    if (encontrado)
-                    {
-                        int x = 
-                    }
-                    else throw new Exception("No se encontro ese producto");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void CONFIMAR_COMPRA_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void TXT_BUSQUEDA_TextChanged(object sender, EventArgs e)
-        {
-            if (CambioDeEstado_Productos.Checked!)
-            {
-                string texto = TXT_BUSQUEDA.Text.ToLower();
-                
-                var filtrados = listaProductos
-                 .Where(obj =>
-                  {
-                      var prop = obj.GetType().GetProperty("Nombre");
-                      if (prop == null) return false;
-                      var valor = prop.GetValue(obj)?.ToString()?.ToLower();
-                      return valor != null && valor.Contains(texto);
-                  })
-                .ToList();
-
-                Grilla_Productos.DataSource = null;
-                Grilla_Productos.DataSource = filtrados;
-            }
-        }
-
-        private void CambioDeEstado_Productos_CheckedChanged(object sender, EventArgs e)
-        {
-            if (CambioDeEstado_Productos.Checked)
-            {
-                CambioDeEstado_Productos.Text = "Ver productos";
-                Grilla_Productos.DataSource = null;
-                Grilla_Productos.DataSource = listaCarrito;
-            }
-            else
-            {
-                CambioDeEstado_Productos.Text = "Ver tus compras";
-                Grilla_Productos.DataSource = null;
-                Grilla_Productos.DataSource = listaProductos;
-            }
-        }
+       
+    
     }
 }
