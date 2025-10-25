@@ -8,7 +8,7 @@ namespace GUI
     {
         Cliente_BLL Cliente_BLL = new Cliente_BLL();
         Dueño_BLL Dueño_BLL = new Dueño_BLL();
-
+        bool reporte_open = false;
         Validar_Persona validar_Persona = new Validar_Persona();
 
         public Form1()
@@ -16,7 +16,7 @@ namespace GUI
             InitializeComponent();
             Grilla_Clientes.DataSource = null;
             Grilla_Clientes.DataSource = Cliente_BLL.ObtenerClientes();
-            Grilla_Dueño.DataSource = null; 
+            Grilla_Dueño.DataSource = null;
             Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
         }
 
@@ -118,11 +118,11 @@ namespace GUI
                 validar_Persona.Validar_Mail(TXT_MAIL_DUEÑO.Text);
 
                 string nombre = TXT_NOMBRE_DUEÑO.Text;
-                string telefono = TXT_TELEFONO_DUEÑO.Text;  
-                string mail = TXT_MAIL_DUEÑO.Text;  
+                string telefono = TXT_TELEFONO_DUEÑO.Text;
+                string mail = TXT_MAIL_DUEÑO.Text;
 
 
-                Dueño_BLL.Agregar_Dueño(new DueñoBE(001,nombre,telefono,mail)); 
+                Dueño_BLL.Agregar_Dueño(new DueñoBE(001, nombre, telefono, mail));
             }
             catch (Exception ex)
             {
@@ -180,9 +180,9 @@ namespace GUI
                 {
                     throw new ArgumentException("Debe seleccionar una fila para modificar");
                 }
-                
+
             }
-            catch ( Exception ex )
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -190,6 +190,19 @@ namespace GUI
             {
                 Grilla_Dueño.DataSource = null;
                 Grilla_Dueño.DataSource = Dueño_BLL.ObtenerDueños();
+            }
+        }
+
+        private void BTN_REPORTE_Click(object sender, EventArgs e)
+        {
+            REPORTE reporte = new REPORTE();
+
+            if (reporte_open == false)
+            {
+                reporte.Show();
+                reporte_open = true;    
+
+                reporte.FormClosed += (s, args) => { reporte_open = false; };
             }
         }
     }

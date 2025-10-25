@@ -2,19 +2,21 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="31.2.3" />
+    <PackageReference Include="Syncfusion.Licensing" Version="31.2.3" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="31.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj" />
     <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\SYNC\SYNC.csproj" />
     <ProjectReference Include="..\VALIDACION\VALIDACION.csproj" />
   </ItemGroup>
 

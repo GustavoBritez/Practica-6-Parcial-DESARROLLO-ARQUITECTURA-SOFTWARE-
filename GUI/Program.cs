@@ -13,7 +13,7 @@ namespace GUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ix0oFS8QJAw9HSQvXkVhQlBad1hJXGJWfFFpR2Nbek55flVHallVVBYiSV9jS3tSdkdgW35fd3BSQmlZWU91Xg ==");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ix0oFS8QJAw9HSQvXkVhQlBad1hJXGJWfFFpR2Nbek55flVHallVVBYiSV9jS3tSdkdgW35fd3BSQmlZWU91Xg ==");
 
             Application.Run(new Form1());
             

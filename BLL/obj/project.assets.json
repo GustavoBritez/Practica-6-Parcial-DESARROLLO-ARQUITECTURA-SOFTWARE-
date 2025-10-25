@@ -2726,9 +2726,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BLL\\obj\\",
       "projectStyle": "PackageReference",
@@ -2753,11 +2753,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BE\\BE.csproj": {
-              "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BE\\BE.csproj"
+            "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BE\\BE.csproj": {
+              "projectPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\BE\\BE.csproj"
             },
-            "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\ORM\\ORM.csproj": {
-              "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\ORM\\ORM.csproj"
+            "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\ORM\\ORM.csproj": {
+              "projectPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\ORM\\ORM.csproj"
             }
           }
         }

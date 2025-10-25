@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Tab_Dueño = new TabPage();
-            button1 = new Button();
+            BTN_REPORTE = new Button();
             label7 = new Label();
             BTN_ELIMINAR_DUEÑO = new Button();
             BTN_MODIFICAR_DUEÑO = new Button();
@@ -55,12 +55,12 @@
             Grilla_Clientes = new DataGridView();
             Control_Vista = new TabControl();
             tabPage1 = new TabPage();
-            Lista_Productos = new ListBox();
-            TXT_BUSQUEDA = new TextBox();
-            label9 = new Label();
-            BTN_AGREGAR = new Button();
-            BTN_ELIMINAR = new Button();
             BTN_MODIFICAR = new Button();
+            BTN_ELIMINAR = new Button();
+            BTN_AGREGAR = new Button();
+            label9 = new Label();
+            TXT_BUSQUEDA = new TextBox();
+            Lista_Productos = new ListBox();
             Tab_Dueño.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Grilla_Dueño).BeginInit();
             Tab_Cliente.SuspendLayout();
@@ -72,7 +72,7 @@
             // Tab_Dueño
             // 
             Tab_Dueño.BackColor = Color.DimGray;
-            Tab_Dueño.Controls.Add(button1);
+            Tab_Dueño.Controls.Add(BTN_REPORTE);
             Tab_Dueño.Controls.Add(label7);
             Tab_Dueño.Controls.Add(BTN_ELIMINAR_DUEÑO);
             Tab_Dueño.Controls.Add(BTN_MODIFICAR_DUEÑO);
@@ -92,16 +92,17 @@
             Tab_Dueño.TabIndex = 3;
             Tab_Dueño.Text = "Dueño";
             // 
-            // button1
+            // BTN_REPORTE
             // 
-            button1.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(199, 362);
-            button1.Name = "button1";
-            button1.Size = new Size(397, 33);
-            button1.TabIndex = 11;
-            button1.Text = "Generar Reporte";
-            button1.UseVisualStyleBackColor = true;
+            BTN_REPORTE.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BTN_REPORTE.ForeColor = SystemColors.ActiveCaptionText;
+            BTN_REPORTE.Location = new Point(199, 362);
+            BTN_REPORTE.Name = "BTN_REPORTE";
+            BTN_REPORTE.Size = new Size(397, 33);
+            BTN_REPORTE.TabIndex = 11;
+            BTN_REPORTE.Text = "Generar Reporte";
+            BTN_REPORTE.UseVisualStyleBackColor = true;
+            BTN_REPORTE.Click += BTN_REPORTE_Click;
             // 
             // label7
             // 
@@ -361,21 +362,32 @@
             tabPage1.TabIndex = 4;
             tabPage1.Text = "Panaderia";
             // 
-            // Lista_Productos
+            // BTN_MODIFICAR
             // 
-            Lista_Productos.Dock = DockStyle.Bottom;
-            Lista_Productos.FormattingEnabled = true;
-            Lista_Productos.Location = new Point(3, 355);
-            Lista_Productos.Name = "Lista_Productos";
-            Lista_Productos.Size = new Size(786, 64);
-            Lista_Productos.TabIndex = 0;
+            BTN_MODIFICAR.Location = new Point(419, 329);
+            BTN_MODIFICAR.Name = "BTN_MODIFICAR";
+            BTN_MODIFICAR.Size = new Size(75, 23);
+            BTN_MODIFICAR.TabIndex = 6;
+            BTN_MODIFICAR.Text = "Modificar";
+            BTN_MODIFICAR.UseVisualStyleBackColor = true;
             // 
-            // TXT_BUSQUEDA
+            // BTN_ELIMINAR
             // 
-            TXT_BUSQUEDA.Location = new Point(71, 329);
-            TXT_BUSQUEDA.Name = "TXT_BUSQUEDA";
-            TXT_BUSQUEDA.Size = new Size(114, 23);
-            TXT_BUSQUEDA.TabIndex = 1;
+            BTN_ELIMINAR.Location = new Point(325, 328);
+            BTN_ELIMINAR.Name = "BTN_ELIMINAR";
+            BTN_ELIMINAR.Size = new Size(75, 23);
+            BTN_ELIMINAR.TabIndex = 5;
+            BTN_ELIMINAR.Text = "Eliminar";
+            BTN_ELIMINAR.UseVisualStyleBackColor = true;
+            // 
+            // BTN_AGREGAR
+            // 
+            BTN_AGREGAR.Location = new Point(223, 328);
+            BTN_AGREGAR.Name = "BTN_AGREGAR";
+            BTN_AGREGAR.Size = new Size(75, 23);
+            BTN_AGREGAR.TabIndex = 4;
+            BTN_AGREGAR.Text = "Agregar";
+            BTN_AGREGAR.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -388,32 +400,21 @@
             label9.TabIndex = 2;
             label9.Text = "Buscar";
             // 
-            // BTN_AGREGAR
+            // TXT_BUSQUEDA
             // 
-            BTN_AGREGAR.Location = new Point(223, 328);
-            BTN_AGREGAR.Name = "BTN_AGREGAR";
-            BTN_AGREGAR.Size = new Size(75, 23);
-            BTN_AGREGAR.TabIndex = 4;
-            BTN_AGREGAR.Text = "Agregar";
-            BTN_AGREGAR.UseVisualStyleBackColor = true;
+            TXT_BUSQUEDA.Location = new Point(71, 329);
+            TXT_BUSQUEDA.Name = "TXT_BUSQUEDA";
+            TXT_BUSQUEDA.Size = new Size(114, 23);
+            TXT_BUSQUEDA.TabIndex = 1;
             // 
-            // BTN_ELIMINAR
+            // Lista_Productos
             // 
-            BTN_ELIMINAR.Location = new Point(325, 328);
-            BTN_ELIMINAR.Name = "BTN_ELIMINAR";
-            BTN_ELIMINAR.Size = new Size(75, 23);
-            BTN_ELIMINAR.TabIndex = 5;
-            BTN_ELIMINAR.Text = "Eliminar";
-            BTN_ELIMINAR.UseVisualStyleBackColor = true;
-            // 
-            // BTN_MODIFICAR
-            // 
-            BTN_MODIFICAR.Location = new Point(425, 326);
-            BTN_MODIFICAR.Name = "BTN_MODIFICAR";
-            BTN_MODIFICAR.Size = new Size(75, 23);
-            BTN_MODIFICAR.TabIndex = 6;
-            BTN_MODIFICAR.Text = "Modificar";
-            BTN_MODIFICAR.UseVisualStyleBackColor = true;
+            Lista_Productos.Dock = DockStyle.Bottom;
+            Lista_Productos.FormattingEnabled = true;
+            Lista_Productos.Location = new Point(3, 355);
+            Lista_Productos.Name = "Lista_Productos";
+            Lista_Productos.Size = new Size(786, 64);
+            Lista_Productos.TabIndex = 0;
             // 
             // Form1
             // 
@@ -439,7 +440,7 @@
         #endregion
 
         private TabPage Tab_Dueño;
-        private Button button1;
+        private Button BTN_REPORTE;
         private Label label7;
         private Button BTN_ELIMINAR_DUEÑO;
         private Button BTN_MODIFICAR_DUEÑO;

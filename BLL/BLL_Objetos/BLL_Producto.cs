@@ -8,7 +8,7 @@ namespace BLL
     {
         private ORM_Productos maper = new();
 
-        public void Buscar_incrementalmente()
+        public void Buscar_incrementalmente( string nombre )
         {
 
         }

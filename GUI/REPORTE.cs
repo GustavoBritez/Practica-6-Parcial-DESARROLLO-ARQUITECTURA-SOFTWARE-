@@ -1,32 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Syncfusion.Windows.Forms.PdfViewer;
+﻿using SYNC;
+using Syncfusion.Pdf;
+using System.Diagnostics;
 
 namespace GUI
 {
     public partial class REPORTE : Form
     {
+        private PdfDocument newPDF = new();
+
         public REPORTE()
         {
             InitializeComponent();
         }
 
-        public void TEST_PDF_VIEWER()
+        private void BTN_REPORT_CLIENTE_Click(object sender, EventArgs e)
         {
-            MONTOTO.BeginInvoke(new Action(() =>
-            {
-                PdfDocumentView pdfViewer = new PdfDocumentView();
-                pdfViewer.Dock = DockStyle.Fill;
-                this.Controls.Add(pdfViewer);
-                pdfViewer.Load(@"C:\REPORTE.pdf");
-            }));
+            Class1 reporte = new Class1();
+           
+            PdfDocument doc = reporte.Generar_Reporte();
+
+
+            Process.Start("Reporte_Clientes.pdf");
         }
     }
 }

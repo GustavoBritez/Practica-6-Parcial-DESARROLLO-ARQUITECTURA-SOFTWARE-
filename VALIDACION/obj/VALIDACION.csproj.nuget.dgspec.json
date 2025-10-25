@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj": {}
+    "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj": {
+    "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj",
+        "projectUniqueName": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj",
         "projectName": "VALIDACION",
-        "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj",
+        "projectPath": "C:\\Users\\Navegador\\source\\repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\VALIDACION.csproj",
         "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Navegador\\Source\\Repos\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\VALIDACION\\obj\\",
         "projectStyle": "PackageReference",
