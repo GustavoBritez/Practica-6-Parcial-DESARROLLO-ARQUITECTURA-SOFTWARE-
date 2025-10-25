@@ -1,0 +1,6 @@
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\bin\Debug\VALIDACION.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\bin\Debug\VALIDACION.pdb
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.AssemblyReference.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.pdb

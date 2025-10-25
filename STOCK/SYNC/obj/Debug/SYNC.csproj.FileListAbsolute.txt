@@ -1,0 +1,8 @@
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\bin\Debug\SYNC.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\bin\Debug\SYNC.pdb
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.csproj.AssemblyReference.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.pdb
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.csproj.Up2Date

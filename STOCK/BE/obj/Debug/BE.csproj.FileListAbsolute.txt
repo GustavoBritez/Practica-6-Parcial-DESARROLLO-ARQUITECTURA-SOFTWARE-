@@ -1,0 +1,6 @@
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\bin\Debug\BE.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\bin\Debug\BE.pdb
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\obj\Debug\BE.dll
+C:\Users\Danie\Desktop\FRAMEWORK\STOCK\BE\obj\Debug\BE.pdb
