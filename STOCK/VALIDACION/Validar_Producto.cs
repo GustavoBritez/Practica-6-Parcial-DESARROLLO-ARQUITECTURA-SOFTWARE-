@@ -17,7 +17,7 @@ namespace VALIDACION
 
             Regex rgx = new Regex(@"^P-[1-9]{3}");
 
-            if (!rgx.IsMatch(codigo))
+            if (rgx.IsMatch(codigo))
                 throw new ArgumentException("El codigo debe ser P-XXX");
         }  
 

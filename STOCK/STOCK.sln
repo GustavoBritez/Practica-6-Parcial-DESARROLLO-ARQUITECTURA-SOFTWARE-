@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}"
 EndProject
@@ -15,8 +15,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{87048A41-4333-4618-A890-B79B1848C3C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VALIDACION", "VALIDACION\VALIDACION.csproj", "{1AE55F12-0069-48E6-AA15-9C76AA055055}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYNC", "SYNC\SYNC.csproj", "{8D00BFFB-79B4-41AF-AC29-2C189D69C1F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +42,6 @@ Global
 		{1AE55F12-0069-48E6-AA15-9C76AA055055}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AE55F12-0069-48E6-AA15-9C76AA055055}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AE55F12-0069-48E6-AA15-9C76AA055055}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D00BFFB-79B4-41AF-AC29-2C189D69C1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D00BFFB-79B4-41AF-AC29-2C189D69C1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D00BFFB-79B4-41AF-AC29-2C189D69C1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D00BFFB-79B4-41AF-AC29-2C189D69C1F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

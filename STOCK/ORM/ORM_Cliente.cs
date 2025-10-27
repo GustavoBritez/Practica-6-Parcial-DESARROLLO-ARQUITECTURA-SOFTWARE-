@@ -1,5 +1,5 @@
 ﻿using BE;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -52,19 +52,36 @@ namespace ORM
         {
             try
             {
-                cliente.Id_Cliente = this.listaClientes.Max( c => c.Id_Cliente +1 );
-
-                SqlParameter[] sp = new SqlParameter[]
+                if (this.listaClientes.Count == 0)
                 {
+                    int id_sin_numeros = 1;
+
+                    SqlParameter[] sp = new SqlParameter[]
+                    {
                     new SqlParameter("@ACCION", "AGREGAR"),
                     new SqlParameter ("@ID_CLIENTE", SqlDbType.Int ) { Value = cliente.Id_Cliente },
                     new SqlParameter ("@NOMBRE", SqlDbType.VarChar ) { Value = cliente.Nombre },
                     new SqlParameter ("@TELEFONO", SqlDbType.VarChar ) { Value = cliente.Telefono },
                     new SqlParameter ("@MAIL", SqlDbType.VarChar ){ Value = cliente.Mail }
-                };
 
-                acceso.Escribir(storedprocedure, sp);
+                    };
+                    acceso.Escribir(storedprocedure, sp);
+                }
+                else
+                {
+                    cliente.Id_Cliente = this.listaClientes.Max(c => c.Id_Cliente + 1);
 
+                    SqlParameter[] sp = new SqlParameter[]
+                    {
+                    new SqlParameter("@ACCION", "AGREGAR"),
+                    new SqlParameter ("@ID_CLIENTE", SqlDbType.Int ) { Value = cliente.Id_Cliente },
+                    new SqlParameter ("@NOMBRE", SqlDbType.VarChar ) { Value = cliente.Nombre },
+                    new SqlParameter ("@TELEFONO", SqlDbType.VarChar ) { Value = cliente.Telefono },
+                    new SqlParameter ("@MAIL", SqlDbType.VarChar ){ Value = cliente.Mail }
+
+                    };
+                    acceso.Escribir(storedprocedure, sp);
+                }
                 //this.listaClientes.Add(cliente); 
                 // Quiero ver si esto funciona sin tener que agregar el cliente a la lista en memoria
             }

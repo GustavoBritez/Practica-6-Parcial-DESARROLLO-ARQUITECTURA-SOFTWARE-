@@ -4,3 +4,9 @@ C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.As
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.CoreCompileInputs.cache
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.dll
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\VALIDACION\obj\Debug\VALIDACION.pdb
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\bin\Debug\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\bin\Debug\VALIDACION.pdb
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.AssemblyReference.cache
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\obj\Debug\VALIDACION.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\obj\Debug\VALIDACION.dll
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\VALIDACION\obj\Debug\VALIDACION.pdb

@@ -1,5 +1,5 @@
 using BE;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Data;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +24,10 @@ namespace ORM
             listaProducts = Obtener_Productos_ROM();
         }
 
-        public List<object> Obtener_lista_Productos()
+        public List<ProductoBE> Obtener_lista_Productos()
         {
             List<ProductoBE> listaOriginal = Cargar_Productos_Grilla();
-            List<object> listaObjetos = listaOriginal.Cast<object>().ToList();
-            return listaObjetos;
+            return listaOriginal;
         }
 
         private List<ProductoBE> Obtener_Productos_ROM()
@@ -44,10 +43,10 @@ namespace ORM
             foreach (DataRow dr in dt.Rows) {
 
                 ProductoBE mapeo = new ProductoBE(
-                    Convert.ToInt32(dr["Id_producto"]), // En la columna DB ? se llama asi ?
+                    dr["CODIGO_PROD"].ToString(), // En la columna DB ? se llama asi ?
                     dr["Nombre"].ToString(),  // En la columna DB ? se llama asi ?
-                    Convert.ToDecimal(dr["Precio"]),  // En la columna DB ? se llama asi ?
-                    Convert.ToInt32(dr["Cantidad"]) // En la columna DB ? se llama asi ?
+                    Convert.ToDecimal(dr["Precio_Venta"]),  // En la columna DB ? se llama asi ?
+                    Convert.ToDecimal(dr["Stock_Actual"]) // En la columna DB ? se llama asi ?
                     );
                 productos.Add( mapeo );
             }
@@ -63,26 +62,16 @@ namespace ORM
         {
             try
             {
-                if ( this.listaProducts.Count == 0)
-                {
-                    nuevoProducto.Id_Producto = 1;
-                }
-                else
-                {
-                    int idproducto = this.listaProducts.Max(x => x.Id_Producto + 1);
-
-                    nuevoProducto.Id_Producto = idproducto;
-
                     SqlParameter[] sp = new SqlParameter[]
                     {
                         new SqlParameter("@ACCION", "AGREGAR"),
-                        new SqlParameter(codigo_prod, SqlDbType.Int) { Value = nuevoProducto.Id_Producto},
+                        new SqlParameter(codigo_prod, SqlDbType.NVarChar) { Value = nuevoProducto.Id_Producto},
                         new SqlParameter(nombre, SqlDbType.NVarChar) { Value = nuevoProducto.Nombre },
                         new SqlParameter(precio_venta, SqlDbType.Decimal) { Value = nuevoProducto.Precio},
-                        new SqlParameter(stock_actual, SqlDbType.Int) {Value = nuevoProducto.Cantidad},
+                        new SqlParameter(stock_actual, SqlDbType.Int) { Value = Convert.ToInt32(nuevoProducto.Cantidad)},
                     };
                     acceso.Escribir(storedProcedure,sp);
-                }
+
             }
             catch( Exception ex )
             {
@@ -97,7 +86,7 @@ namespace ORM
                 SqlParameter[] sp = new SqlParameter[]
                 {
                     new SqlParameter("@ACCION","ELIMINAR" ),
-                    new SqlParameter("@ID_PRODUCTO", SqlDbType.Int) { Value = id_producto },
+                    new SqlParameter(codigo_prod, SqlDbType.Int) { Value = id_producto },
                 };
                 acceso.Escribir(storedProcedure,sp);
             }
@@ -119,10 +108,10 @@ namespace ORM
             SqlParameter[] sp = new SqlParameter[]
             {
                 new SqlParameter("@ACCION","MODIFICAR"),
-                new SqlParameter("@ID_PRODUCTO", SqlDbType.Int) {Value = productoOriginal.Id_Producto},
-                new SqlParameter("@NOMBRE", SqlDbType.NVarChar) { Value = productoOriginal.Nombre},
-                new SqlParameter("@PRECIO",SqlDbType.Decimal) { Value = productoOriginal.Precio},
-                new SqlParameter("@CANTIDAD",SqlDbType.Int) { Value = productoOriginal.Cantidad}
+                new SqlParameter(codigo_prod, SqlDbType.Int) {Value = productoOriginal.Id_Producto},
+                new SqlParameter(nombre, SqlDbType.NVarChar) { Value = productoOriginal.Nombre},
+                new SqlParameter(precio_venta,SqlDbType.Decimal) { Value = productoOriginal.Precio},
+                new SqlParameter(stock_actual,SqlDbType.Int) { Value = productoOriginal.Cantidad}
             };
 
             acceso.Escribir(storedProcedure,sp);

@@ -4,14 +4,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace ORM
 {
 
     public class Access
     {
-        private SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=STOCK;Integrated Security=True;Trust Server Certificate=True");
+        private SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=STOCK;Integrated Security=True;");
 
         private SqlTransaction transaction;
 
@@ -86,10 +86,8 @@ namespace ORM
 
                     filas_afectadas = cmd.ExecuteNonQuery(); // Ejecuta la consulta y devuelve el número de filas afectadas
 
-                    if ( filas_afectadas == -1 )
-                    {
-                        Commit_TX();
-                    }
+                     Commit_TX();
+
                 }
             }
             catch( Exception ex )

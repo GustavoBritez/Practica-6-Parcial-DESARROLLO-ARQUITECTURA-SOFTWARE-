@@ -6,3 +6,5 @@ C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.dll
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.pdb
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\bin\Debug\Syncfusion.Licensing.dll
 C:\Users\Danie\Desktop\FRAMEWORK\STOCK\SYNC\obj\Debug\SYNC.csproj.Up2Date
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\SYNC\obj\Debug\SYNC.csproj.AssemblyReference.cache
+C:\Users\Danie\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\SYNC\obj\Debug\SYNC.csproj.CoreCompileInputs.cache
