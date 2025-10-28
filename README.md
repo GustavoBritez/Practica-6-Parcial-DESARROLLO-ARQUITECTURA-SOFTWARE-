@@ -5,7 +5,6 @@ Producto - Carga, Eliminacion y Modificacion de Producto reflejados en memoria y
 Carrito - Solo se carga en memoria
 
 
-
 En SQL tenemos los STORED PROCEDURE
 
 SP_CLIENTE_CRUD 
@@ -13,3 +12,13 @@ SP_PRODUCTO_CRUD
 
 
 Se realizan reportes de productos mas vendidos, con opcion de guardado de PDF y Previsualizacion de los productos mas vendidos en graficos de BARRAS y en grafico de TORTA
+
+TECNOLOGIA UTILIZADA SYNCFUSION:
+
+Ventajas
+- De los mas personalizables del mercado
+- Soporte atento y Multi lenguaje
+
+Desventajas
+- Hay que tirar mucho codigo 
+
