@@ -13,6 +13,7 @@ namespace BE
         private string nombre;
         private decimal costo;
         private int cantidad;
+
         public int Id_Materia_Prima { get => id_materia_prima; set => id_materia_prima = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public decimal Precio { get => costo; set => costo = value; }

@@ -98,9 +98,7 @@ namespace GUI
                         Convert.ToDecimal(TXT_PRECIO_PROD.Text),
                         Convert.ToDecimal(TXT_CANTIDAD_PROD.Text)
                         );
-
                 productobll.Agregar_Producto(newBe);
-
             }
             catch (Exception ex)
             {
@@ -108,7 +106,8 @@ namespace GUI
             }
             finally
             {
-                Actualizar();
+                            Grilla_Producto.DataSource = null;
+            Grilla_Producto.DataSource = productobll.Obtener_Productos();
             }
         }
 
@@ -130,17 +129,11 @@ namespace GUI
 
                 clienteEXISTENTE.Agregar_Productos(newProducto);
 
-                Lista_S.ListaClientesCarritos.Add(clienteEXISTENTE);
-
                 CargarGrillaCarrito(clienteEXISTENTE);
             }
             catch( Exception ex )
             {
                 MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-
             }
         }
 
@@ -162,7 +155,6 @@ namespace GUI
                     Grilla_Carrito.Rows.Add( newP.Nombre,newP.Id_Producto,newP.Precio );
                 }
             }
-
         }
 
         private void Grilla_Cliente_SelectionChanged(object sender, EventArgs e)
@@ -206,8 +198,6 @@ namespace GUI
                 REPORTE rp = new REPORTE();
                 rp.Show();
             }
-
-
         }
     }
 }
