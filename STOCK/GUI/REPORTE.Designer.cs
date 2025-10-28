@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings messageBoxSettings2 = new Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings();
-            Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings pdfViewerPrinterSettings2 = new Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings();
+            Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings messageBoxSettings1 = new Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings();
+            Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings pdfViewerPrinterSettings1 = new Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(REPORTE));
-            Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings textSearchSettings2 = new Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings();
+            Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings textSearchSettings1 = new Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings();
             this.button2 = new System.Windows.Forms.Button();
             this.pdfDocumentView1 = new Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView();
             this.button1 = new System.Windows.Forms.Button();
+            this.BTN_GUARDAR_PDF = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -58,17 +59,17 @@
             this.pdfDocumentView1.IsTextSearchEnabled = true;
             this.pdfDocumentView1.IsTextSelectionEnabled = true;
             this.pdfDocumentView1.Location = new System.Drawing.Point(49, 70);
-            messageBoxSettings2.EnableNotification = true;
-            this.pdfDocumentView1.MessageBoxSettings = messageBoxSettings2;
+            messageBoxSettings1.EnableNotification = true;
+            this.pdfDocumentView1.MessageBoxSettings = messageBoxSettings1;
             this.pdfDocumentView1.MinimumZoomPercentage = 50;
             this.pdfDocumentView1.Name = "pdfDocumentView1";
             this.pdfDocumentView1.PageBorderThickness = 1;
-            pdfViewerPrinterSettings2.Copies = 1;
-            pdfViewerPrinterSettings2.PageOrientation = Syncfusion.Windows.PdfViewer.PdfViewerPrintOrientation.Auto;
-            pdfViewerPrinterSettings2.PageSize = Syncfusion.Windows.PdfViewer.PdfViewerPrintSize.ActualSize;
-            pdfViewerPrinterSettings2.PrintLocation = ((System.Drawing.PointF)(resources.GetObject("pdfViewerPrinterSettings2.PrintLocation")));
-            pdfViewerPrinterSettings2.ShowPrintStatusDialog = true;
-            this.pdfDocumentView1.PrinterSettings = pdfViewerPrinterSettings2;
+            pdfViewerPrinterSettings1.Copies = 1;
+            pdfViewerPrinterSettings1.PageOrientation = Syncfusion.Windows.PdfViewer.PdfViewerPrintOrientation.Auto;
+            pdfViewerPrinterSettings1.PageSize = Syncfusion.Windows.PdfViewer.PdfViewerPrintSize.ActualSize;
+            pdfViewerPrinterSettings1.PrintLocation = ((System.Drawing.PointF)(resources.GetObject("pdfViewerPrinterSettings1.PrintLocation")));
+            pdfViewerPrinterSettings1.ShowPrintStatusDialog = true;
+            this.pdfDocumentView1.PrinterSettings = pdfViewerPrinterSettings1;
             this.pdfDocumentView1.ReferencePath = null;
             this.pdfDocumentView1.ScrollDisplacementValue = 0;
             this.pdfDocumentView1.ShowHorizontalScrollBar = true;
@@ -76,10 +77,10 @@
             this.pdfDocumentView1.Size = new System.Drawing.Size(687, 307);
             this.pdfDocumentView1.SpaceBetweenPages = 8;
             this.pdfDocumentView1.TabIndex = 2;
-            textSearchSettings2.CurrentInstanceColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(64)))));
-            textSearchSettings2.HighlightAllInstance = true;
-            textSearchSettings2.OtherInstanceColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            this.pdfDocumentView1.TextSearchSettings = textSearchSettings2;
+            textSearchSettings1.CurrentInstanceColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(64)))));
+            textSearchSettings1.HighlightAllInstance = true;
+            textSearchSettings1.OtherInstanceColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.pdfDocumentView1.TextSearchSettings = textSearchSettings1;
             this.pdfDocumentView1.ThemeName = "Office2016DarkGray";
             this.pdfDocumentView1.VerticalScrollOffset = 0;
             this.pdfDocumentView1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Office2016DarkGray;
@@ -96,11 +97,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // BTN_GUARDAR_PDF
+            // 
+            this.BTN_GUARDAR_PDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_GUARDAR_PDF.Location = new System.Drawing.Point(307, 383);
+            this.BTN_GUARDAR_PDF.Name = "BTN_GUARDAR_PDF";
+            this.BTN_GUARDAR_PDF.Size = new System.Drawing.Size(170, 55);
+            this.BTN_GUARDAR_PDF.TabIndex = 5;
+            this.BTN_GUARDAR_PDF.Text = "GUARDAR PDF";
+            this.BTN_GUARDAR_PDF.UseVisualStyleBackColor = true;
+            this.BTN_GUARDAR_PDF.Click += new System.EventHandler(this.BTN_GUARDAR_PDF_Click);
+            // 
             // REPORTE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BTN_GUARDAR_PDF);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pdfDocumentView1);
             this.Controls.Add(this.button2);
@@ -115,5 +128,6 @@
         private System.Windows.Forms.Button button2;
         private Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView pdfDocumentView1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTN_GUARDAR_PDF;
     }
 }

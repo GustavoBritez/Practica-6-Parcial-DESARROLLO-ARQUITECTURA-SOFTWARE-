@@ -124,4 +124,4 @@ C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTW
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\GUI\obj\Debug\GUI.csproj.Up2Date
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\GUI\obj\Debug\GUI.exe
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\GUI\obj\Debug\GUI.pdb
-C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\GUI\obj\Debug\GUI.exe.config
+C:\Users\Navegador\source\repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\GUI\obj\Debug\GUI.exe.config

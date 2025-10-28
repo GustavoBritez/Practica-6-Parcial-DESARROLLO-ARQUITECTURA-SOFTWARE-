@@ -21,28 +21,44 @@ namespace BLL
                 /// recordar q el grafico tiene que estar siemopre detnro de pdfDOCUMENT y luego agregamos este OBJ
                 /// a la page para luego usar page. grapics
                 /// 1. - INSTANCIAR OBVJETOS 
-
+                #region Instanciamos obj
                 PdfDocument pdfDocument = new PdfDocument();
                 PdfPage page = pdfDocument.Pages.Add();
                 PdfGraphics Graficos = page.Graphics;
 
                 PdfFont fontTitulo = new PdfStandardFont(PdfFontFamily.Helvetica, 40, PdfFontStyle.Bold);
-                PdfFont fontLabel = new PdfStandardFont(PdfFontFamily.Helvetica, 10);
+                PdfFont fontLabel = new PdfStandardFont(PdfFontFamily.Helvetica, 15);
+                PdfFont fontAlumnos = new PdfStandardFont(PdfFontFamily.Helvetica , 20);
+
+                #endregion
 
 
                 // Tenemos que averiguar como hacer la colocacion de textos mas dinamic
                 // Esto al tuntun es una kagada
+
+
+                #region Posicionamiento y dibujo de los objetos
+                //  ----------- fontTitulo
                 Graficos.DrawString("SYNCFUSION", fontTitulo, PdfBrushes.Red, new PointF(20, 20));
 
+                //  ---------- fontLabel
                 Graficos.DrawString("Distribución de Productos Más Vendidos (Grafico de Torta)",
-                    new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold),
+                    fontLabel,
                     PdfBrushes.Black,
                     new PointF(20, 70)
                 );
 
-                // 2. CALCULO DE DATOS Y PORCENTAJES
+                //  --------- fontAlumnos
 
-                // Evitamos usar la LISTA_S
+                Graficos.DrawString(" Britez Alvarenga Gustavo Daniel y Midon Joaquin ",
+                                fontAlumnos,
+                                PdfBrushes.Black,
+                                new PointF(20,730));
+
+                // ---------- FONT pROFESOR
+                #endregion
+
+                #region Calculo de datos y porcentajes 
                 var data = table.AsEnumerable()
                                 .Select(row => new
                                 {
@@ -52,38 +68,42 @@ namespace BLL
 
 
                 decimal ventaTotal = data.Sum(d => d.Valor);
-                float chartCenterX = 250f; // Posición X central del gráfico
-                float chartCenterY = 280f; // Posición Y central del gráfico
+                float X = 250f; // Posición X central del gráfico
+                float Y = 280f; // Posición Y central del gráfico
                 float radius = 120f;      // Radio del gráfico
                 float currentAngle = 0f;  // Ángulo de inicio
                 float legendY = 150f;     // Posición de inicio de la leyenda
 
-                // Colores para las porciones y averiguar como poner mas colores, en caso de que se pasen los prouctos
+                // Averiguar como poner mas colores, en caso de que se pasen los prouctos
                 PdfBrush[] brushes = { PdfBrushes.Blue, PdfBrushes.Green, PdfBrushes.Orange, PdfBrushes.Purple, PdfBrushes.Brown, PdfBrushes.DarkRed, PdfBrushes.AliceBlue , PdfBrushes.Coral, PdfBrushes.DarkGoldenrod, PdfBrushes.NavajoWhite };
                 int colorIndex = 0;
 
-                // 3. DIBUJAR EL GRÁFICO DE TORTA Y LA LEYENDA
+                #endregion
+
+                #region Dibujar el grafico de torta y leyenda 
 
                 foreach (var item in data)
                 {
                     float porcentaje = (float)(item.Valor / ventaTotal);
-                    float sweepAngle = porcentaje * 360f; // 360 grados totales
+                    float angulodeBarrido = porcentaje * 360f; // 360 grados totales
 
                     PdfBrush currentBrush = brushes[colorIndex % brushes.Length];
 
                     Graficos.DrawPie(
                         new PdfPen(Color.Black, 0.5f), // Borde de la porción
                         currentBrush, // Relleno de la porción
-                        chartCenterX - radius, // Posición X 
-                        chartCenterY - radius, // Posición Y 
+                        X - radius, // Posición X 
+                        Y - radius, // Posición Y 
                         radius * 2, // Ancho 
                         radius * 2, // Alto 
                         currentAngle, // Ángulo de inicio
-                        sweepAngle // Ángulo de la porción
+                        angulodeBarrido // Ángulo de la porción
                     );
 
-                    float percentageX = chartCenterX + radius + 30;
+                    float percentageX = X + radius + 30;
 
+
+                    /// ref
                     Graficos.DrawRectangle(
                         currentBrush,
                         new RectangleF(percentageX, legendY, 10, 10)
@@ -98,11 +118,11 @@ namespace BLL
                         new PointF(percentageX + 15, legendY)
                     );
 
-                    currentAngle += sweepAngle;
+                    currentAngle += angulodeBarrido;
                     legendY += 15f;
                     colorIndex++;
                 }
-
+                #endregion
                 MemoryStream streamer = new MemoryStream();
                 pdfDocument.Save(streamer);
                 return streamer;
@@ -117,20 +137,26 @@ namespace BLL
         {
             try
             {
+
+
+                #region Definimos los obj
                 PdfDocument pdfDocument = new PdfDocument();
                 PdfPage page = pdfDocument.Pages.Add();
                 PdfGraphics Graficos = page.Graphics;
 
                 // --- Variables de Dibujo Manual ---
-                // Definimos el área donde irá el gráfico (ancho fijo, alto fijo)
+                // Definimos el área donde irá el gráfico
                 float chartAreaWidth = 400f;
                 float chartAreaHeight = 250f;
 
                 PointF chartOrigin = new PointF(20, 100);
 
-                // --- 1. ENCABEZADO (Funciona correctamente) ---
+                // --- 1. ENCABEZADO
                 PdfFont fontTitulo = new PdfStandardFont(PdfFontFamily.Helvetica, 50, PdfFontStyle.Bold);
                 PdfFont fontLabel = new PdfStandardFont(PdfFontFamily.Helvetica, 8);
+                #endregion
+
+                #region TEXTOS
 
                 Graficos.DrawString("SYNCFUSION", fontTitulo, PdfBrushes.Red, new PointF(20, 20));
 
@@ -143,23 +169,28 @@ namespace BLL
                     new PointF(20, 70)
                 );
 
-                // 2. CÁLCULO DE ESCALA Y DATOS
+                #endregion
+
+
+                #region Calculo de escala y datos
+
                 var valores = table.AsEnumerable()
                                    .Select(row => Convert.ToDecimal(row["Total Venta"]))
                                    .ToList();
 
                 decimal maxValor = valores.Any() ? valores.Max() : 100m;
 
-                // Mapeo: 400 unidades de ancho del gráfico / MaxValor de ventas
                 float escalaHorizontal = chartAreaWidth / (float)maxValor;
-                float barHeight = 20f; 
-                float currentY = chartOrigin.Y + 40; 
+                float alto = 20f; 
+                float Y = chartOrigin.Y + 40; 
 
-                // Colores para las barras 
                 PdfBrush[] brushes = { PdfBrushes.Firebrick, PdfBrushes.Green, PdfBrushes.Orange, PdfBrushes.Purple, PdfBrushes.Brown, PdfBrushes.Moccasin};
                 int colorIndex = 0;
 
-                // 3. DIBUJAR BARRAS Y ETIQUETAS
+                #endregion
+
+
+                #region Dibujar Barras y ETIQUETAS 
 
                 foreach (DataRow row in table.Rows)
                 {
@@ -167,13 +198,13 @@ namespace BLL
                     float valor = (float)Convert.ToDecimal(row["Total Venta"]);
 
 
-                    float barWidth = valor * escalaHorizontal;
+                    float ANCHO = valor * escalaHorizontal;
 
                     RectangleF rectBarra = new RectangleF(
                         chartOrigin.X +80 ,
-                        currentY,
-                        barWidth,
-                        barHeight
+                        Y,
+                        ANCHO,
+                        alto
                     );
 
                     // c) Dibujar la Barra (sin usar PdfChart, se usa DrawRectangle)
@@ -186,7 +217,7 @@ namespace BLL
                         $"{valor:N0}",
                         fontLabel,
                         PdfBrushes.Black,
-                        new PointF(chartOrigin.X + barWidth + 5, currentY + 5) // Osea al lado
+                        new PointF(chartOrigin.X + ANCHO + 5, Y + 5) // Osea al lado
                     );
 
                     // e) Dibujar la Etiqueta del Nombre del producto
@@ -194,12 +225,14 @@ namespace BLL
                         nombre,
                         fontLabel,
                         PdfBrushes.Black,
-                        new PointF(chartOrigin.X, currentY +5) 
+                        new PointF(chartOrigin.X, Y +5) 
                     );
 
-                    currentY += barHeight + 5f;
+                    Y += alto + 5f;
                     colorIndex++;
                 }
+
+                #endregion
                 MemoryStream streamer = new MemoryStream();
                 pdfDocument.Save(streamer);
                 return streamer;
@@ -209,5 +242,6 @@ namespace BLL
                 throw new ArgumentException("Error al generar el gráfico de barras manual: " + ex.Message, ex);
             }
         }
+
     }
 }
