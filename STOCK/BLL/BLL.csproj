@@ -93,6 +93,7 @@
     <Compile Include="BLL_OrdenProduccion.cs" />
     <Compile Include="BLL_Producto.cs" />
     <Compile Include="BLL_SYNC.cs" />
+    <Compile Include="BLL_Usuario.cs" />
     <Compile Include="Cliente_BLL.cs" />
     <Compile Include="Lista_S.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

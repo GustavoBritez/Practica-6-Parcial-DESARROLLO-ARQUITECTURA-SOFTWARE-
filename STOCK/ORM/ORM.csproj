@@ -173,6 +173,7 @@
     <Compile Include="ORM_Cliente.cs" />
     <Compile Include="ORM_Materia_Prima.cs" />
     <Compile Include="ORM_Productos.cs" />
+    <Compile Include="ORM_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
