@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using VALIDACION;
 using BLL;
 using BE;
+using System.Data;
 
 namespace GUI
 {
@@ -17,6 +18,8 @@ namespace GUI
         private Cliente_BLL clientebll = new Cliente_BLL();
         
         private BLL_Producto productobll = new BLL_Producto();
+
+        
 
         public Form1()
         {
@@ -161,6 +164,8 @@ namespace GUI
         {
             if (Grilla_Cliente.SelectedRows.Count == 0 || Grilla_Cliente.Rows.Count == 0)
             {
+
+
                 Grilla_Carrito.DataSource = null;
                 Grilla_Carrito.Refresh();
                 return;
@@ -171,6 +176,11 @@ namespace GUI
 
                 ClienteBE cliente = Lista_S.ListaClientesCarritos
                                       .FirstOrDefault(c => c.Id_Cliente == idClienteSeleccionado);
+
+
+                control_Personalizado_Fecha1.Nombre = cliente.Nombre;
+                control_Personalizado_Fecha1.Telefono = cliente.Telefono;
+                control_Personalizado_Fecha1.Descripcion = cliente.Mail;
 
                 if (cliente != null)
                 {
@@ -198,6 +208,16 @@ namespace GUI
                 REPORTE rp = new REPORTE();
                 rp.Show();
             }
+        }
+
+        private void Grilla_Cliente_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == 0) { return; }
+
+            string texto = "Este texto se traducira";
+
+
+
         }
     }
 }

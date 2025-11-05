@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\control_personalizado_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\control_personalizado_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\logeo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\logeo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\logeo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\logeo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\control_personalizado_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\control_personalizado_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87048A41-4333-4618-A890-B79B1848C3C9}|ORM\\ORM.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\orm\\orm_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87048A41-4333-4618-A890-B79B1848C3C9}|ORM\\ORM.csproj|solutionrelative:orm\\orm_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87048A41-4333-4618-A890-B79B1848C3C9}|ORM\\ORM.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\orm\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87048A41-4333-4618-A890-B79B1848C3C9}|ORM\\ORM.csproj|solutionrelative:orm\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8FAC-1549-4098-B286-5550AE56B5C2}|BLL\\BLL.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\bll\\bll_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8FAC-1549-4098-B286-5550AE56B5C2}|BLL\\BLL.csproj|solutionrelative:bll\\bll_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\control_personalizado_fecha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\control_personalizado_fecha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|c:\\users\\navegador\\source\\repos\\gustavobritez\\practica-6-parcial-desarrollo-arquitectura-software-\\stock\\gui\\control_personalizado_fecha.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{9A421895-4E4C-4A7A-ADCB-D59D66E7CEC2}|GUI\\GUI.csproj|solutionrelative:gui\\control_personalizado_fecha.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 949,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Form1.cs",
+              "RelativeToolTip": "GUI\\Form1.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAUwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:45:22.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "REPORTE.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\REPORTE.cs",
+              "RelativeDocumentMoniker": "GUI\\REPORTE.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\REPORTE.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GUI\\REPORTE.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:10:35.038Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GUI\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:44:52.447Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Control_Personalizado_Fecha.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.cs",
+              "RelativeDocumentMoniker": "GUI\\Control_Personalizado_Fecha.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GUI\\Control_Personalizado_Fecha.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:46:36.98Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Logeo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Logeo.cs",
+              "RelativeDocumentMoniker": "GUI\\Logeo.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Logeo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GUI\\Logeo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:44:51.212Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logeo.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Logeo.cs",
+              "RelativeDocumentMoniker": "GUI\\Logeo.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Logeo.cs",
+              "RelativeToolTip": "GUI\\Logeo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:10:36.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ORM_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\ORM\\ORM_Usuario.cs",
+              "RelativeDocumentMoniker": "ORM\\ORM_Usuario.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\ORM\\ORM_Usuario.cs",
+              "RelativeToolTip": "ORM\\ORM_Usuario.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwCUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:46:48.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Control_Personalizado_Fecha.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.cs",
+              "RelativeDocumentMoniker": "GUI\\Control_Personalizado_Fecha.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.cs",
+              "RelativeToolTip": "GUI\\Control_Personalizado_Fecha.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:44:31.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Access.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\ORM\\Access.cs",
+              "RelativeDocumentMoniker": "ORM\\Access.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\ORM\\Access.cs",
+              "RelativeToolTip": "ORM\\Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T23:12:38.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BLL_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\BLL\\BLL_Usuario.cs",
+              "RelativeDocumentMoniker": "BLL\\BLL_Usuario.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\BLL\\BLL_Usuario.cs",
+              "RelativeToolTip": "BLL\\BLL_Usuario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:46:45.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Control_Personalizado_Fecha.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\Control_Personalizado_Fecha.Designer.cs",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.Designer.cs",
+              "RelativeToolTip": "GUI\\Control_Personalizado_Fecha.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T22:44:30.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Control_Personalizado_Fecha.resx",
+              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.resx",
+              "RelativeDocumentMoniker": "GUI\\Control_Personalizado_Fecha.resx",
+              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\GustavoBritez\\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\\STOCK\\GUI\\Control_Personalizado_Fecha.resx",
+              "RelativeToolTip": "GUI\\Control_Personalizado_Fecha.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-11-04T22:44:30.682Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -55,6 +55,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Grilla_Cliente = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.control_Personalizado_Fecha1 = new GUI.Control_Personalizado_Fecha();
             this.tabControl1.SuspendLayout();
             this.Tab_Cliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla_Carrito)).BeginInit();
@@ -70,7 +71,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(818, 432);
+            this.tabControl1.Size = new System.Drawing.Size(818, 667);
             this.tabControl1.TabIndex = 0;
             // 
             // Tab_Cliente
@@ -100,10 +101,11 @@
             this.Tab_Cliente.Controls.Add(this.BTN_AGREGAR_CLIENTE);
             this.Tab_Cliente.Controls.Add(this.label1);
             this.Tab_Cliente.Controls.Add(this.Grilla_Cliente);
+            this.Tab_Cliente.Controls.Add(this.control_Personalizado_Fecha1);
             this.Tab_Cliente.Location = new System.Drawing.Point(4, 22);
             this.Tab_Cliente.Name = "Tab_Cliente";
             this.Tab_Cliente.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_Cliente.Size = new System.Drawing.Size(810, 406);
+            this.Tab_Cliente.Size = new System.Drawing.Size(810, 641);
             this.Tab_Cliente.TabIndex = 0;
             this.Tab_Cliente.Text = "Cliente";
             // 
@@ -315,6 +317,7 @@
             this.Grilla_Cliente.Name = "Grilla_Cliente";
             this.Grilla_Cliente.Size = new System.Drawing.Size(326, 112);
             this.Grilla_Cliente.TabIndex = 0;
+            this.Grilla_Cliente.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grilla_Cliente_RowEnter);
             this.Grilla_Cliente.SelectionChanged += new System.EventHandler(this.Grilla_Cliente_SelectionChanged);
             // 
             // tabPage3
@@ -322,16 +325,26 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(810, 406);
+            this.tabPage3.Size = new System.Drawing.Size(810, 641);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Empleado";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // control_Personalizado_Fecha1
+            // 
+            this.control_Personalizado_Fecha1.Descripcion = "";
+            this.control_Personalizado_Fecha1.Location = new System.Drawing.Point(16, 429);
+            this.control_Personalizado_Fecha1.Name = "control_Personalizado_Fecha1";
+            this.control_Personalizado_Fecha1.Nombre = "Nombre";
+            this.control_Personalizado_Fecha1.Size = new System.Drawing.Size(370, 109);
+            this.control_Personalizado_Fecha1.TabIndex = 25;
+            this.control_Personalizado_Fecha1.Telefono = "Dni";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 432);
+            this.ClientSize = new System.Drawing.Size(818, 667);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -374,6 +387,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TXT_NOMBRE_CLIENTE;
         private System.Windows.Forms.Button button1;
+        private Control_Personalizado_Fecha control_Personalizado_Fecha1;
     }
 }
 

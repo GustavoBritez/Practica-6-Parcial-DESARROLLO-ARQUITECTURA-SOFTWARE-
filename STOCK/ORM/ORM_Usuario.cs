@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace ORM
 {
@@ -23,9 +24,18 @@ namespace ORM
                 new SqlParameter("ACCION", System.Data.SqlDbType.VarChar) { Value = mail },
 
             };
-            access.Leer("SP_VALIDAR_USUARIO",SP);    
+            DataTable dt = access.Leer("SP_VALIDAR_USUARIO",SP);    
             
+            DataRow dr = dt.Rows[0];
 
+            ClienteBE newCliente = new ClienteBE
+            (
+                Convert.ToInt32(dr["Id_Cliente"]),
+                dr["Nombre"].ToString(),
+                dr["Telefono"].ToString(),
+                dr["Email"].ToString()
+            );
+            return newCliente;
 
         }
     }

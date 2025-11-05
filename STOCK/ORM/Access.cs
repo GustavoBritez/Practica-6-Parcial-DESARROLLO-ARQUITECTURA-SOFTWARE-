@@ -11,7 +11,7 @@ namespace ORM
 
     public class Access
     {
-        private SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=STOCK﻿;Integrated Security=True;");
+        private SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=STOCK;Integrated Security=True;");
 
         private SqlTransaction transaction;
 

@@ -16,3 +16,9 @@ C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTW
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.dll
 C:\Users\Navegador\Source\Repos\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\bin\Debug\BE.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\bin\Debug\BE.pdb
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.dll
+C:\Users\Navegador\source\repos\GustavoBritez\Practica-6-Parcial-DESARROLLO-ARQUITECTURA-SOFTWARE-\STOCK\BE\obj\Debug\BE.pdb
