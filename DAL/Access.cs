@@ -47,7 +47,6 @@ namespace DAL
             }
             return dt;
         }
-        //test
 
         public int Escribir( string Query , SqlParameter[]? sp = null )
         {
@@ -59,7 +58,10 @@ namespace DAL
 
                 using var transaction = conn.BeginTransaction();
 
-                using var cmd = new SqlCommand(Query, conn, transaction);
+                using var cmd = new SqlCommand(Query, conn, transaction)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
                 if (sp != null && sp.Length > 0)
                     cmd.Parameters.AddRange(sp);
