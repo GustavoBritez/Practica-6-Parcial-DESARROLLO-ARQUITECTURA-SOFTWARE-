@@ -47,7 +47,7 @@ namespace DAL
             }
             return dt;
         }
-
+        //test
 
         public int Escribir( string Query , SqlParameter[]? sp = null )
         {
