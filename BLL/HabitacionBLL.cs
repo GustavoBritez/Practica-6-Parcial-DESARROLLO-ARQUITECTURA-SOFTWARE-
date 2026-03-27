@@ -15,6 +15,11 @@ namespace BLL
         
         private readonly HabitacionDAL _habitacionDAL;
 
+        public HabitacionBLL()
+        {
+            _habitacionDAL = new HabitacionDAL();
+        }
+
         public void AgregarHabitacion(HabitacionBE HBE)
         {
             ValidarEntidad(HBE);
