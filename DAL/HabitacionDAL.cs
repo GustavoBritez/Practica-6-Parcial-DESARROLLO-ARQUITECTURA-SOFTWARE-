@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,7 +62,7 @@ namespace DAL
             return valida > 0;
         }
 
-        public bool ObtenerHabitaciones()
+        public DataTable ObtenerHabitaciones()
         {
             var parametros = new SqlParameter[]
             {
@@ -69,7 +70,7 @@ namespace DAL
             };
             var dt = _access.Leer("SP_CRUD", parametros);
 
-            return dt.Rows.Count > 0;
+            return dt;
         }
     }
 }
