@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,7 +11,7 @@ using DAL;
 
 namespace BLL
 {
-    internal class HabitacionBLL
+    public class HabitacionBLL
     {
         
         private readonly HabitacionDAL _habitacionDAL;
@@ -36,6 +37,11 @@ namespace BLL
         {
             ValidarEntidad(HBE);
             _habitacionDAL.ModificarHabitacion(HBE);
+        }
+
+        public DataTable ObtenerHabitaciones()
+        {
+            return _habitacionDAL.ObtenerHabitaciones();
         }
 
         private static void ValidarEntidad( HabitacionBE HBE )

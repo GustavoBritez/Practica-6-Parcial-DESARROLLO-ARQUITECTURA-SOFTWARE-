@@ -60,5 +60,16 @@ namespace DAL
 
             return valida > 0;
         }
+
+        public bool ObtenerHabitaciones()
+        {
+            var parametros = new SqlParameter[]
+            {
+                new SqlParameter("@OPTION", "GET")
+            };
+            var dt = _access.Leer("SP_CRUD", parametros);
+
+            return dt.Rows.Count > 0;
+        }
     }
 }
